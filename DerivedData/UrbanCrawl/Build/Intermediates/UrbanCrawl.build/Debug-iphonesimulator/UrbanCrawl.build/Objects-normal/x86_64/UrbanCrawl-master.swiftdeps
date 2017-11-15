@@ -1,0 +1,23 @@
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "9bc762e87faf3c10b116643c4183341f"
+build_time: [564045676, 245249000]
+inputs:
+  "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/UrbanCrawl/UCServices.swift": [564045518, 0]
+  "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/UrbanCrawl/Controllers/PlanTravelViewController.swift": [564045518, 0]
+  "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/UrbanCrawl/VideoTableViewCell.swift": [564045518, 0]
+  "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/UrbanCrawl/CustomOverlayView.swift": [564045518, 0]
+  "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/UrbanCrawl/Controllers/UCCityTableViewController.swift": [564045518, 0]
+  "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/UrbanCrawl/UCPlaceTableViewController.swift": [564045518, 0]
+  "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/UrbanCrawl/DevModeTableViewCell.swift": [564045518, 0]
+  "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/UrbanCrawl/MarkingTableViewCell.swift": [564045518, 0]
+  "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/UrbanCrawl/AppDelegate.swift": [564045518, 0]
+  "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/UrbanCrawl/ExampleCollectionViewCell.swift": [564045518, 0]
+  "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/UrbanCrawl/CustomActivityIndicator.swift": [564045518, 0]
+  "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/UrbanCrawl/ViewController.swift": [564045518, 0]
+  "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/UrbanCrawl/CityTableViewCell.swift": [564045518, 0]
+  "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/UrbanCrawl/LogsWebViewController.swift": [564045518, 0]
+  "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/UrbanCrawl/LabelTableViewCell.swift": [564045518, 0]
+  "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/UrbanCrawl/ScrollTableViewCell.swift": [564045518, 0]
+  "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/UrbanCrawl/SetttingsTableViewController.swift": [564045518, 0]
+  "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/UrbanCrawl/Controllers/UCHomeTableViewController.swift": [564045518, 0]
+  "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/UrbanCrawl/TextViewTableViewCell.swift": [564045518, 0]

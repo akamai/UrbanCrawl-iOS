@@ -1,0 +1,545 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "CustomOverlayView"
+provides-nominal:
+- "C10UrbanCrawl17CustomOverlayView"
+provides-member:
+- ["C10UrbanCrawl17CustomOverlayView", ""]
+provides-dynamic-lookup:
+- "hitTest"
+- "closeButtonTapped"
+- "populateWithPhoto"
+- "photosViewController"
+- "setHidden"
+depends-top-level:
+- "CGPoint"
+- !private "Void"
+- "TernaryPrecedence"
+- "UIEvent"
+- !private "=="
+- "AssignmentPrecedence"
+- "INSPhotoViewable"
+- "INSNibLoadedView"
+- "UIView"
+- "AnyObject"
+- "CustomOverlayView"
+- "INSPhotosViewController"
+- "Bool"
+- !private "!="
+- "INSPhotosOverlayViewable"
+- !private "BooleanLiteralType"
+- !private "Array"
+depends-member:
+- !private ["Ps9AnyObject", "RawValue"]
+- !private ["Ps9AnyObject", "UIView"]
+- !private ["Ps9AnyObject", "alpha"]
+- !private ["Ps9AnyObject", "animate"]
+- ["Ps9AnyObject", "closeButtonTapped"]
+- !private ["Ps9AnyObject", "dismiss"]
+- ["Ps9AnyObject", "hitTest"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "isHidden"]
+- ["Ps9AnyObject", "photosViewController"]
+- ["Ps9AnyObject", "populateWithPhoto"]
+- ["Ps9AnyObject", "setHidden"]
+- ["Ps9AnyObject", "view"]
+- ["Ps9AnyObject", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- ["Sb", "deinit"]
+- !private ["PSo15CALayerDelegate", "UIView"]
+- !private ["PSo15CALayerDelegate", "alpha"]
+- !private ["PSo15CALayerDelegate", "animate"]
+- ["PSo15CALayerDelegate", "closeButtonTapped"]
+- ["PSo15CALayerDelegate", "hitTest"]
+- !private ["PSo15CALayerDelegate", "init"]
+- !private ["PSo15CALayerDelegate", "isHidden"]
+- ["PSo15CALayerDelegate", "photosViewController"]
+- ["PSo15CALayerDelegate", "populateWithPhoto"]
+- ["PSo15CALayerDelegate", "setHidden"]
+- ["PSo15CALayerDelegate", "view"]
+- ["PSo15CALayerDelegate", ""]
+- ["V12CoreGraphics7CGFloat", "deinit"]
+- ["VSC7CGPoint", "deinit"]
+- ["VSC6CGRect", "deinit"]
+- !private ["Ps7CVarArg", "RawValue"]
+- !private ["Ps7CVarArg", "UIView"]
+- !private ["Ps7CVarArg", "alpha"]
+- !private ["Ps7CVarArg", "animate"]
+- ["Ps7CVarArg", "closeButtonTapped"]
+- !private ["Ps7CVarArg", "dismiss"]
+- ["Ps7CVarArg", "hitTest"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "isHidden"]
+- ["Ps7CVarArg", "photosViewController"]
+- ["Ps7CVarArg", "populateWithPhoto"]
+- ["Ps7CVarArg", "setHidden"]
+- ["Ps7CVarArg", "view"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps28CustomDebugStringConvertible", "RawValue"]
+- !private ["Ps28CustomDebugStringConvertible", "UIView"]
+- !private ["Ps28CustomDebugStringConvertible", "alpha"]
+- !private ["Ps28CustomDebugStringConvertible", "animate"]
+- ["Ps28CustomDebugStringConvertible", "closeButtonTapped"]
+- !private ["Ps28CustomDebugStringConvertible", "dismiss"]
+- ["Ps28CustomDebugStringConvertible", "hitTest"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "isHidden"]
+- ["Ps28CustomDebugStringConvertible", "photosViewController"]
+- ["Ps28CustomDebugStringConvertible", "populateWithPhoto"]
+- ["Ps28CustomDebugStringConvertible", "setHidden"]
+- ["Ps28CustomDebugStringConvertible", "view"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- ["C10UrbanCrawl17CustomOverlayView", "AnyObject"]
+- ["C10UrbanCrawl17CustomOverlayView", "Bool"]
+- ["C10UrbanCrawl17CustomOverlayView", "CGPoint"]
+- ["C10UrbanCrawl17CustomOverlayView", "INSPhotoViewable"]
+- ["C10UrbanCrawl17CustomOverlayView", "INSPhotosViewController"]
+- ["C10UrbanCrawl17CustomOverlayView", "UIEvent"]
+- ["C10UrbanCrawl17CustomOverlayView", "UIView"]
+- !private ["C10UrbanCrawl17CustomOverlayView", "Void"]
+- !private ["C10UrbanCrawl17CustomOverlayView", "alpha"]
+- ["C10UrbanCrawl17CustomOverlayView", "closeButtonTapped"]
+- ["C10UrbanCrawl17CustomOverlayView", "deinit"]
+- ["C10UrbanCrawl17CustomOverlayView", "hitTest"]
+- ["C10UrbanCrawl17CustomOverlayView", "init"]
+- !private ["C10UrbanCrawl17CustomOverlayView", "isHidden"]
+- ["C10UrbanCrawl17CustomOverlayView", "photosViewController"]
+- ["C10UrbanCrawl17CustomOverlayView", "populateWithPhoto"]
+- ["C10UrbanCrawl17CustomOverlayView", "setHidden"]
+- ["C10UrbanCrawl17CustomOverlayView", "view"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "RawValue"]
+- !private ["Ps23CustomStringConvertible", "UIView"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "alpha"]
+- !private ["Ps23CustomStringConvertible", "animate"]
+- ["Ps23CustomStringConvertible", "closeButtonTapped"]
+- !private ["Ps23CustomStringConvertible", "dismiss"]
+- ["Ps23CustomStringConvertible", "hitTest"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "isHidden"]
+- ["Ps23CustomStringConvertible", "photosViewController"]
+- ["Ps23CustomStringConvertible", "populateWithPhoto"]
+- ["Ps23CustomStringConvertible", "setHidden"]
+- ["Ps23CustomStringConvertible", "view"]
+- ["Ps23CustomStringConvertible", ""]
+- ["Sd", "deinit"]
+- !private ["Ps9Equatable", "Element"]
+- !private ["Ps9Equatable", "RawValue"]
+- !private ["Ps9Equatable", "UIView"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "allowAnimatedContent"]
+- !private ["Ps9Equatable", "allowUserInteraction"]
+- !private ["Ps9Equatable", "alpha"]
+- !private ["Ps9Equatable", "animate"]
+- ["Ps9Equatable", "closeButtonTapped"]
+- !private ["Ps9Equatable", "dismiss"]
+- ["Ps9Equatable", "hitTest"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "isHidden"]
+- ["Ps9Equatable", "photosViewController"]
+- ["Ps9Equatable", "populateWithPhoto"]
+- ["Ps9Equatable", "setHidden"]
+- ["Ps9Equatable", "view"]
+- ["Ps9Equatable", ""]
+- !private ["Ps25ExpressibleByArrayLiteral", "Element"]
+- !private ["Ps25ExpressibleByArrayLiteral", "allowAnimatedContent"]
+- !private ["Ps25ExpressibleByArrayLiteral", "allowUserInteraction"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "RawValue"]
+- !private ["Ps8Hashable", "UIView"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "alpha"]
+- !private ["Ps8Hashable", "animate"]
+- ["Ps8Hashable", "closeButtonTapped"]
+- !private ["Ps8Hashable", "dismiss"]
+- ["Ps8Hashable", "hitTest"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "isHidden"]
+- ["Ps8Hashable", "photosViewController"]
+- ["Ps8Hashable", "populateWithPhoto"]
+- ["Ps8Hashable", "setHidden"]
+- ["Ps8Hashable", "view"]
+- ["Ps8Hashable", ""]
+- ["CSo16INSNibLoadedView", "AnyObject"]
+- ["CSo16INSNibLoadedView", "Bool"]
+- ["CSo16INSNibLoadedView", "CGPoint"]
+- ["CSo16INSNibLoadedView", "INSPhotoViewable"]
+- ["CSo16INSNibLoadedView", "INSPhotosViewController"]
+- ["CSo16INSNibLoadedView", "UIEvent"]
+- ["CSo16INSNibLoadedView", "UIView"]
+- !private ["CSo16INSNibLoadedView", "Void"]
+- !private ["CSo16INSNibLoadedView", "alpha"]
+- ["CSo16INSNibLoadedView", "closeButtonTapped"]
+- ["CSo16INSNibLoadedView", "deinit"]
+- ["CSo16INSNibLoadedView", "hitTest"]
+- ["CSo16INSNibLoadedView", "init"]
+- !private ["CSo16INSNibLoadedView", "isHidden"]
+- ["CSo16INSNibLoadedView", "photosViewController"]
+- ["CSo16INSNibLoadedView", "populateWithPhoto"]
+- ["CSo16INSNibLoadedView", "setHidden"]
+- ["CSo16INSNibLoadedView", "view"]
+- ["CSo16INSNibLoadedView", ""]
+- !private ["P15INSPhotoGallery24INSPhotosOverlayViewable", "UIView"]
+- !private ["P15INSPhotoGallery24INSPhotosOverlayViewable", "alpha"]
+- !private ["P15INSPhotoGallery24INSPhotosOverlayViewable", "isHidden"]
+- ["P15INSPhotoGallery24INSPhotosOverlayViewable", "photosViewController"]
+- ["P15INSPhotoGallery24INSPhotosOverlayViewable", "populateWithPhoto"]
+- ["P15INSPhotoGallery24INSPhotosOverlayViewable", "setHidden"]
+- ["P15INSPhotoGallery24INSPhotosOverlayViewable", "view"]
+- ["P15INSPhotoGallery24INSPhotosOverlayViewable", ""]
+- !private ["C15INSPhotoGallery23INSPhotosViewController", "dismiss"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- ["CSo7NSCoder", "deinit"]
+- !private ["PSo8NSCoding", "UIView"]
+- !private ["PSo8NSCoding", "alpha"]
+- !private ["PSo8NSCoding", "animate"]
+- ["PSo8NSCoding", "closeButtonTapped"]
+- !private ["PSo8NSCoding", "dismiss"]
+- ["PSo8NSCoding", "hitTest"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "isHidden"]
+- ["PSo8NSCoding", "photosViewController"]
+- ["PSo8NSCoding", "populateWithPhoto"]
+- ["PSo8NSCoding", "setHidden"]
+- ["PSo8NSCoding", "view"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo26NSExtensionRequestHandling", "dismiss"]
+- ["CSo8NSObject", "AnyObject"]
+- ["CSo8NSObject", "Bool"]
+- ["CSo8NSObject", "CGPoint"]
+- ["CSo8NSObject", "INSPhotoViewable"]
+- ["CSo8NSObject", "INSPhotosViewController"]
+- !private ["CSo8NSObject", "RawValue"]
+- ["CSo8NSObject", "UIEvent"]
+- ["CSo8NSObject", "UIView"]
+- !private ["CSo8NSObject", "Void"]
+- !private ["CSo8NSObject", "alpha"]
+- !private ["CSo8NSObject", "animate"]
+- ["CSo8NSObject", "closeButtonTapped"]
+- !private ["CSo8NSObject", "deinit"]
+- !private ["CSo8NSObject", "dismiss"]
+- ["CSo8NSObject", "hitTest"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "isHidden"]
+- ["CSo8NSObject", "photosViewController"]
+- ["CSo8NSObject", "populateWithPhoto"]
+- ["CSo8NSObject", "setHidden"]
+- ["CSo8NSObject", "view"]
+- !private ["PSo16NSObjectProtocol", "RawValue"]
+- !private ["PSo16NSObjectProtocol", "UIView"]
+- !private ["PSo16NSObjectProtocol", "alpha"]
+- !private ["PSo16NSObjectProtocol", "animate"]
+- ["PSo16NSObjectProtocol", "closeButtonTapped"]
+- !private ["PSo16NSObjectProtocol", "dismiss"]
+- ["PSo16NSObjectProtocol", "hitTest"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "isHidden"]
+- ["PSo16NSObjectProtocol", "photosViewController"]
+- ["PSo16NSObjectProtocol", "populateWithPhoto"]
+- ["PSo16NSObjectProtocol", "setHidden"]
+- ["PSo16NSObjectProtocol", "view"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["Ps9OptionSet", "Element"]
+- !private ["Ps9OptionSet", "allowAnimatedContent"]
+- !private ["Ps9OptionSet", "allowUserInteraction"]
+- ["Sq", "deinit"]
+- !private ["Ps16RawRepresentable", "Element"]
+- !private ["Ps16RawRepresentable", "allowAnimatedContent"]
+- !private ["Ps16RawRepresentable", "allowUserInteraction"]
+- !private ["Ps10SetAlgebra", "Element"]
+- !private ["Ps10SetAlgebra", "allowAnimatedContent"]
+- !private ["Ps10SetAlgebra", "allowUserInteraction"]
+- !private ["PSo29UIAccessibilityIdentification", "UIView"]
+- !private ["PSo29UIAccessibilityIdentification", "alpha"]
+- !private ["PSo29UIAccessibilityIdentification", "animate"]
+- ["PSo29UIAccessibilityIdentification", "closeButtonTapped"]
+- ["PSo29UIAccessibilityIdentification", "hitTest"]
+- !private ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "isHidden"]
+- ["PSo29UIAccessibilityIdentification", "photosViewController"]
+- ["PSo29UIAccessibilityIdentification", "populateWithPhoto"]
+- ["PSo29UIAccessibilityIdentification", "setHidden"]
+- ["PSo29UIAccessibilityIdentification", "view"]
+- ["PSo29UIAccessibilityIdentification", ""]
+- !private ["PSo12UIAppearance", "UIView"]
+- !private ["PSo12UIAppearance", "alpha"]
+- !private ["PSo12UIAppearance", "animate"]
+- ["PSo12UIAppearance", "closeButtonTapped"]
+- ["PSo12UIAppearance", "hitTest"]
+- !private ["PSo12UIAppearance", "init"]
+- !private ["PSo12UIAppearance", "isHidden"]
+- ["PSo12UIAppearance", "photosViewController"]
+- ["PSo12UIAppearance", "populateWithPhoto"]
+- ["PSo12UIAppearance", "setHidden"]
+- ["PSo12UIAppearance", "view"]
+- ["PSo12UIAppearance", ""]
+- !private ["PSo21UIAppearanceContainer", "UIView"]
+- !private ["PSo21UIAppearanceContainer", "alpha"]
+- !private ["PSo21UIAppearanceContainer", "animate"]
+- ["PSo21UIAppearanceContainer", "closeButtonTapped"]
+- !private ["PSo21UIAppearanceContainer", "dismiss"]
+- ["PSo21UIAppearanceContainer", "hitTest"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "isHidden"]
+- ["PSo21UIAppearanceContainer", "photosViewController"]
+- ["PSo21UIAppearanceContainer", "populateWithPhoto"]
+- ["PSo21UIAppearanceContainer", "setHidden"]
+- ["PSo21UIAppearanceContainer", "view"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo18UIContentContainer", "dismiss"]
+- !private ["PSo17UICoordinateSpace", "UIView"]
+- !private ["PSo17UICoordinateSpace", "alpha"]
+- !private ["PSo17UICoordinateSpace", "animate"]
+- ["PSo17UICoordinateSpace", "closeButtonTapped"]
+- ["PSo17UICoordinateSpace", "hitTest"]
+- !private ["PSo17UICoordinateSpace", "init"]
+- !private ["PSo17UICoordinateSpace", "isHidden"]
+- ["PSo17UICoordinateSpace", "photosViewController"]
+- ["PSo17UICoordinateSpace", "populateWithPhoto"]
+- ["PSo17UICoordinateSpace", "setHidden"]
+- ["PSo17UICoordinateSpace", "view"]
+- ["PSo17UICoordinateSpace", ""]
+- !private ["PSo13UIDynamicItem", "UIView"]
+- !private ["PSo13UIDynamicItem", "alpha"]
+- !private ["PSo13UIDynamicItem", "animate"]
+- ["PSo13UIDynamicItem", "closeButtonTapped"]
+- ["PSo13UIDynamicItem", "hitTest"]
+- !private ["PSo13UIDynamicItem", "init"]
+- !private ["PSo13UIDynamicItem", "isHidden"]
+- ["PSo13UIDynamicItem", "photosViewController"]
+- ["PSo13UIDynamicItem", "populateWithPhoto"]
+- ["PSo13UIDynamicItem", "setHidden"]
+- ["PSo13UIDynamicItem", "view"]
+- ["PSo13UIDynamicItem", ""]
+- !private ["PSo18UIFocusEnvironment", "UIView"]
+- !private ["PSo18UIFocusEnvironment", "alpha"]
+- !private ["PSo18UIFocusEnvironment", "animate"]
+- ["PSo18UIFocusEnvironment", "closeButtonTapped"]
+- !private ["PSo18UIFocusEnvironment", "dismiss"]
+- ["PSo18UIFocusEnvironment", "hitTest"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "isHidden"]
+- ["PSo18UIFocusEnvironment", "photosViewController"]
+- ["PSo18UIFocusEnvironment", "populateWithPhoto"]
+- ["PSo18UIFocusEnvironment", "setHidden"]
+- ["PSo18UIFocusEnvironment", "view"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "UIView"]
+- !private ["PSo11UIFocusItem", "alpha"]
+- !private ["PSo11UIFocusItem", "animate"]
+- ["PSo11UIFocusItem", "closeButtonTapped"]
+- ["PSo11UIFocusItem", "hitTest"]
+- !private ["PSo11UIFocusItem", "init"]
+- !private ["PSo11UIFocusItem", "isHidden"]
+- ["PSo11UIFocusItem", "photosViewController"]
+- ["PSo11UIFocusItem", "populateWithPhoto"]
+- ["PSo11UIFocusItem", "setHidden"]
+- ["PSo11UIFocusItem", "view"]
+- ["PSo11UIFocusItem", ""]
+- !private ["PSo30UIPageViewControllerDataSource", "dismiss"]
+- !private ["PSo28UIPageViewControllerDelegate", "dismiss"]
+- ["CSo11UIResponder", "AnyObject"]
+- ["CSo11UIResponder", "Bool"]
+- ["CSo11UIResponder", "CGPoint"]
+- ["CSo11UIResponder", "INSPhotoViewable"]
+- ["CSo11UIResponder", "INSPhotosViewController"]
+- !private ["CSo11UIResponder", "RawValue"]
+- ["CSo11UIResponder", "UIEvent"]
+- ["CSo11UIResponder", "UIView"]
+- !private ["CSo11UIResponder", "Void"]
+- !private ["CSo11UIResponder", "alpha"]
+- !private ["CSo11UIResponder", "animate"]
+- ["CSo11UIResponder", "closeButtonTapped"]
+- !private ["CSo11UIResponder", "dismiss"]
+- ["CSo11UIResponder", "hitTest"]
+- ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "isHidden"]
+- ["CSo11UIResponder", "photosViewController"]
+- ["CSo11UIResponder", "populateWithPhoto"]
+- ["CSo11UIResponder", "setHidden"]
+- ["CSo11UIResponder", "view"]
+- !private ["PSo30UIResponderStandardEditActions", "RawValue"]
+- !private ["PSo30UIResponderStandardEditActions", "UIView"]
+- !private ["PSo30UIResponderStandardEditActions", "alpha"]
+- !private ["PSo30UIResponderStandardEditActions", "animate"]
+- ["PSo30UIResponderStandardEditActions", "closeButtonTapped"]
+- !private ["PSo30UIResponderStandardEditActions", "dismiss"]
+- ["PSo30UIResponderStandardEditActions", "hitTest"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "isHidden"]
+- ["PSo30UIResponderStandardEditActions", "photosViewController"]
+- ["PSo30UIResponderStandardEditActions", "populateWithPhoto"]
+- ["PSo30UIResponderStandardEditActions", "setHidden"]
+- ["PSo30UIResponderStandardEditActions", "view"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- !private ["PSo16UIStateRestoring", "dismiss"]
+- !private ["PSo18UITraitEnvironment", "UIView"]
+- !private ["PSo18UITraitEnvironment", "alpha"]
+- !private ["PSo18UITraitEnvironment", "animate"]
+- ["PSo18UITraitEnvironment", "closeButtonTapped"]
+- !private ["PSo18UITraitEnvironment", "dismiss"]
+- ["PSo18UITraitEnvironment", "hitTest"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "isHidden"]
+- ["PSo18UITraitEnvironment", "photosViewController"]
+- ["PSo18UITraitEnvironment", "populateWithPhoto"]
+- ["PSo18UITraitEnvironment", "setHidden"]
+- ["PSo18UITraitEnvironment", "view"]
+- ["PSo18UITraitEnvironment", ""]
+- ["CSo6UIView", "AnyObject"]
+- ["CSo6UIView", "Bool"]
+- ["CSo6UIView", "CGPoint"]
+- ["CSo6UIView", "INSPhotoViewable"]
+- ["CSo6UIView", "INSPhotosViewController"]
+- ["CSo6UIView", "UIEvent"]
+- ["CSo6UIView", "UIView"]
+- !private ["CSo6UIView", "Void"]
+- !private ["CSo6UIView", "alpha"]
+- !private ["CSo6UIView", "animate"]
+- ["CSo6UIView", "closeButtonTapped"]
+- ["CSo6UIView", "deinit"]
+- ["CSo6UIView", "hitTest"]
+- ["CSo6UIView", "init"]
+- !private ["CSo6UIView", "isHidden"]
+- ["CSo6UIView", "photosViewController"]
+- ["CSo6UIView", "populateWithPhoto"]
+- ["CSo6UIView", "setHidden"]
+- ["CSo6UIView", "view"]
+- !private ["VSC22UIViewAnimationOptions", "Element"]
+- !private ["VSC22UIViewAnimationOptions", "allowAnimatedContent"]
+- !private ["VSC22UIViewAnimationOptions", "allowUserInteraction"]
+- ["VSC22UIViewAnimationOptions", "deinit"]
+- !private ["CSo16UIViewController", "dismiss"]
+- !private ["PSo37UIViewControllerTransitioningDelegate", "dismiss"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "UIView"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "alpha"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "animate"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "closeButtonTapped"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "hitTest"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "isHidden"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "photosViewController"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "populateWithPhoto"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "setHidden"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "view"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", ""]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "RawValue"]
+- !private ["Ps9_Hashable", "UIView"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "alpha"]
+- !private ["Ps9_Hashable", "animate"]
+- ["Ps9_Hashable", "closeButtonTapped"]
+- !private ["Ps9_Hashable", "dismiss"]
+- ["Ps9_Hashable", "hitTest"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "isHidden"]
+- ["Ps9_Hashable", "photosViewController"]
+- ["Ps9_Hashable", "populateWithPhoto"]
+- ["Ps9_Hashable", "setHidden"]
+- ["Ps9_Hashable", "view"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Sb"
+- "PSo15CALayerDelegate"
+- "V12CoreGraphics7CGFloat"
+- "VSC7CGPoint"
+- "VSC6CGRect"
+- "Ps7CVarArg"
+- "Ps28CustomDebugStringConvertible"
+- "C10UrbanCrawl17CustomOverlayView"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Sd"
+- "Ps9Equatable"
+- !private "Ps25ExpressibleByArrayLiteral"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- "Ps8Hashable"
+- "CSo16INSNibLoadedView"
+- "P15INSPhotoGallery24INSPhotosOverlayViewable"
+- !private "C15INSPhotoGallery23INSPhotosViewController"
+- !private "Ps25LosslessStringConvertible"
+- "CSo7NSCoder"
+- "PSo8NSCoding"
+- !private "PSo26NSExtensionRequestHandling"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "Ps9OptionSet"
+- "Sq"
+- !private "Ps16RawRepresentable"
+- !private "Ps10SetAlgebra"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- !private "PSo18UIContentContainer"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- "PSo11UIFocusItem"
+- !private "PSo30UIPageViewControllerDataSource"
+- !private "PSo28UIPageViewControllerDelegate"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- !private "PSo16UIStateRestoring"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- "VSC22UIViewAnimationOptions"
+- !private "CSo16UIViewController"
+- !private "PSo37UIViewControllerTransitioningDelegate"
+- "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Modules/CocoaLumberjack.swiftmodule/x86_64.swiftmodule"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/CocoaLumberjack-Swift.h"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/DDLog+LOGV.h"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/DDAbstractDatabaseLogger.h"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/DDOSLogger.h"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/DDFileLogger.h"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/DDTTYLogger.h"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/DDASLLogger.h"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/DDASLLogCapture.h"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/DDAssertMacros.h"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/DDLogMacros.h"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/DDLegacyMacros.h"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/DDLog.h"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/CocoaLumberjack.h"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/CocoaLumberjack-umbrella.h"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/INSPhotoGallery/INSPhotoGallery.framework/Modules/INSPhotoGallery.swiftmodule/x86_64.swiftmodule"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/INSPhotoGallery/INSPhotoGallery.framework/Headers/INSPhotoGallery-Swift.h"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/INSPhotoGallery/INSPhotoGallery.framework/Headers/INSPhotoGallery-umbrella.h"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/INSPhotoGallery/INSPhotoGallery.framework/Modules/module.modulemap"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/INSNibLoading/INSNibLoading.framework/Headers/UIView+INSNibLoading.h"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/INSNibLoading/INSNibLoading.framework/Headers/INSNibLoading-umbrella.h"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/INSNibLoading/INSNibLoading.framework/Modules/module.modulemap"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/Pods/AkamaiMAP/MAP-sdk-ios-prod-18.33.781/VocSdk.framework/Headers/AkaWebAccelerator.h"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/Pods/AkamaiMAP/MAP-sdk-ios-prod-18.33.781/VocSdk.framework/Headers/VocItem.h"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/Pods/AkamaiMAP/MAP-sdk-ios-prod-18.33.781/VocSdk.framework/Headers/VocConfig.h"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/Pods/AkamaiMAP/MAP-sdk-ios-prod-18.33.781/VocSdk.framework/Headers/VocDataQuery.h"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/Pods/AkamaiMAP/MAP-sdk-ios-prod-18.33.781/VocSdk.framework/Headers/VocService.h"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/Pods/AkamaiMAP/MAP-sdk-ios-prod-18.33.781/VocSdk.framework/Headers/VocSdkBase.h"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/Pods/AkamaiMAP/MAP-sdk-ios-prod-18.33.781/VocSdk.framework/Headers/VocSdkVersion.h"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/Pods/AkamaiMAP/MAP-sdk-ios-prod-18.33.781/VocSdk.framework/Headers/VocSdk.h"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/Pods/AkamaiMAP/MAP-sdk-ios-prod-18.33.781/VocSdk.framework/Modules/module.modulemap"
+interface-hash: "0134b83353d172db25492cc17cfa0d35"

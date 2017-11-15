@@ -1,0 +1,455 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "LogsWebViewController"
+provides-nominal:
+- "C10UrbanCrawl21LogsWebViewController"
+provides-member:
+- ["C10UrbanCrawl21LogsWebViewController", ""]
+provides-dynamic-lookup:
+- "webView"
+- "viewDidLoad"
+- "didReceiveMemoryWarning"
+depends-top-level:
+- !private "AppDelegate"
+- "AssignmentPrecedence"
+- "CastingPrecedence"
+- !private "UIApplication"
+- !private "String"
+- !private "StringLiteralType"
+- "UIViewController"
+- "UIWebView"
+- "LogsWebViewController"
+depends-member:
+- !private ["Ps9AnyObject", "Encoding"]
+- !private ["Ps9AnyObject", "String"]
+- !private ["Ps9AnyObject", "UIApplication"]
+- !private ["Ps9AnyObject", "currentLogFileInfo"]
+- !private ["Ps9AnyObject", "ddFileLogger"]
+- !private ["Ps9AnyObject", "delegate"]
+- ["Ps9AnyObject", "didReceiveMemoryWarning"]
+- !private ["Ps9AnyObject", "filePath"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "loadHTMLString"]
+- !private ["Ps9AnyObject", "shared"]
+- !private ["Ps9AnyObject", "title"]
+- ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", "webView"]
+- ["Ps9AnyObject", ""]
+- !private ["C10UrbanCrawl11AppDelegate", "ddFileLogger"]
+- ["C10UrbanCrawl11AppDelegate", "deinit"]
+- !private ["PSo15CALayerDelegate", "loadHTMLString"]
+- !private ["Ps7CVarArg", "Encoding"]
+- !private ["Ps7CVarArg", "String"]
+- !private ["Ps7CVarArg", "UIApplication"]
+- !private ["Ps7CVarArg", "currentLogFileInfo"]
+- !private ["Ps7CVarArg", "ddFileLogger"]
+- !private ["Ps7CVarArg", "delegate"]
+- ["Ps7CVarArg", "didReceiveMemoryWarning"]
+- !private ["Ps7CVarArg", "filePath"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "loadHTMLString"]
+- !private ["Ps7CVarArg", "shared"]
+- !private ["Ps7CVarArg", "title"]
+- ["Ps7CVarArg", "viewDidLoad"]
+- ["Ps7CVarArg", "webView"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps10Comparable", "Encoding"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "Encoding"]
+- !private ["Ps28CustomDebugStringConvertible", "String"]
+- !private ["Ps28CustomDebugStringConvertible", "UIApplication"]
+- !private ["Ps28CustomDebugStringConvertible", "currentLogFileInfo"]
+- !private ["Ps28CustomDebugStringConvertible", "ddFileLogger"]
+- !private ["Ps28CustomDebugStringConvertible", "delegate"]
+- ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps28CustomDebugStringConvertible", "filePath"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "loadHTMLString"]
+- !private ["Ps28CustomDebugStringConvertible", "shared"]
+- !private ["Ps28CustomDebugStringConvertible", "title"]
+- ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", "webView"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "Encoding"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "Encoding"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps23CustomStringConvertible", "Encoding"]
+- !private ["Ps23CustomStringConvertible", "String"]
+- !private ["Ps23CustomStringConvertible", "UIApplication"]
+- !private ["Ps23CustomStringConvertible", "currentLogFileInfo"]
+- !private ["Ps23CustomStringConvertible", "ddFileLogger"]
+- !private ["Ps23CustomStringConvertible", "delegate"]
+- ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps23CustomStringConvertible", "filePath"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "loadHTMLString"]
+- !private ["Ps23CustomStringConvertible", "shared"]
+- !private ["Ps23CustomStringConvertible", "title"]
+- !private ["Ps23CustomStringConvertible", "utf8"]
+- ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", "webView"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["CSo16DDAbstractLogger", "currentLogFileInfo"]
+- !private ["CSo12DDFileLogger", "currentLogFileInfo"]
+- !private ["CSo13DDLogFileInfo", "filePath"]
+- !private ["PSo8DDLogger", "currentLogFileInfo"]
+- ["VE10FoundationSS8Encoding", "deinit"]
+- !private ["VE10FoundationSS8Encoding", "utf8"]
+- !private ["Ps9Equatable", "Encoding"]
+- !private ["Ps9Equatable", "String"]
+- !private ["Ps9Equatable", "UIApplication"]
+- !private ["Ps9Equatable", "currentLogFileInfo"]
+- !private ["Ps9Equatable", "ddFileLogger"]
+- !private ["Ps9Equatable", "delegate"]
+- ["Ps9Equatable", "didReceiveMemoryWarning"]
+- !private ["Ps9Equatable", "filePath"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "loadHTMLString"]
+- !private ["Ps9Equatable", "shared"]
+- !private ["Ps9Equatable", "title"]
+- !private ["Ps9Equatable", "utf8"]
+- ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", "webView"]
+- ["Ps9Equatable", ""]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "Encoding"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps32ExpressibleByStringInterpolation", "Encoding"]
+- !private ["Ps32ExpressibleByStringInterpolation", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "Encoding"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "Encoding"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps8Hashable", "Encoding"]
+- !private ["Ps8Hashable", "String"]
+- !private ["Ps8Hashable", "UIApplication"]
+- !private ["Ps8Hashable", "currentLogFileInfo"]
+- !private ["Ps8Hashable", "ddFileLogger"]
+- !private ["Ps8Hashable", "delegate"]
+- ["Ps8Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps8Hashable", "filePath"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "loadHTMLString"]
+- !private ["Ps8Hashable", "shared"]
+- !private ["Ps8Hashable", "title"]
+- !private ["Ps8Hashable", "utf8"]
+- ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", "webView"]
+- ["Ps8Hashable", ""]
+- ["SQ", "deinit"]
+- !private ["C10UrbanCrawl21LogsWebViewController", "AppDelegate"]
+- !private ["C10UrbanCrawl21LogsWebViewController", "String"]
+- !private ["C10UrbanCrawl21LogsWebViewController", "UIApplication"]
+- ["C10UrbanCrawl21LogsWebViewController", "UIWebView"]
+- ["C10UrbanCrawl21LogsWebViewController", "deinit"]
+- ["C10UrbanCrawl21LogsWebViewController", "didReceiveMemoryWarning"]
+- ["C10UrbanCrawl21LogsWebViewController", "init"]
+- !private ["C10UrbanCrawl21LogsWebViewController", "title"]
+- ["C10UrbanCrawl21LogsWebViewController", "viewDidLoad"]
+- ["C10UrbanCrawl21LogsWebViewController", "webView"]
+- !private ["Ps25LosslessStringConvertible", "Encoding"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "Encoding"]
+- !private ["Ps10MirrorPath", "init"]
+- ["CSo7NSCoder", "deinit"]
+- !private ["PSo8NSCoding", "Encoding"]
+- !private ["PSo8NSCoding", "String"]
+- !private ["PSo8NSCoding", "UIApplication"]
+- ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "loadHTMLString"]
+- !private ["PSo8NSCoding", "title"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", "webView"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "Encoding"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "String"]
+- !private ["PSo26NSExtensionRequestHandling", "UIApplication"]
+- ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- !private ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "title"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", "webView"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- !private ["PSo16NSMutableCopying", "Encoding"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["CSo8NSObject", "AppDelegate"]
+- !private ["CSo8NSObject", "Encoding"]
+- !private ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "UIApplication"]
+- ["CSo8NSObject", "UIWebView"]
+- !private ["CSo8NSObject", "currentLogFileInfo"]
+- !private ["CSo8NSObject", "ddFileLogger"]
+- !private ["CSo8NSObject", "delegate"]
+- ["CSo8NSObject", "didReceiveMemoryWarning"]
+- !private ["CSo8NSObject", "filePath"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "loadHTMLString"]
+- !private ["CSo8NSObject", "shared"]
+- !private ["CSo8NSObject", "title"]
+- ["CSo8NSObject", "viewDidLoad"]
+- ["CSo8NSObject", "webView"]
+- !private ["PSo16NSObjectProtocol", "Encoding"]
+- !private ["PSo16NSObjectProtocol", "String"]
+- !private ["PSo16NSObjectProtocol", "UIApplication"]
+- !private ["PSo16NSObjectProtocol", "currentLogFileInfo"]
+- !private ["PSo16NSObjectProtocol", "ddFileLogger"]
+- !private ["PSo16NSObjectProtocol", "delegate"]
+- ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- !private ["PSo16NSObjectProtocol", "filePath"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "loadHTMLString"]
+- !private ["PSo16NSObjectProtocol", "shared"]
+- !private ["PSo16NSObjectProtocol", "title"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", "webView"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "Encoding"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "Encoding"]
+- !private ["CSo8NSString", "init"]
+- ["Sq", "deinit"]
+- !private ["Ps16RawRepresentable", "utf8"]
+- !private ["SS", "Encoding"]
+- ["SS", "deinit"]
+- !private ["SS", "init"]
+- !private ["Ps16TextOutputStream", "Encoding"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "Encoding"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "loadHTMLString"]
+- !private ["PSo12UIAppearance", "loadHTMLString"]
+- !private ["PSo21UIAppearanceContainer", "String"]
+- !private ["PSo21UIAppearanceContainer", "UIApplication"]
+- ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "loadHTMLString"]
+- !private ["PSo21UIAppearanceContainer", "title"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", "webView"]
+- ["PSo21UIAppearanceContainer", ""]
+- ["CSo13UIApplication", "deinit"]
+- !private ["CSo13UIApplication", "delegate"]
+- !private ["CSo13UIApplication", "shared"]
+- !private ["PSo21UIApplicationDelegate", "ddFileLogger"]
+- !private ["PSo18UIContentContainer", "String"]
+- !private ["PSo18UIContentContainer", "UIApplication"]
+- ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- !private ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "title"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", "webView"]
+- ["PSo18UIContentContainer", ""]
+- !private ["PSo17UICoordinateSpace", "loadHTMLString"]
+- !private ["PSo13UIDynamicItem", "loadHTMLString"]
+- !private ["PSo18UIFocusEnvironment", "String"]
+- !private ["PSo18UIFocusEnvironment", "UIApplication"]
+- ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "loadHTMLString"]
+- !private ["PSo18UIFocusEnvironment", "title"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", "webView"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "loadHTMLString"]
+- !private ["CSo11UIResponder", "AppDelegate"]
+- !private ["CSo11UIResponder", "String"]
+- !private ["CSo11UIResponder", "UIApplication"]
+- ["CSo11UIResponder", "UIWebView"]
+- !private ["CSo11UIResponder", "ddFileLogger"]
+- !private ["CSo11UIResponder", "delegate"]
+- ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "loadHTMLString"]
+- !private ["CSo11UIResponder", "shared"]
+- !private ["CSo11UIResponder", "title"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- ["CSo11UIResponder", "webView"]
+- !private ["PSo30UIResponderStandardEditActions", "String"]
+- !private ["PSo30UIResponderStandardEditActions", "UIApplication"]
+- !private ["PSo30UIResponderStandardEditActions", "ddFileLogger"]
+- !private ["PSo30UIResponderStandardEditActions", "delegate"]
+- ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "loadHTMLString"]
+- !private ["PSo30UIResponderStandardEditActions", "shared"]
+- !private ["PSo30UIResponderStandardEditActions", "title"]
+- ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
+- ["PSo30UIResponderStandardEditActions", "webView"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- !private ["PSo20UIScrollViewDelegate", "loadHTMLString"]
+- !private ["PSo16UIStateRestoring", "String"]
+- !private ["PSo16UIStateRestoring", "UIApplication"]
+- ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- !private ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "title"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", "webView"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["PSo18UITraitEnvironment", "String"]
+- !private ["PSo18UITraitEnvironment", "UIApplication"]
+- ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "loadHTMLString"]
+- !private ["PSo18UITraitEnvironment", "title"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", "webView"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "loadHTMLString"]
+- !private ["CSo16UIViewController", "AppDelegate"]
+- !private ["CSo16UIViewController", "String"]
+- !private ["CSo16UIViewController", "UIApplication"]
+- ["CSo16UIViewController", "UIWebView"]
+- ["CSo16UIViewController", "deinit"]
+- ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- ["CSo16UIViewController", "init"]
+- !private ["CSo16UIViewController", "title"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", "webView"]
+- ["CSo16UIViewController", ""]
+- !private ["CSo9UIWebView", "loadHTMLString"]
+- !private ["PSo18VocServiceDelegate", "ddFileLogger"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "loadHTMLString"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "Encoding"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "Encoding"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "Encoding"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "Encoding"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "Encoding"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "Encoding"]
+- !private ["Ps9_Hashable", "String"]
+- !private ["Ps9_Hashable", "UIApplication"]
+- !private ["Ps9_Hashable", "currentLogFileInfo"]
+- !private ["Ps9_Hashable", "ddFileLogger"]
+- !private ["Ps9_Hashable", "delegate"]
+- ["Ps9_Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps9_Hashable", "filePath"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "loadHTMLString"]
+- !private ["Ps9_Hashable", "shared"]
+- !private ["Ps9_Hashable", "title"]
+- !private ["Ps9_Hashable", "utf8"]
+- ["Ps9_Hashable", "viewDidLoad"]
+- ["Ps9_Hashable", "webView"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "Encoding"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+depends-nominal:
+- "Ps9AnyObject"
+- "C10UrbanCrawl11AppDelegate"
+- !private "PSo15CALayerDelegate"
+- "Ps7CVarArg"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- !private "CSo16DDAbstractLogger"
+- !private "CSo12DDFileLogger"
+- !private "CSo13DDLogFileInfo"
+- !private "PSo8DDLogger"
+- "VE10FoundationSS8Encoding"
+- "Ps9Equatable"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps32ExpressibleByStringInterpolation"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps8Hashable"
+- "SQ"
+- "C10UrbanCrawl21LogsWebViewController"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- "CSo7NSCoder"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- "PSo26NSExtensionRequestHandling"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- "Sq"
+- !private "Ps16RawRepresentable"
+- "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "CSo13UIApplication"
+- !private "PSo21UIApplicationDelegate"
+- "PSo18UIContentContainer"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- !private "PSo11UIFocusItem"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- !private "PSo20UIScrollViewDelegate"
+- "PSo16UIStateRestoring"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- !private "CSo9UIWebView"
+- !private "PSo18VocServiceDelegate"
+- !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Modules/CocoaLumberjack.swiftmodule/x86_64.swiftmodule"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/CocoaLumberjack-Swift.h"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/DDLog+LOGV.h"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/DDAbstractDatabaseLogger.h"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/DDOSLogger.h"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/DDFileLogger.h"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/DDTTYLogger.h"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/DDASLLogger.h"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/DDASLLogCapture.h"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/DDAssertMacros.h"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/DDLogMacros.h"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/DDLegacyMacros.h"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/DDLog.h"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/CocoaLumberjack.h"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/CocoaLumberjack-umbrella.h"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/INSPhotoGallery/INSPhotoGallery.framework/Modules/INSPhotoGallery.swiftmodule/x86_64.swiftmodule"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/INSPhotoGallery/INSPhotoGallery.framework/Headers/INSPhotoGallery-Swift.h"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/INSPhotoGallery/INSPhotoGallery.framework/Headers/INSPhotoGallery-umbrella.h"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/INSPhotoGallery/INSPhotoGallery.framework/Modules/module.modulemap"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/INSNibLoading/INSNibLoading.framework/Headers/UIView+INSNibLoading.h"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/INSNibLoading/INSNibLoading.framework/Headers/INSNibLoading-umbrella.h"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/INSNibLoading/INSNibLoading.framework/Modules/module.modulemap"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/Pods/AkamaiMAP/MAP-sdk-ios-prod-18.33.781/VocSdk.framework/Headers/AkaWebAccelerator.h"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/Pods/AkamaiMAP/MAP-sdk-ios-prod-18.33.781/VocSdk.framework/Headers/VocItem.h"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/Pods/AkamaiMAP/MAP-sdk-ios-prod-18.33.781/VocSdk.framework/Headers/VocConfig.h"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/Pods/AkamaiMAP/MAP-sdk-ios-prod-18.33.781/VocSdk.framework/Headers/VocDataQuery.h"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/Pods/AkamaiMAP/MAP-sdk-ios-prod-18.33.781/VocSdk.framework/Headers/VocService.h"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/Pods/AkamaiMAP/MAP-sdk-ios-prod-18.33.781/VocSdk.framework/Headers/VocSdkBase.h"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/Pods/AkamaiMAP/MAP-sdk-ios-prod-18.33.781/VocSdk.framework/Headers/VocSdkVersion.h"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/Pods/AkamaiMAP/MAP-sdk-ios-prod-18.33.781/VocSdk.framework/Headers/VocSdk.h"
+- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/Pods/AkamaiMAP/MAP-sdk-ios-prod-18.33.781/VocSdk.framework/Modules/module.modulemap"
+interface-hash: "b46e776b4f805ca55a0ef20b69620448"

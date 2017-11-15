@@ -1,0 +1,13 @@
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "5e93859f4b28f47dc0dc9984b67fdf1d"
+build_time: [564045672, 6809000]
+inputs:
+  "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/Pods/INSPhotoGallery/INSPhotoGallery/INSPhoto.swift": [560525811, 0]
+  "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/Pods/INSPhotoGallery/INSPhotoGallery/INSPhotosDataSource.swift": [559669832, 0]
+  "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/Pods/INSPhotoGallery/INSPhotoGallery/INSPhotosInteractionAnimator.swift": [559669832, 0]
+  "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/Pods/INSPhotoGallery/INSPhotoGallery/INSPhotosOverlayView.swift": [559669832, 0]
+  "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/Pods/INSPhotoGallery/INSPhotoGallery/INSPhotosTransitionAnimator.swift": [559669832, 0]
+  "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/Pods/INSPhotoGallery/INSPhotoGallery/INSPhotosViewController.swift": [559669832, 0]
+  "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/Pods/INSPhotoGallery/INSPhotoGallery/INSPhotoViewController.swift": [559669832, 0]
+  "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/Pods/INSPhotoGallery/INSPhotoGallery/INSScalingImageView.swift": [559669832, 0]
+  "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/Pods/INSPhotoGallery/INSPhotoGallery/UIVIew+INSPhotoViewer.swift": [559669832, 0]

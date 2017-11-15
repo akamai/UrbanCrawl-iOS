@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': '/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/INSPhotoGallery/INSPhotoGallery.framework/Modules'
+    'contents': [{
+      'type': 'file',
+      'name': 'module.modulemap',
+      'external-contents': '/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Intermediates/Pods.build/Debug-iphonesimulator/INSPhotoGallery.build/unextended-module.modulemap',
+    }]
+  }]
+}

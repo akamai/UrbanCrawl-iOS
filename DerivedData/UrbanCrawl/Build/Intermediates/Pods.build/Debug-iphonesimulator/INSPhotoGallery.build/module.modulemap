@@ -1,0 +1,10 @@
+framework module INSPhotoGallery {
+  umbrella header "INSPhotoGallery-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module INSPhotoGallery.Swift {
+    header "INSPhotoGallery-Swift.h"
+}

@@ -1,0 +1,3 @@
+#!/bin/sh
+"${SRCROOT}/Pods/Target Support Files/Pods-UrbanCrawl/Pods-UrbanCrawl-resources.sh"
+
