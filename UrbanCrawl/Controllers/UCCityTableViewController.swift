@@ -76,10 +76,7 @@ class UCCityTableViewController: UIViewController,UCServicesDelegate,UITableView
         let services = UCServices.sharedInstance;
         UCServices.sharedInstance.selectedPlace = nil
 
-        services.delegate = self;
-        self.addressDevMode()
-        self.updateDevConsole()
-  
+        services.delegate = self;  
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -87,7 +84,8 @@ class UCCityTableViewController: UIViewController,UCServicesDelegate,UITableView
     }
 
     override func viewDidAppear(_ animated: Bool) {
-  
+        self.addressDevMode()
+        self.updateDevConsole()
     }
     
     override func didReceiveMemoryWarning() {

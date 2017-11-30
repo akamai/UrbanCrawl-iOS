@@ -544,7 +544,10 @@ class UCHomeTableViewController: UIViewController,UCServicesDelegate,UITableView
             nQualityLabel.text = "Determining.."
 
             break
-        default: break
+        default:
+            nQualityView.backgroundColor = UIColor.lightGray
+            nQualityLabel.text = "Not Available"
+            break
             
         }
 

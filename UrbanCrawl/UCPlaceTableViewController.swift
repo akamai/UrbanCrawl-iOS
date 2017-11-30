@@ -74,15 +74,17 @@ class UCPlaceTableViewController: UIViewController,UCServicesDelegate,UITableVie
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         self.consoleView?.textColor = UIColor(red: 0.6157, green: 1, blue: 0, alpha: 1.0)
-
     }
     
     override func viewWillAppear(_ animated: Bool) {
 
         self.nextViewMetrics = nil
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         self.addressDevMode()
         self.updateDevConsole()
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -556,7 +558,9 @@ class UCPlaceTableViewController: UIViewController,UCServicesDelegate,UITableVie
             
             if(UCServices.sharedInstance.developerMode == true && self.devView?.superview == nil){
                 devView?.frame = CGRect(x: self.view.frame.origin.x, y: self.view.frame.origin.y+self.view.frame.size.height-220, width: self.view.frame.size.width, height:220)
+                
                 devView?.alpha = 0.9
+                self.view.layoutSubviews()
                 
                 self.view.addSubview(devView!)
                 self.view.bringSubview(toFront: devView!)
