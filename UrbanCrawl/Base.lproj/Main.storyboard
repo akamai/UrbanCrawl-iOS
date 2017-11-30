@@ -239,7 +239,7 @@
                                     <rect key="frame" x="0.0" y="28" width="375" height="75"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="u8V-6e-ibn" id="lzG-3R-KTq">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="74.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0MU-PE-Nv9">
@@ -429,10 +429,10 @@
                             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             <prototypes>
                                 <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CityTableViewCell" rowHeight="102" id="4V2-jX-c5I" customClass="CityTableViewCell" customModule="UrbanCrawl" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="55.5" width="375" height="102"/>
+                                    <rect key="frame" x="0.0" y="56" width="375" height="102"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4V2-jX-c5I" id="x7N-nV-6TJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="101.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="101"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5dV-uk-Rcg">
@@ -477,17 +477,17 @@
                                     </connections>
                                 </tableViewCell>
                                 <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VideoTableViewCell" rowHeight="168" id="E6P-4n-7L6" customClass="VideoTableViewCell" customModule="UrbanCrawl" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="157.5" width="375" height="168"/>
+                                    <rect key="frame" x="0.0" y="158" width="375" height="168"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="E6P-4n-7L6" id="GzA-zq-fgc">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="167.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="167"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="08.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="efq-NI-Zlv">
                                                 <rect key="frame" x="-1" y="0.0" width="375" height="167"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RUE-Dw-V1O">
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RUE-Dw-V1O">
                                                 <rect key="frame" x="162" y="58" width="50" height="50"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" image="play.png"/>
@@ -502,10 +502,10 @@
                                     </connections>
                                 </tableViewCell>
                                 <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ScrollViewIdentifier" rowHeight="126" id="wab-Lc-wdF" customClass="ScrollTableViewCell" customModule="UrbanCrawl" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="325.5" width="375" height="126"/>
+                                    <rect key="frame" x="0.0" y="326" width="375" height="126"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wab-Lc-wdF" id="LRa-rz-ij9">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="125.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="125"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <subviews>
                                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zUc-CK-buS">
@@ -718,17 +718,17 @@
                                     </connections>
                                 </tableViewCell>
                                 <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TextViewIdentifier" rowHeight="97" id="kq9-El-fvY" customClass="TextViewTableViewCell" customModule="UrbanCrawl" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="451.5" width="375" height="97"/>
+                                    <rect key="frame" x="0.0" y="452" width="375" height="97"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kq9-El-fvY" id="Siy-Dt-a9E">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="96.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <subviews>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6AD-ts-VRi">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6AD-ts-VRi">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                         </subviews>
@@ -744,10 +744,10 @@
                                     </connections>
                                 </tableViewCell>
                                 <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LabelCellIdentifier" rowHeight="61" id="0lX-UM-wqv" customClass="LabelTableViewCell" customModule="UrbanCrawl" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="548.5" width="375" height="61"/>
+                                    <rect key="frame" x="0.0" y="549" width="375" height="61"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0lX-UM-wqv" id="MFf-WV-d33">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="60.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wwC-LP-zfp">
@@ -866,10 +866,10 @@
                             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             <prototypes>
                                 <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CityTableViewCell" rowHeight="102" id="Dpi-zD-T4j" customClass="CityTableViewCell" customModule="UrbanCrawl" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="55.5" width="375" height="102"/>
+                                    <rect key="frame" x="0.0" y="56" width="375" height="102"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Dpi-zD-T4j" id="gul-1Y-4Hy">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="101.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="101"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sBC-g5-gJF">
@@ -900,10 +900,10 @@
                                     </connections>
                                 </tableViewCell>
                                 <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VideoTableViewCell" rowHeight="168" id="1g8-lj-677" customClass="VideoTableViewCell" customModule="UrbanCrawl" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="157.5" width="375" height="168"/>
+                                    <rect key="frame" x="0.0" y="158" width="375" height="168"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1g8-lj-677" id="2WX-Ce-AZq">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="167.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="167"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PA1-VN-v6N">
@@ -926,21 +926,21 @@
                                     </connections>
                                 </tableViewCell>
                                 <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MarkingViewIdentifier" rowHeight="60" id="wfc-WL-UKw" customClass="MarkingTableViewCell" customModule="UrbanCrawl" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="325.5" width="375" height="60"/>
+                                    <rect key="frame" x="0.0" y="326" width="375" height="60"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wfc-WL-UKw" id="IUK-nz-Lzh">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="PlA-C9-tCZ">
-                                                <rect key="frame" x="18" y="13" width="174" height="28"/>
+                                                <rect key="frame" x="18" y="12.5" width="174" height="28"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewQ-sz-Txp">
-                                                <rect key="frame" x="212" y="11" width="155" height="30"/>
+                                                <rect key="frame" x="212" y="10.5" width="155" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <state key="normal" title="Button">
@@ -958,17 +958,17 @@
                                     </connections>
                                 </tableViewCell>
                                 <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TextViewIdentifier" rowHeight="97" id="tcE-Cs-l17" customClass="TextViewTableViewCell" customModule="UrbanCrawl" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="385.5" width="375" height="97"/>
+                                    <rect key="frame" x="0.0" y="386" width="375" height="97"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tcE-Cs-l17" id="Tvv-FM-Y0c">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="96.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <subviews>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HCU-ca-vQe">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                         </subviews>
@@ -982,10 +982,10 @@
                                     </connections>
                                 </tableViewCell>
                                 <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LabelCellIdentifier" rowHeight="61" id="Clk-2G-PNi" customClass="LabelTableViewCell" customModule="UrbanCrawl" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="482.5" width="375" height="61"/>
+                                    <rect key="frame" x="0.0" y="483" width="375" height="61"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Clk-2G-PNi" id="7eR-GO-wQg">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="60.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m08-Sv-mhE">

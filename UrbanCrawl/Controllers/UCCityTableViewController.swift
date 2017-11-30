@@ -99,7 +99,7 @@ class UCCityTableViewController: UIViewController,UCServicesDelegate,UITableView
 
     func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 9
+        return 8
     }
     
     
@@ -127,7 +127,7 @@ class UCCityTableViewController: UIViewController,UCServicesDelegate,UITableView
         case 0: return  100
         case 1: return  165
         case 2: return  130
-        case 3: return  150
+        case 3: return  280
         case 4: return  50.0
         case 5: return  50.0
         case 6: return  50.0
@@ -158,11 +158,15 @@ class UCCityTableViewController: UIViewController,UCServicesDelegate,UITableView
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String?
     {
+        
+        let city = UCServices.sharedInstance.selectedCity
+        let cityName = city?.value(forKey: "name") as! String?
+        
         switch(section) {
         case 0:return nil
-        case 1:return "Video"
+        case 1:return String(format: "VIRTUAL TOUR TO %@ ", cityName!)
         case 2:return "Places of Interest"
-        case 3:return "About Tokyo"
+        case 3:return String(format: "About %@ ", cityName!)
         case 4:return "Other Information"
         default :return nil
             
@@ -225,6 +229,12 @@ class UCCityTableViewController: UIViewController,UCServicesDelegate,UITableView
             
                fatalError("The dequeued cell is not an instance of VideoTableViewCell")
         }
+        
+        if(UCServices.sharedInstance.cityImages[cityName!] == nil) {}
+        else {
+            cell.heroImage!.image = UCServices.sharedInstance.cityImages[cityName!]
+        }
+        
         
         if(cell.heroImage!.layer.sublayers != nil )
         {

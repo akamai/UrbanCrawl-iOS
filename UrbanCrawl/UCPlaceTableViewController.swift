@@ -125,7 +125,7 @@ class UCPlaceTableViewController: UIViewController,UCServicesDelegate,UITableVie
         case 0: return  100
         case 1: return  165
         case 2: return  30
-        case 3: return  200
+        case 3: return  250
         case 4: return  50.0
         case 5: return  50.0
         case 6: return  50.0
