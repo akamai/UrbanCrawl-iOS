@@ -1,5 +1,5 @@
 version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
-options: "d7280f3fc235a572b8c359221f36aae5"
-build_time: [564045669, 959231000]
+options: "2816a219c4c725d958c7295f5ac834b4"
+build_time: [565371789, 303324000]
 inputs:
-  "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/Pods/CocoaLumberjack/Classes/CocoaLumberjack.swift": [560428316, 0]
+  "/Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/Pods/CocoaLumberjack/Classes/CocoaLumberjack.swift": [560428316, 0]

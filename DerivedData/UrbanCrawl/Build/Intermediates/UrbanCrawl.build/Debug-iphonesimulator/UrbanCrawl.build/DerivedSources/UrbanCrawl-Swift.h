@@ -147,6 +147,7 @@ SWIFT_CLASS("_TtC10UrbanCrawl11AppDelegate")
 - (void)vocService:(id <VocService> _Nonnull)vocService didRegister:(NSDictionary * _Nonnull)info;
 - (void)vocService:(id <VocService> _Nonnull)vocService didInitialize:(NSDictionary * _Nonnull)info;
 - (NSInteger)testQuality;
+- (void)subscribeToSegmentWithSegmentName:(NSString * _Nonnull)segmentName;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

@@ -6,50 +6,53 @@ provides-nominal:
 provides-member:
 - ["C10UrbanCrawl11AppDelegate", ""]
 provides-dynamic-lookup:
+- "subscribeToSegment"
 - "window"
 - "application"
-- "applicationWillTerminate"
+- "applicationWillResignActive"
 - "applicationDidBecomeActive"
 - "applicationDidEnterBackground"
-- "vocService"
-- "vocService"
-- "vocService"
-- "vocService"
-- "akaService"
 - "applicationWillEnterForeground"
-- "applicationWillResignActive"
-- "testQuality"
 - "ddFileLogger"
+- "testQuality"
+- "akaService"
+- "vocService"
+- "vocService"
+- "vocService"
+- "vocService"
+- "applicationWillTerminate"
 depends-top-level:
-- !private "VOCServiceState"
-- !private "VocServiceFactory"
-- "UIWindow"
-- !private "TimeInterval"
-- !private "*"
-- "AkaWebAccelerator"
-- "VocService"
+- "UIApplication"
 - "AnyHashable"
-- "VocServiceDelegate"
+- !private "VOCServiceState"
+- "AkaWebAccelerator"
 - "UIApplicationDelegate"
+- "UIWindow"
+- "VocServiceDelegate"
+- !private "VocNetworkQuality"
+- "String"
+- !private "Dictionary"
+- !private "*"
 - "AssignmentPrecedence"
 - !private "=="
-- !private "DDLogVerbose"
-- "DDFileLogger"
-- !private "DDLog"
-- !private "String"
-- !private "Dictionary"
-- !private "StringLiteralType"
-- "UIApplication"
 - "Bool"
 - "Error"
+- !private "VocServiceFactory"
+- !private "Array"
+- !private "StringLiteralType"
+- !private "Set"
+- "AppDelegate"
+- "Int"
+- !private "DDLogVerbose"
+- "UIApplicationLaunchOptionsKey"
+- "DDFileLogger"
 - !private "OperationQueue"
 - !private "BooleanLiteralType"
-- "Int"
-- "UIApplicationLaunchOptionsKey"
-- "UIResponder"
-- "AppDelegate"
 - !private "print"
-- !private "VocNetworkQuality"
+- "VocService"
+- "UIResponder"
+- !private "DDLog"
+- !private "TimeInterval"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - ["PSo17AkaWebAccelerator", "deinit"]
@@ -59,6 +62,7 @@ depends-member:
 - !private ["PSo17AkaWebAccelerator", "startEvent"]
 - !private ["PSo17AkaWebAccelerator", "state"]
 - !private ["PSo17AkaWebAccelerator", "stopEvent"]
+- !private ["PSo17AkaWebAccelerator", "subscribeSegments"]
 - !private ["Ps9AnyObject", "DDFileLogger"]
 - !private ["Ps9AnyObject", "DDLog"]
 - !private ["Ps9AnyObject", "DDLogVerbose"]
@@ -87,6 +91,7 @@ depends-member:
 - !private ["Ps9AnyObject", "main"]
 - !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "rollingFrequency"]
+- ["Ps9AnyObject", "subscribeToSegment"]
 - ["Ps9AnyObject", "testQuality"]
 - ["Ps9AnyObject", "vocService"]
 - ["Ps9AnyObject", "window"]
@@ -101,7 +106,8 @@ depends-member:
 - ["C10UrbanCrawl11AppDelegate", "Error"]
 - ["C10UrbanCrawl11AppDelegate", "Int"]
 - !private ["C10UrbanCrawl11AppDelegate", "OperationQueue"]
-- !private ["C10UrbanCrawl11AppDelegate", "String"]
+- !private ["C10UrbanCrawl11AppDelegate", "Set"]
+- ["C10UrbanCrawl11AppDelegate", "String"]
 - !private ["C10UrbanCrawl11AppDelegate", "TimeInterval"]
 - ["C10UrbanCrawl11AppDelegate", "UIApplication"]
 - ["C10UrbanCrawl11AppDelegate", "UIApplicationLaunchOptionsKey"]
@@ -127,6 +133,7 @@ depends-member:
 - ["C10UrbanCrawl11AppDelegate", "deinit"]
 - ["C10UrbanCrawl11AppDelegate", "init"]
 - !private ["C10UrbanCrawl11AppDelegate", "print"]
+- ["C10UrbanCrawl11AppDelegate", "subscribeToSegment"]
 - ["C10UrbanCrawl11AppDelegate", "testQuality"]
 - ["C10UrbanCrawl11AppDelegate", "vocService"]
 - ["C10UrbanCrawl11AppDelegate", "window"]
@@ -136,6 +143,7 @@ depends-member:
 - !private ["Ps7CVarArg", "DDFileLogger"]
 - !private ["Ps7CVarArg", "DDLog"]
 - !private ["Ps7CVarArg", "DDLogVerbose"]
+- !private ["Ps7CVarArg", "Element"]
 - !private ["Ps7CVarArg", "Key"]
 - !private ["Ps7CVarArg", "OperationQueue"]
 - !private ["Ps7CVarArg", "TimeInterval"]
@@ -163,17 +171,20 @@ depends-member:
 - !private ["Ps7CVarArg", "main"]
 - !private ["Ps7CVarArg", "print"]
 - !private ["Ps7CVarArg", "rollingFrequency"]
+- ["Ps7CVarArg", "subscribeToSegment"]
 - ["Ps7CVarArg", "testQuality"]
 - ["Ps7CVarArg", "vocService"]
 - ["Ps7CVarArg", "window"]
 - ["Ps7CVarArg", ""]
 - !private ["Vs9Character", "deinit"]
+- !private ["Ps10Collection", "Element"]
 - !private ["Ps10Collection", "Key"]
 - !private ["Ps10Collection", "Value"]
 - !private ["Ps10Comparable", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "DDFileLogger"]
 - !private ["Ps28CustomDebugStringConvertible", "DDLog"]
 - !private ["Ps28CustomDebugStringConvertible", "DDLogVerbose"]
+- !private ["Ps28CustomDebugStringConvertible", "Element"]
 - !private ["Ps28CustomDebugStringConvertible", "Key"]
 - !private ["Ps28CustomDebugStringConvertible", "OperationQueue"]
 - !private ["Ps28CustomDebugStringConvertible", "TimeInterval"]
@@ -201,12 +212,14 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "main"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
 - !private ["Ps28CustomDebugStringConvertible", "rollingFrequency"]
+- ["Ps28CustomDebugStringConvertible", "subscribeToSegment"]
 - ["Ps28CustomDebugStringConvertible", "testQuality"]
 - ["Ps28CustomDebugStringConvertible", "vocService"]
 - ["Ps28CustomDebugStringConvertible", "window"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "Element"]
 - !private ["Ps17CustomReflectable", "Key"]
 - !private ["Ps17CustomReflectable", "Value"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
@@ -214,6 +227,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "DDFileLogger"]
 - !private ["Ps23CustomStringConvertible", "DDLog"]
 - !private ["Ps23CustomStringConvertible", "DDLogVerbose"]
+- !private ["Ps23CustomStringConvertible", "Element"]
 - !private ["Ps23CustomStringConvertible", "Key"]
 - !private ["Ps23CustomStringConvertible", "OperationQueue"]
 - !private ["Ps23CustomStringConvertible", "TimeInterval"]
@@ -242,6 +256,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "main"]
 - !private ["Ps23CustomStringConvertible", "print"]
 - !private ["Ps23CustomStringConvertible", "rollingFrequency"]
+- ["Ps23CustomStringConvertible", "subscribeToSegment"]
 - ["Ps23CustomStringConvertible", "testQuality"]
 - ["Ps23CustomStringConvertible", "vocService"]
 - ["Ps23CustomStringConvertible", "window"]
@@ -265,6 +280,7 @@ depends-member:
 - !private ["Ps9Equatable", "DDFileLogger"]
 - !private ["Ps9Equatable", "DDLog"]
 - !private ["Ps9Equatable", "DDLogVerbose"]
+- !private ["Ps9Equatable", "Element"]
 - !private ["Ps9Equatable", "OperationQueue"]
 - !private ["Ps9Equatable", "RawValue"]
 - !private ["Ps9Equatable", "TimeInterval"]
@@ -297,12 +313,14 @@ depends-member:
 - ["Ps9Equatable", "poor"]
 - !private ["Ps9Equatable", "print"]
 - !private ["Ps9Equatable", "rollingFrequency"]
+- ["Ps9Equatable", "subscribeToSegment"]
 - ["Ps9Equatable", "testQuality"]
 - ["Ps9Equatable", "unknown"]
 - ["Ps9Equatable", "vocService"]
 - ["Ps9Equatable", "window"]
 - ["Ps9Equatable", ""]
 - ["Ps5Error", "deinit"]
+- !private ["Ps25ExpressibleByArrayLiteral", "Element"]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps30ExpressibleByDictionaryLiteral", "Key"]
 - !private ["Ps30ExpressibleByDictionaryLiteral", "Value"]
@@ -317,6 +335,7 @@ depends-member:
 - !private ["Ps8Hashable", "DDFileLogger"]
 - !private ["Ps8Hashable", "DDLog"]
 - !private ["Ps8Hashable", "DDLogVerbose"]
+- !private ["Ps8Hashable", "Element"]
 - !private ["Ps8Hashable", "OperationQueue"]
 - !private ["Ps8Hashable", "RawValue"]
 - !private ["Ps8Hashable", "TimeInterval"]
@@ -349,14 +368,17 @@ depends-member:
 - ["Ps8Hashable", "poor"]
 - !private ["Ps8Hashable", "print"]
 - !private ["Ps8Hashable", "rollingFrequency"]
+- ["Ps8Hashable", "subscribeToSegment"]
 - ["Ps8Hashable", "testQuality"]
 - ["Ps8Hashable", "unknown"]
 - ["Ps8Hashable", "vocService"]
 - ["Ps8Hashable", "window"]
 - ["Ps8Hashable", ""]
 - ["SQ", "deinit"]
+- !private ["Ps9Indexable", "Element"]
 - !private ["Ps9Indexable", "Key"]
 - !private ["Ps9Indexable", "Value"]
+- !private ["Ps13IndexableBase", "Element"]
 - !private ["Ps13IndexableBase", "Key"]
 - !private ["Ps13IndexableBase", "Value"]
 - ["Si", "deinit"]
@@ -380,7 +402,8 @@ depends-member:
 - ["CSo8NSObject", "Error"]
 - ["CSo8NSObject", "Int"]
 - !private ["CSo8NSObject", "OperationQueue"]
-- !private ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "Set"]
+- ["CSo8NSObject", "String"]
 - !private ["CSo8NSObject", "TimeInterval"]
 - ["CSo8NSObject", "UIApplication"]
 - ["CSo8NSObject", "UIApplicationLaunchOptionsKey"]
@@ -410,6 +433,7 @@ depends-member:
 - !private ["CSo8NSObject", "main"]
 - !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "rollingFrequency"]
+- ["CSo8NSObject", "subscribeToSegment"]
 - ["CSo8NSObject", "testQuality"]
 - ["CSo8NSObject", "vocService"]
 - ["CSo8NSObject", "window"]
@@ -449,6 +473,8 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "startEvent"]
 - !private ["PSo16NSObjectProtocol", "state"]
 - !private ["PSo16NSObjectProtocol", "stopEvent"]
+- !private ["PSo16NSObjectProtocol", "subscribeSegments"]
+- ["PSo16NSObjectProtocol", "subscribeToSegment"]
 - ["PSo16NSObjectProtocol", "testQuality"]
 - ["PSo16NSObjectProtocol", "vocService"]
 - ["PSo16NSObjectProtocol", "window"]
@@ -465,8 +491,12 @@ depends-member:
 - !private ["Ps16RawRepresentable", "notRegistered"]
 - ["Ps16RawRepresentable", "poor"]
 - ["Ps16RawRepresentable", "unknown"]
+- !private ["Ps8Sequence", "Element"]
 - !private ["Ps8Sequence", "Key"]
 - !private ["Ps8Sequence", "Value"]
+- !private ["Vs3Set", "Element"]
+- ["Vs3Set", "deinit"]
+- !private ["Ps10SetAlgebra", "Element"]
 - !private ["Ps12SignedNumber", "init"]
 - ["Vs12StaticString", "deinit"]
 - !private ["Vs12StaticString", "init"]
@@ -510,7 +540,8 @@ depends-member:
 - ["CSo11UIResponder", "Error"]
 - ["CSo11UIResponder", "Int"]
 - !private ["CSo11UIResponder", "OperationQueue"]
-- !private ["CSo11UIResponder", "String"]
+- !private ["CSo11UIResponder", "Set"]
+- ["CSo11UIResponder", "String"]
 - !private ["CSo11UIResponder", "TimeInterval"]
 - ["CSo11UIResponder", "UIApplication"]
 - ["CSo11UIResponder", "UIApplicationLaunchOptionsKey"]
@@ -536,6 +567,7 @@ depends-member:
 - ["CSo11UIResponder", "deinit"]
 - ["CSo11UIResponder", "init"]
 - !private ["CSo11UIResponder", "print"]
+- ["CSo11UIResponder", "subscribeToSegment"]
 - ["CSo11UIResponder", "testQuality"]
 - ["CSo11UIResponder", "vocService"]
 - ["CSo11UIResponder", "window"]
@@ -563,6 +595,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "ddFileLogger"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
 - !private ["PSo30UIResponderStandardEditActions", "print"]
+- ["PSo30UIResponderStandardEditActions", "subscribeToSegment"]
 - ["PSo30UIResponderStandardEditActions", "testQuality"]
 - ["PSo30UIResponderStandardEditActions", "vocService"]
 - ["PSo30UIResponderStandardEditActions", "window"]
@@ -582,6 +615,7 @@ depends-member:
 - !private ["PSo12VocDataQuery", "startEvent"]
 - !private ["PSo12VocDataQuery", "state"]
 - !private ["PSo12VocDataQuery", "stopEvent"]
+- !private ["PSo12VocDataQuery", "subscribeSegments"]
 - ["PSo17VocNetworkQuality", "deinit"]
 - !private ["PSo17VocNetworkQuality", "qualityStatus"]
 - ["OSC23VocNetworkQualityStatus", "deinit"]
@@ -597,6 +631,7 @@ depends-member:
 - !private ["PSo10VocService", "startEvent"]
 - !private ["PSo10VocService", "state"]
 - !private ["PSo10VocService", "stopEvent"]
+- !private ["PSo10VocService", "subscribeSegments"]
 - !private ["PSo18VocServiceDelegate", "DDFileLogger"]
 - !private ["PSo18VocServiceDelegate", "DDLog"]
 - !private ["PSo18VocServiceDelegate", "DDLogVerbose"]
@@ -636,6 +671,7 @@ depends-member:
 - !private ["Ps9_Hashable", "DDFileLogger"]
 - !private ["Ps9_Hashable", "DDLog"]
 - !private ["Ps9_Hashable", "DDLogVerbose"]
+- !private ["Ps9_Hashable", "Element"]
 - !private ["Ps9_Hashable", "OperationQueue"]
 - !private ["Ps9_Hashable", "RawValue"]
 - !private ["Ps9_Hashable", "TimeInterval"]
@@ -668,11 +704,13 @@ depends-member:
 - ["Ps9_Hashable", "poor"]
 - !private ["Ps9_Hashable", "print"]
 - !private ["Ps9_Hashable", "rollingFrequency"]
+- ["Ps9_Hashable", "subscribeToSegment"]
 - ["Ps9_Hashable", "testQuality"]
 - ["Ps9_Hashable", "unknown"]
 - ["Ps9_Hashable", "vocService"]
 - ["Ps9_Hashable", "window"]
 - ["Ps9_Hashable", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "Element"]
 - !private ["Ps21_ObjectiveCBridgeable", "Key"]
 - !private ["Ps21_ObjectiveCBridgeable", "Value"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
@@ -702,6 +740,7 @@ depends-nominal:
 - "Sd"
 - "Ps9Equatable"
 - "Ps5Error"
+- !private "Ps25ExpressibleByArrayLiteral"
 - !private "Ps27ExpressibleByBooleanLiteral"
 - !private "Ps30ExpressibleByDictionaryLiteral"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
@@ -734,6 +773,8 @@ depends-nominal:
 - "Sq"
 - "Ps16RawRepresentable"
 - !private "Ps8Sequence"
+- "Vs3Set"
+- !private "Ps10SetAlgebra"
 - !private "Ps12SignedNumber"
 - "Vs12StaticString"
 - !private "Ps10Strideable"
@@ -781,39 +822,39 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Modules/CocoaLumberjack.swiftmodule/x86_64.swiftmodule"
-- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/CocoaLumberjack-Swift.h"
-- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/DDLog+LOGV.h"
-- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/DDAbstractDatabaseLogger.h"
-- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/DDOSLogger.h"
-- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/DDFileLogger.h"
-- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/DDTTYLogger.h"
-- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/DDASLLogger.h"
-- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/DDASLLogCapture.h"
-- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/DDAssertMacros.h"
-- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/DDLogMacros.h"
-- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/DDLegacyMacros.h"
-- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/DDLog.h"
-- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/CocoaLumberjack.h"
-- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/CocoaLumberjack-umbrella.h"
-- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Modules/module.modulemap"
+- "/Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Modules/CocoaLumberjack.swiftmodule/x86_64.swiftmodule"
+- "/Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/CocoaLumberjack-Swift.h"
+- "/Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/DDLog+LOGV.h"
+- "/Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/DDAbstractDatabaseLogger.h"
+- "/Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/DDOSLogger.h"
+- "/Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/DDFileLogger.h"
+- "/Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/DDTTYLogger.h"
+- "/Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/DDASLLogger.h"
+- "/Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/DDASLLogCapture.h"
+- "/Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/DDAssertMacros.h"
+- "/Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/DDLogMacros.h"
+- "/Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/DDLegacyMacros.h"
+- "/Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/DDLog.h"
+- "/Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/CocoaLumberjack.h"
+- "/Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Headers/CocoaLumberjack-umbrella.h"
+- "/Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
-- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/INSPhotoGallery/INSPhotoGallery.framework/Modules/INSPhotoGallery.swiftmodule/x86_64.swiftmodule"
-- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/INSPhotoGallery/INSPhotoGallery.framework/Headers/INSPhotoGallery-Swift.h"
-- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/INSPhotoGallery/INSPhotoGallery.framework/Headers/INSPhotoGallery-umbrella.h"
-- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/INSPhotoGallery/INSPhotoGallery.framework/Modules/module.modulemap"
-- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/INSNibLoading/INSNibLoading.framework/Headers/UIView+INSNibLoading.h"
-- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/INSNibLoading/INSNibLoading.framework/Headers/INSNibLoading-umbrella.h"
-- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/INSNibLoading/INSNibLoading.framework/Modules/module.modulemap"
-- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/Pods/AkamaiMAP/MAP-sdk-ios-prod-18.33.781/VocSdk.framework/Headers/AkaWebAccelerator.h"
-- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/Pods/AkamaiMAP/MAP-sdk-ios-prod-18.33.781/VocSdk.framework/Headers/VocItem.h"
-- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/Pods/AkamaiMAP/MAP-sdk-ios-prod-18.33.781/VocSdk.framework/Headers/VocConfig.h"
-- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/Pods/AkamaiMAP/MAP-sdk-ios-prod-18.33.781/VocSdk.framework/Headers/VocDataQuery.h"
-- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/Pods/AkamaiMAP/MAP-sdk-ios-prod-18.33.781/VocSdk.framework/Headers/VocService.h"
-- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/Pods/AkamaiMAP/MAP-sdk-ios-prod-18.33.781/VocSdk.framework/Headers/VocSdkBase.h"
-- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/Pods/AkamaiMAP/MAP-sdk-ios-prod-18.33.781/VocSdk.framework/Headers/VocSdkVersion.h"
-- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/Pods/AkamaiMAP/MAP-sdk-ios-prod-18.33.781/VocSdk.framework/Headers/VocSdk.h"
-- "/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/Pods/AkamaiMAP/MAP-sdk-ios-prod-18.33.781/VocSdk.framework/Modules/module.modulemap"
-interface-hash: "293889d4fa5d4b8ae015e264b692c7e5"
+- "/Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/INSPhotoGallery/INSPhotoGallery.framework/Modules/INSPhotoGallery.swiftmodule/x86_64.swiftmodule"
+- "/Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/INSPhotoGallery/INSPhotoGallery.framework/Headers/INSPhotoGallery-Swift.h"
+- "/Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/INSPhotoGallery/INSPhotoGallery.framework/Headers/INSPhotoGallery-umbrella.h"
+- "/Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/INSPhotoGallery/INSPhotoGallery.framework/Modules/module.modulemap"
+- "/Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/INSNibLoading/INSNibLoading.framework/Headers/UIView+INSNibLoading.h"
+- "/Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/INSNibLoading/INSNibLoading.framework/Headers/INSNibLoading-umbrella.h"
+- "/Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/INSNibLoading/INSNibLoading.framework/Modules/module.modulemap"
+- "/Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/Pods/AkamaiMAP/MAP-sdk-ios-prod-18.33.781/VocSdk.framework/Headers/AkaWebAccelerator.h"
+- "/Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/Pods/AkamaiMAP/MAP-sdk-ios-prod-18.33.781/VocSdk.framework/Headers/VocItem.h"
+- "/Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/Pods/AkamaiMAP/MAP-sdk-ios-prod-18.33.781/VocSdk.framework/Headers/VocConfig.h"
+- "/Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/Pods/AkamaiMAP/MAP-sdk-ios-prod-18.33.781/VocSdk.framework/Headers/VocDataQuery.h"
+- "/Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/Pods/AkamaiMAP/MAP-sdk-ios-prod-18.33.781/VocSdk.framework/Headers/VocService.h"
+- "/Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/Pods/AkamaiMAP/MAP-sdk-ios-prod-18.33.781/VocSdk.framework/Headers/VocSdkBase.h"
+- "/Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/Pods/AkamaiMAP/MAP-sdk-ios-prod-18.33.781/VocSdk.framework/Headers/VocSdkVersion.h"
+- "/Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/Pods/AkamaiMAP/MAP-sdk-ios-prod-18.33.781/VocSdk.framework/Headers/VocSdk.h"
+- "/Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/Pods/AkamaiMAP/MAP-sdk-ios-prod-18.33.781/VocSdk.framework/Modules/module.modulemap"
+interface-hash: "638e5c4d0a7ea1e575351e8a78769717"

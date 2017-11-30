@@ -70,7 +70,7 @@
 		</data>
 		<key>Modules/CocoaLumberjack.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		I1aLbxpOv9Usqe+pLSGk3Dd7Y5Q=
+		erAC2li6WzpLVx3XNq5eDAq7f7A=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -248,11 +248,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			I1aLbxpOv9Usqe+pLSGk3Dd7Y5Q=
+			erAC2li6WzpLVx3XNq5eDAq7f7A=
 			</data>
 			<key>hash2</key>
 			<data>
-			wA4E2jZzBRcf/a2B/Cny6doPpoh9fTXHtVMvPo8ymn0=
+			L8v7sld2DHGWjjOOSx3Z735JaHh6IXpFT2COOu+IxAA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

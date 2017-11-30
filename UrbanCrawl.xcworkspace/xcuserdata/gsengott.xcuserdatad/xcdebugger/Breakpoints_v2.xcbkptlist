@@ -15,8 +15,40 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "331"
             endingLineNumber = "331"
-            landmarkName = "getAllCitiesAPIResponse(placesDictionary:responseCode:metrics:)"
+            landmarkName = "issueImageDownload(imageView:cell:city:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UrbanCrawl.UCHomeTableViewController.(issueImageDownload (imageView : __ObjC.UIImageView, cell : UrbanCrawl.CityTableViewCell, city : __ObjC.NSDictionary) -&gt; ()).(closure #1)"
+                  moduleName = "UrbanCrawl"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/UrbanCrawl/Controllers/UCHomeTableViewController.swift"
+                  timestampString = "533749437.540428"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "331"
+                  endingLineNumber = "331"
+                  offsetFromSymbolStart = "1392">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UrbanCrawl.UCHomeTableViewController.(issueImageDownload (imageView : __ObjC.UIImageView, cell : UrbanCrawl.CityTableViewCell, city : __ObjC.NSDictionary) -&gt; ()).(closure #1).(closure #2)"
+                  moduleName = "UrbanCrawl"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/UrbanCrawl/Controllers/UCHomeTableViewController.swift"
+                  timestampString = "533749437.542983"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "331"
+                  endingLineNumber = "331"
+                  offsetFromSymbolStart = "109">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -31,7 +63,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "333"
             endingLineNumber = "333"
-            landmarkName = "getAllCitiesAPIResponse(placesDictionary:responseCode:metrics:)"
+            landmarkName = "issueImageDownload(imageView:cell:city:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -47,7 +79,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "349"
             endingLineNumber = "349"
-            landmarkName = "imageReceivedForTheCity(data:tag:)"
+            landmarkName = "getAllCitiesAPIResponse(placesDictionary:responseCode:metrics:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -206,7 +238,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "351"
             endingLineNumber = "351"
-            landmarkName = "imageReceivedForTheCity(data:tag:)"
+            landmarkName = "getAllCitiesAPIResponse(placesDictionary:responseCode:metrics:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -238,7 +270,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "146"
             endingLineNumber = "146"
-            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -272,38 +304,6 @@
             endingLineNumber = "107"
             landmarkName = "requestPlacesForTheCity(cityId:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "UrbanCrawl.UCServices.(requestPlacesForTheCity (cityId : Swift.Int) -&gt; ()).(closure #1)"
-                  moduleName = "UrbanCrawl"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gsengott/Desktop/UrbanCrawl/SourceCode-Mobile/UrbanCrawl/UrbanCrawl/UCServices.swift"
-                  timestampString = "532419804.924908"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "107"
-                  endingLineNumber = "107"
-                  offsetFromSymbolStart = "65">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "UrbanCrawl.UCServices.(requestPlacesForTheCity (cityId : Swift.Int) -&gt; ()).(closure #1)"
-                  moduleName = "UrbanCrawl"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gsengott/Desktop/UrbanCrawl/SourceCode-Mobile/UrbanCrawl/UrbanCrawl/UCServices.swift"
-                  timestampString = "532419804.926138"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "107"
-                  endingLineNumber = "107"
-                  offsetFromSymbolStart = "179">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -349,9 +349,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "11"
-            endingLineNumber = "11"
-            landmarkName = "UCHomeTableViewController"
-            landmarkType = "3">
+            endingLineNumber = "11">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
@@ -360,8 +358,8 @@
                   symbolName = "UrbanCrawl.UCHomeTableViewController.__deallocating_deinit"
                   moduleName = "UrbanCrawl"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gsengott/Desktop/UrbanCrawl/SourceCode-Mobile/UrbanCrawl/UrbanCrawl/Controllers/UCHomeTableViewController.swift"
-                  timestampString = "532419804.933359"
+                  urlString = "file:///Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/UrbanCrawl/Controllers/UCHomeTableViewController.swift"
+                  timestampString = "533749437.588883"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -375,12 +373,12 @@
                   symbolName = "UrbanCrawl.UCHomeTableViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; UrbanCrawl.UCHomeTableViewController"
                   moduleName = "UrbanCrawl"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gsengott/Desktop/UrbanCrawl/SourceCode-Mobile/UrbanCrawl/UrbanCrawl/Controllers/UCHomeTableViewController.swift"
-                  timestampString = "532419804.934716"
+                  urlString = "file:///Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/UrbanCrawl/Controllers/UCHomeTableViewController.swift"
+                  timestampString = "533749437.590258"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "12"
-                  endingLineNumber = "12"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
                   offsetFromSymbolStart = "57">
                </Location>
                <Location
@@ -390,8 +388,8 @@
                   symbolName = "UrbanCrawl.UCHomeTableViewController.__allocating_init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; UrbanCrawl.UCHomeTableViewController"
                   moduleName = "UrbanCrawl"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gsengott/Desktop/UrbanCrawl/SourceCode-Mobile/UrbanCrawl/UrbanCrawl/Controllers/UCHomeTableViewController.swift"
-                  timestampString = "532419804.936026"
+                  urlString = "file:///Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/UrbanCrawl/Controllers/UCHomeTableViewController.swift"
+                  timestampString = "533749437.591636"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -405,8 +403,8 @@
                   symbolName = "UrbanCrawl.UCHomeTableViewController.__allocating_init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;UrbanCrawl.UCHomeTableViewController&gt;"
                   moduleName = "UrbanCrawl"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gsengott/Desktop/UrbanCrawl/SourceCode-Mobile/UrbanCrawl/UrbanCrawl/Controllers/UCHomeTableViewController.swift"
-                  timestampString = "532419804.937431"
+                  urlString = "file:///Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/UrbanCrawl/Controllers/UCHomeTableViewController.swift"
+                  timestampString = "533749437.593152"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -420,12 +418,12 @@
                   symbolName = "UrbanCrawl.UCHomeTableViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;UrbanCrawl.UCHomeTableViewController&gt;"
                   moduleName = "UrbanCrawl"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gsengott/Desktop/UrbanCrawl/SourceCode-Mobile/UrbanCrawl/UrbanCrawl/Controllers/UCHomeTableViewController.swift"
-                  timestampString = "532419804.938669"
+                  urlString = "file:///Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/UrbanCrawl/Controllers/UCHomeTableViewController.swift"
+                  timestampString = "533749437.594663"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "12"
-                  endingLineNumber = "12"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
                   offsetFromSymbolStart = "19">
                </Location>
             </Locations>
@@ -475,7 +473,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "412"
             endingLineNumber = "412"
-            landmarkName = "retrievedPlacesForCity(cityWithPlaces:metrics:)"
+            landmarkName = "refreshClicked(sender:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -491,40 +489,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "420"
             endingLineNumber = "420"
-            landmarkName = "failedToRetrievePlacesForCityId(cityWithEmptyPlaces:)"
+            landmarkName = "retrievedPlacesForCity(cityWithPlaces:metrics:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "UrbanCrawl.UCHomeTableViewController.failedToRetrievePlacesForCityId (cityWithEmptyPlaces : __ObjC.NSDictionary) -&gt; ()"
-                  moduleName = "UrbanCrawl"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gsengott/Desktop/UrbanCrawl/SourceCode-Mobile/UrbanCrawl/UrbanCrawl/Controllers/UCHomeTableViewController.swift"
-                  timestampString = "532419804.946974"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "420"
-                  endingLineNumber = "420"
-                  offsetFromSymbolStart = "19">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "UrbanCrawl.UCHomeTableViewController.(failedToRetrievePlacesForCityId (cityWithEmptyPlaces : __ObjC.NSDictionary) -&gt; ()).(closure #1)"
-                  moduleName = "UrbanCrawl"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gsengott/Desktop/UrbanCrawl/SourceCode-Mobile/UrbanCrawl/UrbanCrawl/Controllers/UCHomeTableViewController.swift"
-                  timestampString = "532419804.94827"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "421"
-                  endingLineNumber = "421"
-                  offsetFromSymbolStart = "22">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -539,7 +505,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "425"
             endingLineNumber = "425"
-            landmarkName = "failedToRetrievePlacesForCityId(cityWithEmptyPlaces:)"
+            landmarkName = "retrievedPlacesForCity(cityWithPlaces:metrics:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -555,8 +521,40 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "165"
             endingLineNumber = "165"
-            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkName = "tableView(_:titleForHeaderInSection:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UrbanCrawl.UCCityTableViewController.tableView (__ObjC.UITableView, titleForHeaderInSection : Swift.Int) -&gt; Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "UrbanCrawl"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/UrbanCrawl/Controllers/UCCityTableViewController.swift"
+                  timestampString = "533749437.620048"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "165"
+                  endingLineNumber = "165"
+                  offsetFromSymbolStart = "292">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UrbanCrawl.UCCityTableViewController.tableView (__ObjC.UITableView, titleForHeaderInSection : Swift.Int) -&gt; Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "UrbanCrawl"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/UrbanCrawl/Controllers/UCCityTableViewController.swift"
+                  timestampString = "533749437.62142"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "165"
+                  endingLineNumber = "165"
+                  offsetFromSymbolStart = "320">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -571,8 +569,40 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "160"
             endingLineNumber = "160"
-            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkName = "tableView(_:titleForHeaderInSection:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UrbanCrawl.UCCityTableViewController.tableView (__ObjC.UITableView, titleForHeaderInSection : Swift.Int) -&gt; Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "UrbanCrawl"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/UrbanCrawl/Controllers/UCCityTableViewController.swift"
+                  timestampString = "533749437.624669"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "162"
+                  endingLineNumber = "162"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UrbanCrawl.UCCityTableViewController.tableView (__ObjC.UITableView, titleForHeaderInSection : Swift.Int) -&gt; Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "UrbanCrawl"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/UrbanCrawl/Controllers/UCCityTableViewController.swift"
+                  timestampString = "533749437.626318"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "162"
+                  endingLineNumber = "162"
+                  offsetFromSymbolStart = "53">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -637,38 +667,6 @@
             endingLineNumber = "453"
             landmarkName = "addImages(view:cell:places:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "UrbanCrawl.UCCityTableViewController.(addImages (view : __ObjC.UIScrollView, cell : UrbanCrawl.ScrollTableViewCell, places : __ObjC.NSArray) -&gt; ()).(closure #1)"
-                  moduleName = "UrbanCrawl"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gsengott/Desktop/UrbanCrawl/SourceCode-Mobile/UrbanCrawl/UrbanCrawl/Controllers/UCCityTableViewController.swift"
-                  timestampString = "532419804.963902"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "453"
-                  endingLineNumber = "453"
-                  offsetFromSymbolStart = "623">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "UrbanCrawl.UCCityTableViewController.(addImages (view : __ObjC.UIScrollView, cell : UrbanCrawl.ScrollTableViewCell, places : __ObjC.NSArray) -&gt; ()).(closure #1).(closure #1)"
-                  moduleName = "UrbanCrawl"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gsengott/Desktop/UrbanCrawl/SourceCode-Mobile/UrbanCrawl/UrbanCrawl/Controllers/UCCityTableViewController.swift"
-                  timestampString = "532419804.965145"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "454"
-                  endingLineNumber = "454"
-                  offsetFromSymbolStart = "27">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -683,7 +681,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "520"
             endingLineNumber = "520"
-            landmarkName = "placeSelected(_sender:)"
+            landmarkName = "addImages(view:cell:places:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -701,38 +699,6 @@
             endingLineNumber = "453"
             landmarkName = "addImages(view:cell:places:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "UrbanCrawl.UCCityTableViewController.(addImages (view : __ObjC.UIScrollView, cell : UrbanCrawl.ScrollTableViewCell, places : __ObjC.NSArray) -&gt; ()).(closure #1)"
-                  moduleName = "UrbanCrawl"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gsengott/Desktop/UrbanCrawl/SourceCode-Mobile/UrbanCrawl/UrbanCrawl/Controllers/UCCityTableViewController.swift"
-                  timestampString = "532419804.970086"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "453"
-                  endingLineNumber = "453"
-                  offsetFromSymbolStart = "623">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "UrbanCrawl.UCCityTableViewController.(addImages (view : __ObjC.UIScrollView, cell : UrbanCrawl.ScrollTableViewCell, places : __ObjC.NSArray) -&gt; ()).(closure #1).(closure #1)"
-                  moduleName = "UrbanCrawl"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gsengott/Desktop/UrbanCrawl/SourceCode-Mobile/UrbanCrawl/UrbanCrawl/Controllers/UCCityTableViewController.swift"
-                  timestampString = "532419804.971347"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "454"
-                  endingLineNumber = "454"
-                  offsetFromSymbolStart = "27">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -747,7 +713,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "519"
             endingLineNumber = "519"
-            landmarkName = "placeSelected(_sender:)"
+            landmarkName = "addImages(view:cell:places:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -763,7 +729,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "527"
             endingLineNumber = "527"
-            landmarkName = "placeSelected(_sender:)"
+            landmarkName = "addImages(view:cell:places:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -781,38 +747,6 @@
             endingLineNumber = "64"
             landmarkName = "requestPlacesAndImages()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "UrbanCrawl.UCServices.(requestPlacesAndImages () -&gt; ()).(closure #1)"
-                  moduleName = "UrbanCrawl"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gsengott/Desktop/UrbanCrawl/SourceCode-Mobile/UrbanCrawl/UrbanCrawl/UCServices.swift"
-                  timestampString = "532419804.978145"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "65"
-                  endingLineNumber = "65"
-                  offsetFromSymbolStart = "1860">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "UrbanCrawl.UCServices.(requestPlacesAndImages () -&gt; ()).(closure #1).(implicit closure #1)"
-                  moduleName = "UrbanCrawl"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gsengott/Desktop/UrbanCrawl/SourceCode-Mobile/UrbanCrawl/UrbanCrawl/UCServices.swift"
-                  timestampString = "532419804.979591"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "65"
-                  endingLineNumber = "65"
-                  offsetFromSymbolStart = "12">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -875,38 +809,38 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "549"
             endingLineNumber = "549"
-            landmarkName = "retrievedPlaceDetailsForThePlace(placeId:metrics:)"
+            landmarkName = "placeSelected(_sender:)"
             landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "UrbanCrawl.UCCityTableViewController.retrievedPlaceDetailsForThePlace (placeId : Swift.Int, metrics : Swift.Dictionary&lt;Swift.String, Swift.String&gt;) -&gt; ()"
+                  symbolName = "UrbanCrawl.UCCityTableViewController.placeSelected (_sender : Swift.AnyObject) -&gt; ()"
                   moduleName = "UrbanCrawl"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gsengott/Desktop/UrbanCrawl/SourceCode-Mobile/UrbanCrawl/UrbanCrawl/Controllers/UCCityTableViewController.swift"
-                  timestampString = "532419804.988873"
+                  urlString = "file:///Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/UrbanCrawl/Controllers/UCCityTableViewController.swift"
+                  timestampString = "533749437.679897"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "549"
                   endingLineNumber = "549"
-                  offsetFromSymbolStart = "139">
+                  offsetFromSymbolStart = "3509">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "UrbanCrawl.UCCityTableViewController.(retrievedPlaceDetailsForThePlace (placeId : Swift.Int, metrics : Swift.Dictionary&lt;Swift.String, Swift.String&gt;) -&gt; ()).(closure #1)"
+                  symbolName = "UrbanCrawl.UCCityTableViewController.placeSelected (_sender : Swift.AnyObject) -&gt; ()"
                   moduleName = "UrbanCrawl"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gsengott/Desktop/UrbanCrawl/SourceCode-Mobile/UrbanCrawl/UrbanCrawl/Controllers/UCCityTableViewController.swift"
-                  timestampString = "532419804.990116"
+                  urlString = "file:///Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/UrbanCrawl/Controllers/UCCityTableViewController.swift"
+                  timestampString = "533749437.682469"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "550"
-                  endingLineNumber = "550"
-                  offsetFromSymbolStart = "15">
+                  startingLineNumber = "549"
+                  endingLineNumber = "549"
+                  offsetFromSymbolStart = "4980">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -923,7 +857,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "551"
             endingLineNumber = "551"
-            landmarkName = "retrievedPlaceDetailsForThePlace(placeId:metrics:)"
+            landmarkName = "placeSelected(_sender:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -939,7 +873,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "522"
             endingLineNumber = "522"
-            landmarkName = "placeSelected(_sender:)"
+            landmarkName = "addImages(view:cell:places:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -957,38 +891,6 @@
             endingLineNumber = "533"
             landmarkName = "placeSelected(_sender:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "UrbanCrawl.UCCityTableViewController.placeSelected (_sender : Swift.AnyObject) -&gt; ()"
-                  moduleName = "UrbanCrawl"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gsengott/Desktop/UrbanCrawl/SourceCode-Mobile/UrbanCrawl/UrbanCrawl/Controllers/UCCityTableViewController.swift"
-                  timestampString = "532419804.997071"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "533"
-                  endingLineNumber = "533"
-                  offsetFromSymbolStart = "3509">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "UrbanCrawl.UCCityTableViewController.placeSelected (_sender : Swift.AnyObject) -&gt; ()"
-                  moduleName = "UrbanCrawl"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gsengott/Desktop/UrbanCrawl/SourceCode-Mobile/UrbanCrawl/UrbanCrawl/Controllers/UCCityTableViewController.swift"
-                  timestampString = "532419804.998252"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "533"
-                  endingLineNumber = "533"
-                  offsetFromSymbolStart = "4980">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1035,7 +937,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "258"
             endingLineNumber = "258"
-            landmarkName = "issueImageDownload(imageView:cell:city:)"
+            landmarkName = "updateDevConsole()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1066,39 +968,22 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "12"
-            endingLineNumber = "12"
-            landmarkName = "UCPlaceTableViewController"
-            landmarkType = "3">
+            endingLineNumber = "12">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "UrbanCrawl.UCPlaceTableViewController.placeDetails.getter : Swift.Optional&lt;__ObjC.NSDictionary&gt;"
+                  symbolName = "UrbanCrawl.UCPlaceTableViewController.__deallocating_deinit"
                   moduleName = "UrbanCrawl"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gsengott/Desktop/UrbanCrawl/SourceCode-Mobile/UrbanCrawl/UrbanCrawl/UCPlaceTableViewController.swift"
-                  timestampString = "532419805.009845"
+                  urlString = "file:///Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/UrbanCrawl/UCPlaceTableViewController.swift"
+                  timestampString = "533749437.720487"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "35">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "UrbanCrawl.UCPlaceTableViewController.placeDetails.setter : Swift.Optional&lt;__ObjC.NSDictionary&gt;"
-                  moduleName = "UrbanCrawl"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gsengott/Desktop/UrbanCrawl/SourceCode-Mobile/UrbanCrawl/UrbanCrawl/UCPlaceTableViewController.swift"
-                  timestampString = "532419805.011016"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "65">
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -1107,13 +992,43 @@
                   symbolName = "UrbanCrawl.UCPlaceTableViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; UrbanCrawl.UCPlaceTableViewController"
                   moduleName = "UrbanCrawl"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gsengott/Desktop/UrbanCrawl/SourceCode-Mobile/UrbanCrawl/UrbanCrawl/UCPlaceTableViewController.swift"
-                  timestampString = "532419805.012191"
+                  urlString = "file:///Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/UrbanCrawl/UCPlaceTableViewController.swift"
+                  timestampString = "533749437.722946"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
                   offsetFromSymbolStart = "57">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UrbanCrawl.UCPlaceTableViewController.__allocating_init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; UrbanCrawl.UCPlaceTableViewController"
+                  moduleName = "UrbanCrawl"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/UrbanCrawl/UCPlaceTableViewController.swift"
+                  timestampString = "533749437.725324"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UrbanCrawl.UCPlaceTableViewController.__allocating_init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;UrbanCrawl.UCPlaceTableViewController&gt;"
+                  moduleName = "UrbanCrawl"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/UrbanCrawl/UCPlaceTableViewController.swift"
+                  timestampString = "533749437.727306"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -1122,12 +1037,12 @@
                   symbolName = "UrbanCrawl.UCPlaceTableViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;UrbanCrawl.UCPlaceTableViewController&gt;"
                   moduleName = "UrbanCrawl"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gsengott/Desktop/UrbanCrawl/SourceCode-Mobile/UrbanCrawl/UrbanCrawl/UCPlaceTableViewController.swift"
-                  timestampString = "532419805.013375"
+                  urlString = "file:///Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/UrbanCrawl/UCPlaceTableViewController.swift"
+                  timestampString = "533749437.729432"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
                   offsetFromSymbolStart = "19">
                </Location>
             </Locations>
@@ -1161,8 +1076,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "414"
             endingLineNumber = "414"
-            landmarkName = "issueImageDownload(imageView:cell:info:type:)"
-            landmarkType = "7">
+            landmarkName = "UCPlaceTableViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1179,38 +1094,6 @@
             endingLineNumber = "232"
             landmarkName = "requestImagesFor(place:city:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "UrbanCrawl.UCServices.(requestImagesFor (place : Swift.Int, city : Swift.Int) -&gt; ()).(closure #1)"
-                  moduleName = "UrbanCrawl"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gsengott/Desktop/UrbanCrawl/SourceCode-Mobile/UrbanCrawl/UrbanCrawl/UCServices.swift"
-                  timestampString = "532419805.021235"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "232"
-                  endingLineNumber = "232"
-                  offsetFromSymbolStart = "828">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "UrbanCrawl.UCServices.(requestImagesFor (place : Swift.Int, city : Swift.Int) -&gt; ()).(closure #1)"
-                  moduleName = "UrbanCrawl"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gsengott/Desktop/UrbanCrawl/SourceCode-Mobile/UrbanCrawl/UrbanCrawl/UCServices.swift"
-                  timestampString = "532419805.022422"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "232"
-                  endingLineNumber = "232"
-                  offsetFromSymbolStart = "1017">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1225,7 +1108,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "484"
             endingLineNumber = "484"
-            landmarkName = "failedToRetrieveImagesForPlace(placeId:)"
+            landmarkName = "retrievedImages(imageURLS:placeId:metrics:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1241,8 +1124,40 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "488"
             endingLineNumber = "488"
-            landmarkName = "gotToImages(sender:)"
+            landmarkName = "retrievedImages(imageURLS:placeId:metrics:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UrbanCrawl.UCPlaceTableViewController.retrievedImages (imageURLS : __ObjC.NSArray, placeId : Swift.Int, metrics : Swift.Dictionary&lt;Swift.String, Swift.String&gt;) -&gt; ()"
+                  moduleName = "UrbanCrawl"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/UrbanCrawl/UCPlaceTableViewController.swift"
+                  timestampString = "533749437.747854"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "488"
+                  endingLineNumber = "488"
+                  offsetFromSymbolStart = "424">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UrbanCrawl.UCPlaceTableViewController.(retrievedImages (imageURLS : __ObjC.NSArray, placeId : Swift.Int, metrics : Swift.Dictionary&lt;Swift.String, Swift.String&gt;) -&gt; ()).(closure #1)"
+                  moduleName = "UrbanCrawl"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/UrbanCrawl/UCPlaceTableViewController.swift"
+                  timestampString = "533749437.749116"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "488"
+                  endingLineNumber = "488"
+                  offsetFromSymbolStart = "429">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1257,40 +1172,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "489"
             endingLineNumber = "489"
-            landmarkName = "gotToImages(sender:)"
+            landmarkName = "retrievedImages(imageURLS:placeId:metrics:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "UrbanCrawl.UCPlaceTableViewController.gotToImages (sender : __ObjC.UIButton) -&gt; ()"
-                  moduleName = "UrbanCrawl"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gsengott/Desktop/UrbanCrawl/SourceCode-Mobile/UrbanCrawl/UrbanCrawl/UCPlaceTableViewController.swift"
-                  timestampString = "532419805.0298"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "491"
-                  endingLineNumber = "491"
-                  offsetFromSymbolStart = "26">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "UrbanCrawl.UCPlaceTableViewController.gotToImages (sender : __ObjC.UIButton) -&gt; ()"
-                  moduleName = "UrbanCrawl"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gsengott/Desktop/UrbanCrawl/SourceCode-Mobile/UrbanCrawl/UrbanCrawl/UCPlaceTableViewController.swift"
-                  timestampString = "532419805.030991"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "491"
-                  endingLineNumber = "491"
-                  offsetFromSymbolStart = "955">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1323,6 +1206,38 @@
             endingLineNumber = "245"
             landmarkName = "requestImagesFor(place:city:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UrbanCrawl.UCServices.requestImagesFor (place : Swift.Int, city : Swift.Int) -&gt; ()"
+                  moduleName = "UrbanCrawl"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/UrbanCrawl/UCServices.swift"
+                  timestampString = "533749437.759103"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "245"
+                  endingLineNumber = "245"
+                  offsetFromSymbolStart = "628">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UrbanCrawl.UCServices.(requestImagesFor (place : Swift.Int, city : Swift.Int) -&gt; ()).(closure #1)"
+                  moduleName = "UrbanCrawl"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/UrbanCrawl/UCServices.swift"
+                  timestampString = "533749437.760533"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "246"
+                  endingLineNumber = "246"
+                  offsetFromSymbolStart = "68">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1447,8 +1362,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "386"
             endingLineNumber = "386"
-            landmarkName = "prepare(for:sender:)"
-            landmarkType = "7">
+            landmarkName = "UCPlaceTableViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1495,38 +1410,38 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "143"
             endingLineNumber = "143"
-            landmarkName = "tableView(_:titleForHeaderInSection:)"
+            landmarkName = "tableView(_:numberOfRowsInSection:)"
             landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "UrbanCrawl.UCPlaceTableViewController.tableView (__ObjC.UITableView, titleForHeaderInSection : Swift.Int) -&gt; Swift.Optional&lt;Swift.String&gt;"
+                  symbolName = "UrbanCrawl.UCPlaceTableViewController.tableView (__ObjC.UITableView, numberOfRowsInSection : Swift.Int) -&gt; Swift.Int"
                   moduleName = "UrbanCrawl"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gsengott/Desktop/UrbanCrawl/SourceCode-Mobile/UrbanCrawl/UrbanCrawl/UCPlaceTableViewController.swift"
-                  timestampString = "532419805.045524"
+                  urlString = "file:///Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/UrbanCrawl/UCPlaceTableViewController.swift"
+                  timestampString = "533749437.771833"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "143"
                   endingLineNumber = "143"
-                  offsetFromSymbolStart = "26">
+                  offsetFromSymbolStart = "62">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "UrbanCrawl.UCPlaceTableViewController.tableView (__ObjC.UITableView, titleForHeaderInSection : Swift.Int) -&gt; Swift.Optional&lt;Swift.String&gt;"
+                  symbolName = "UrbanCrawl.UCPlaceTableViewController.tableView (__ObjC.UITableView, numberOfRowsInSection : Swift.Int) -&gt; Swift.Int"
                   moduleName = "UrbanCrawl"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gsengott/Desktop/UrbanCrawl/SourceCode-Mobile/UrbanCrawl/UrbanCrawl/UCPlaceTableViewController.swift"
-                  timestampString = "532419805.046882"
+                  urlString = "file:///Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/UrbanCrawl/UCPlaceTableViewController.swift"
+                  timestampString = "533749437.77314"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "143"
                   endingLineNumber = "143"
-                  offsetFromSymbolStart = "1946">
+                  offsetFromSymbolStart = "78">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -1543,7 +1458,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "82"
             endingLineNumber = "82"
-            landmarkName = "numberOfComponents(in:)"
+            landmarkName = "doneClicked(sender:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1559,40 +1474,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "88"
             endingLineNumber = "88"
-            landmarkName = "pickerView(_:numberOfRowsInComponent:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "UrbanCrawl/Controllers/PlanTravelViewController.swift"
-            timestampString = "528800694.433768"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
-            landmarkName = "pickerView(_:titleForRow:forComponent:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "UrbanCrawl/Controllers/PlanTravelViewController.swift"
-            timestampString = "528800694.433768"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
-            landmarkName = "pickerView(_:titleForRow:forComponent:)"
-            landmarkType = "7">
+            landmarkName = "PlanTravelViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1617,8 +1500,8 @@
                   symbolName = "CocoaLumberjack.CurrentFileName (Swift.StaticString) -&gt; Swift.String"
                   moduleName = "CocoaLumberjack"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gsengott/Desktop/UrbanCrawl/SourceCode-Mobile/UrbanCrawl/Pods/CocoaLumberjack/Classes/CocoaLumberjack.swift"
-                  timestampString = "532419805.058622"
+                  urlString = "file:///Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/Pods/CocoaLumberjack/Classes/CocoaLumberjack.swift"
+                  timestampString = "533749437.787583"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "88"
@@ -1632,8 +1515,8 @@
                   symbolName = "CocoaLumberjack.CurrentFileName (Swift.StaticString) -&gt; Swift.String"
                   moduleName = "CocoaLumberjack"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gsengott/Desktop/UrbanCrawl/SourceCode-Mobile/UrbanCrawl/Pods/CocoaLumberjack/Classes/CocoaLumberjack.swift"
-                  timestampString = "532419805.059844"
+                  urlString = "file:///Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/Pods/CocoaLumberjack/Classes/CocoaLumberjack.swift"
+                  timestampString = "533749437.789371"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "88"
@@ -1687,7 +1570,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "99"
             endingLineNumber = "99"
-            landmarkName = "numberOfSections(in:)"
+            landmarkName = "viewWillAppear(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1703,7 +1586,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "104"
             endingLineNumber = "104"
-            landmarkName = "tableView(_:numberOfRowsInSection:)"
+            landmarkName = "viewDidAppear(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1718,7 +1601,9 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "541"
-            endingLineNumber = "541">
+            endingLineNumber = "541"
+            landmarkName = "testNetworkQuality(sender:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1733,8 +1618,40 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "435"
             endingLineNumber = "435"
-            landmarkName = "addressDevMode()"
+            landmarkName = "failedToRetrievePlacesForCityId(cityWithEmptyPlaces:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UrbanCrawl.UCHomeTableViewController.failedToRetrievePlacesForCityId (cityWithEmptyPlaces : __ObjC.NSDictionary) -&gt; ()"
+                  moduleName = "UrbanCrawl"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/UrbanCrawl/Controllers/UCHomeTableViewController.swift"
+                  timestampString = "533749437.977462"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "436"
+                  endingLineNumber = "436"
+                  offsetFromSymbolStart = "19">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UrbanCrawl.UCHomeTableViewController.(failedToRetrievePlacesForCityId (cityWithEmptyPlaces : __ObjC.NSDictionary) -&gt; ()).(closure #1)"
+                  moduleName = "UrbanCrawl"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/UrbanCrawl/Controllers/UCHomeTableViewController.swift"
+                  timestampString = "533749437.978688"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "437"
+                  endingLineNumber = "437"
+                  offsetFromSymbolStart = "22">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1749,7 +1666,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "489"
             endingLineNumber = "489"
-            landmarkName = "kickInTimer()"
+            landmarkName = "addressDevMode()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1839,8 +1756,8 @@
                   symbolName = "UrbanCrawl.UCServices.__deallocating_deinit"
                   moduleName = "UrbanCrawl"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gsengott/Desktop/UrbanCrawl/SourceCode-Mobile/UrbanCrawl/UrbanCrawl/UCServices.swift"
-                  timestampString = "532419805.080984"
+                  urlString = "file:///Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/UrbanCrawl/UCServices.swift"
+                  timestampString = "533749437.992105"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -1854,8 +1771,8 @@
                   symbolName = "UrbanCrawl.UCServices.deinit"
                   moduleName = "UrbanCrawl"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gsengott/Desktop/UrbanCrawl/SourceCode-Mobile/UrbanCrawl/UrbanCrawl/UCServices.swift"
-                  timestampString = "532419805.082191"
+                  urlString = "file:///Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/UrbanCrawl/UCServices.swift"
+                  timestampString = "533749437.993284"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -1877,7 +1794,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "224"
             endingLineNumber = "224"
-            landmarkName = "updateDevConsole()"
+            landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1893,8 +1810,40 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "222"
             endingLineNumber = "222"
-            landmarkName = "updateDevConsole()"
+            landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UrbanCrawl.UCHomeTableViewController.prepare (for : __ObjC.UIStoryboardSegue, sender : Swift.Optional&lt;Any&gt;) -&gt; ()"
+                  moduleName = "UrbanCrawl"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/UrbanCrawl/Controllers/UCHomeTableViewController.swift"
+                  timestampString = "533749437.999589"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "222"
+                  endingLineNumber = "222"
+                  offsetFromSymbolStart = "351">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UrbanCrawl.UCHomeTableViewController.prepare (for : __ObjC.UIStoryboardSegue, sender : Swift.Optional&lt;Any&gt;) -&gt; ()"
+                  moduleName = "UrbanCrawl"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/UrbanCrawl/Controllers/UCHomeTableViewController.swift"
+                  timestampString = "533749438.000815"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "222"
+                  endingLineNumber = "222"
+                  offsetFromSymbolStart = "513">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1941,8 +1890,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "212"
             endingLineNumber = "212"
-            landmarkName = "prepare(for:sender:)"
-            landmarkType = "7">
+            landmarkName = "UCHomeTableViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1957,40 +1906,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "206"
             endingLineNumber = "206"
-            landmarkName = "prepare(for:sender:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "UrbanCrawl.UCHomeTableViewController.prepare (for : __ObjC.UIStoryboardSegue, sender : Swift.Optional&lt;Any&gt;) -&gt; ()"
-                  moduleName = "UrbanCrawl"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gsengott/Desktop/UrbanCrawl/SourceCode-Mobile/UrbanCrawl/UrbanCrawl/Controllers/UCHomeTableViewController.swift"
-                  timestampString = "532419805.096245"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "206"
-                  endingLineNumber = "206"
-                  offsetFromSymbolStart = "351">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "UrbanCrawl.UCHomeTableViewController.prepare (for : __ObjC.UIStoryboardSegue, sender : Swift.Optional&lt;Any&gt;) -&gt; ()"
-                  moduleName = "UrbanCrawl"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gsengott/Desktop/UrbanCrawl/SourceCode-Mobile/UrbanCrawl/UrbanCrawl/Controllers/UCHomeTableViewController.swift"
-                  timestampString = "532419805.097381"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "206"
-                  endingLineNumber = "206"
-                  offsetFromSymbolStart = "513">
-               </Location>
-            </Locations>
+            landmarkName = "UCHomeTableViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -2005,8 +1922,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "205"
             endingLineNumber = "205"
-            landmarkName = "prepare(for:sender:)"
-            landmarkType = "7">
+            landmarkName = "UCHomeTableViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -2021,8 +1938,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "204"
             endingLineNumber = "204"
-            landmarkName = "prepare(for:sender:)"
-            landmarkType = "7">
+            landmarkName = "UCHomeTableViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -2037,8 +1954,40 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "405"
             endingLineNumber = "405"
-            landmarkName = "retrievedPlacesForCity(cityWithPlaces:metrics:)"
+            landmarkName = "refreshClicked(sender:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UrbanCrawl.UCHomeTableViewController.refreshClicked (sender : __ObjC.UIButton) -&gt; ()"
+                  moduleName = "UrbanCrawl"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/UrbanCrawl/Controllers/UCHomeTableViewController.swift"
+                  timestampString = "533749438.023306"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "405"
+                  endingLineNumber = "405"
+                  offsetFromSymbolStart = "286">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UrbanCrawl.UCHomeTableViewController.(refreshClicked (sender : __ObjC.UIButton) -&gt; ()).(closure #1)"
+                  moduleName = "UrbanCrawl"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/UrbanCrawl/Controllers/UCHomeTableViewController.swift"
+                  timestampString = "533749438.025478"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "406"
+                  endingLineNumber = "406"
+                  offsetFromSymbolStart = "19">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -2053,7 +2002,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "65"
             endingLineNumber = "65"
-            landmarkName = "viewWillAppear(_:)"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -2071,38 +2020,6 @@
             endingLineNumber = "33"
             landmarkName = "populateWithPhoto(_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "UrbanCrawl.ExampleCollectionViewCell.(populateWithPhoto (INSPhotoGallery.INSPhotoViewable) -&gt; ()).(closure #1)"
-                  moduleName = "UrbanCrawl"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gsengott/Desktop/UrbanCrawl/SourceCode-Mobile/UrbanCrawl/UrbanCrawl/ExampleCollectionViewCell.swift"
-                  timestampString = "532419805.108375"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "348">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "UrbanCrawl.ExampleCollectionViewCell.(populateWithPhoto (INSPhotoGallery.INSPhotoViewable) -&gt; ()).(closure #1).(closure #1)"
-                  moduleName = "UrbanCrawl"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gsengott/Desktop/UrbanCrawl/SourceCode-Mobile/UrbanCrawl/UrbanCrawl/ExampleCollectionViewCell.swift"
-                  timestampString = "532419805.109587"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34"
-                  offsetFromSymbolStart = "16">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -2119,6 +2036,38 @@
             endingLineNumber = "51"
             landmarkName = "populateWithPhoto(_:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UrbanCrawl.ExampleCollectionViewCell.(populateWithPhoto (INSPhotoGallery.INSPhotoViewable) -&gt; ()).(closure #1)"
+                  moduleName = "UrbanCrawl"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/UrbanCrawl/ExampleCollectionViewCell.swift"
+                  timestampString = "533749438.035646"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "612">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UrbanCrawl.ExampleCollectionViewCell.(populateWithPhoto (INSPhotoGallery.INSPhotoViewable) -&gt; ()).(closure #1).(closure #1)"
+                  moduleName = "UrbanCrawl"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/UrbanCrawl/ExampleCollectionViewCell.swift"
+                  timestampString = "533749438.037134"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "64">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -2179,58 +2128,10 @@
             timestampString = "532419799.305456"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "UrbanCrawl/AppDelegate.swift"
-            timestampString = "532419799.305456"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "UrbanCrawl/AppDelegate.swift"
-            timestampString = "532419799.305456"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "UrbanCrawl/AppDelegate.swift"
-            timestampString = "532419799.305456"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
             startingLineNumber = "98"
             endingLineNumber = "98"
-            landmarkName = "AppDelegate"
-            landmarkType = "3">
+            landmarkName = "applicationDidBecomeActive(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -2245,8 +2146,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "102"
             endingLineNumber = "102"
-            landmarkName = "AppDelegate"
-            landmarkType = "3">
+            landmarkName = "applicationWillTerminate(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -2261,8 +2162,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "88"
             endingLineNumber = "88"
-            landmarkName = "AppDelegate"
-            landmarkType = "3">
+            landmarkName = "applicationDidEnterBackground(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -2277,8 +2178,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "94"
             endingLineNumber = "94"
-            landmarkName = "AppDelegate"
-            landmarkType = "3">
+            landmarkName = "applicationWillEnterForeground(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -2293,7 +2194,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "107"
             endingLineNumber = "107"
-            landmarkName = "testQuality()"
+            landmarkName = "vocService(_:didBecomeNotRegistered:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -2309,7 +2210,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "510"
             endingLineNumber = "510"
-            landmarkName = "testNetworkQuality(sender:)"
+            landmarkName = "kickInTimer()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -2325,7 +2226,39 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "234"
             endingLineNumber = "234"
-            landmarkName = "updateDevConsole()"
+            landmarkName = "UCHomeTableViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UrbanCrawl/AppDelegate.swift"
+            timestampString = "533749430.052594"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "152"
+            endingLineNumber = "152"
+            landmarkName = "subscribeToSegment(segmentName:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UrbanCrawl/AppDelegate.swift"
+            timestampString = "533749475.083185"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "151"
+            endingLineNumber = "151"
+            landmarkName = "subscribeToSegment(segmentName:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

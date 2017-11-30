@@ -3,11 +3,11 @@
   'case-sensitive': 'false',
   'roots': [{
     'type': 'directory',
-    'name': '/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Modules'
+    'name': '/Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Products/Debug-iphonesimulator/CocoaLumberjack/CocoaLumberjack.framework/Modules'
     'contents': [{
       'type': 'file',
       'name': 'module.modulemap',
-      'external-contents': '/Users/gsengott/Desktop/OpenSource-FirstCopy/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Intermediates/Pods.build/Debug-iphonesimulator/CocoaLumberjack.build/unextended-module.modulemap',
+      'external-contents': '/Users/gsengott/Documents/GitHub/UrbanCrawl-iOS/DerivedData/UrbanCrawl/Build/Intermediates/Pods.build/Debug-iphonesimulator/CocoaLumberjack.build/unextended-module.modulemap',
     }]
   }]
 }
