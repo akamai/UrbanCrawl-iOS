@@ -147,8 +147,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate,VocServiceDelegate {
     }
     
     
-    
-
+    func subscribeToSegment(segmentName:String){
+        
+        //UC: Subscribe to the city which the user is planning to travel.
+        let segments:Set = [segmentName]
+        self.akaService?.subscribeSegments(segments)
+        
+    }
 
 }
 

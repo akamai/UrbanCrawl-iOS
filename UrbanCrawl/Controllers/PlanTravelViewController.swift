@@ -153,12 +153,25 @@ class PlanTravelViewController: UIViewController,UIPickerViewDelegate,UIPickerVi
     @IBAction func saveButtonClicked(sender:Any?)
     {
         
+        if(self.cityTextField?.text == ""){
+            
+            let alert = UIAlertController(title: "Alert", message: "Please select any city and try to save.", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            
+            return;
+        }
+        
         let alert = UIAlertController(title: "UrbanCrawl", message: "Thanks! We have noted down your travel plan!!", preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.destructive, handler: ({(alert: UIAlertAction!) in         self.dismiss(animated:true, completion: nil)
         })))
         self.present(alert, animated: true, completion: nil)
         
-
+        let cityName:String = (self.cityTextField?.text)!
+        
+        let appDelegate:AppDelegate = (UIApplication.shared.delegate as! AppDelegate)
+        appDelegate.subscribeToSegment(segmentName:cityName)
+        
+        
     }
-
 }
