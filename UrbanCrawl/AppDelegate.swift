@@ -40,8 +40,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate,VocServiceDelegate {
         //UC: Registering MAP SDK with the licence key.
         
         do {
-            let options:Dictionary<String,String> = ["license":"32d8e06a3d85438f20e8f9df3bd5b8298578a4d5a8172514f929486c0f87bc83"]
-            try self.akaService =   VocServiceFactory.createAkaWebAccelerator(with:self , delegateQueue: OperationQueue.main, options: options)
+            let options:Dictionary<String,String> = ["license":"NOW_REFER_TO_INFO_PLIST"]
+            try self.akaService =   VocServiceFactory.createAkaWebAccelerator(with:self , delegateQueue: OperationQueue.main, options: nil)
             
             if (self.akaService?.state == VOCServiceState.notRegistered) {
                 // service needs registering

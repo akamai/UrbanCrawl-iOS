@@ -429,7 +429,6 @@
 				TargetAttributes = {
 					F2CF81701F723A8C0007429D = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = NSR5NV3A38;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -731,7 +730,7 @@
 			baseConfigurationReference = D2B2DEF90F1457277544F308 /* Pods-UrbanCrawl.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = NSR5NV3A38;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = UrbanCrawl/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -746,7 +745,7 @@
 			baseConfigurationReference = 163ED7CF669149F06879BA97 /* Pods-UrbanCrawl.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = NSR5NV3A38;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = UrbanCrawl/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
