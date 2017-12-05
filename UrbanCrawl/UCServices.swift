@@ -71,7 +71,9 @@ func requestPlacesAndImages()
     request.httpMethod = "GET"
     
     let startDate = Date()
-    let session = URLSession(configuration: URLSessionConfiguration.default)
+	var sessionConfiguration = URLSessionConfiguration.default
+	VocServiceFactory.setupSessionConfiguration(sessionConfiguration)
+	let session = URLSession(configuration: sessionConfiguration)
     let task = session.dataTask(with: request, completionHandler: {(data, response, error) -> Void in
         if let data = data {
             let json = try? JSONSerialization.jsonObject(with: data, options: [])
@@ -118,7 +120,9 @@ func requestPlacesForTheCity(cityId:Int){
     let currentCityMCopy:NSMutableDictionary? = NSMutableDictionary(dictionary:currentcity!)
     
     let startDate = Date()
-    let session = URLSession(configuration: URLSessionConfiguration.default)
+	var sessionConfiguration = URLSessionConfiguration.default
+	VocServiceFactory.setupSessionConfiguration(sessionConfiguration)
+	let session = URLSession(configuration: sessionConfiguration)
     let task = session.dataTask(with: request, completionHandler: {(data, response, error) -> Void in
         if let data = data {
             let json = try? JSONSerialization.jsonObject(with: data, options: [])
@@ -169,7 +173,9 @@ func requestPlaceDetails(placeId:Int)
     let currentPlaceMCopy:NSMutableDictionary? = NSMutableDictionary(dictionary:currentPlace!)
     
     let startDate = Date()
-    let session = URLSession(configuration: URLSessionConfiguration.default)
+	var sessionConfiguration = URLSessionConfiguration.default
+	VocServiceFactory.setupSessionConfiguration(sessionConfiguration)
+	let session = URLSession(configuration: sessionConfiguration)
     let task = session.dataTask(with: request, completionHandler: {(data, response, error) -> Void in
         if let data = data {
             let json = try? JSONSerialization.jsonObject(with: data, options: [])
@@ -241,7 +247,9 @@ func requestImagesFor(place:Int, city:Int)
     request.httpMethod = "GET"
     
     let startDate = Date()
-    let session = URLSession(configuration: URLSessionConfiguration.default)
+	var sessionConfiguration = URLSessionConfiguration.default
+	VocServiceFactory.setupSessionConfiguration(sessionConfiguration)
+	let session = URLSession(configuration: sessionConfiguration)
     let task = session.dataTask(with: request, completionHandler: {(data, response, error) -> Void in
         if let data = data {
             let json = try? JSONSerialization.jsonObject(with: data, options: [])
@@ -297,7 +305,9 @@ func requestHeroImageForCities(ImageURL:NSString, tag:NSInteger)
     var request:URLRequest = URLRequest(url:urlForTheRequest!)
     request.httpMethod = "GET"
     
-    let session = URLSession(configuration: URLSessionConfiguration.default)
+	var sessionConfiguration = URLSessionConfiguration.default
+	VocServiceFactory.setupSessionConfiguration(sessionConfiguration)
+	let session = URLSession(configuration: sessionConfiguration)
     let task = session.dataTask(with: request, completionHandler: {(data, response, error) -> Void in
         if let data = data {
             if let response = response as? HTTPURLResponse , 200...299 ~= response.statusCode {

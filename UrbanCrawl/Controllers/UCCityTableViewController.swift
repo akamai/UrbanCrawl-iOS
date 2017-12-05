@@ -469,7 +469,9 @@ class UCCityTableViewController: UIViewController,UCServicesDelegate,UITableView
             request.httpMethod = "GET"
             
             let StartDate = Date()
-            let session = URLSession(configuration: URLSessionConfiguration.default)
+			var sessionConfiguration = URLSessionConfiguration.default
+			VocServiceFactory.setupSessionConfiguration(sessionConfiguration)
+			let session = URLSession(configuration: sessionConfiguration)
             let task = session.dataTask(with: request, completionHandler: {(data, response, error) -> Void in
                 if let data = data {
                     if let response = response as? HTTPURLResponse , 200...299 ~= response.statusCode {
