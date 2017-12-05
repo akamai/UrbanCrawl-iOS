@@ -23,6 +23,7 @@
  */
 
 import UIKit
+import VocSdk
 
 class UCCityTableViewController: UIViewController,UCServicesDelegate,UITableViewDelegate,UITableViewDataSource {
     

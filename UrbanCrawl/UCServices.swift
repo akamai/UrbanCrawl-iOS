@@ -25,7 +25,7 @@
 import Foundation
 import UIKit
 import CocoaLumberjack
-
+import VocSdk
 
 @objc protocol UCServicesDelegate:class{
     
