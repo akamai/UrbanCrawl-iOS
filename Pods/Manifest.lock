@@ -1,5 +1,7 @@
 PODS:
-  - AkamaiMAP (18.33.781)
+  - AkamaiMAP (18.41.823):
+    - AkamaiMAP/Core (= 18.41.823)
+  - AkamaiMAP/Core (18.41.823)
   - CocoaLumberjack/Default (3.3.0)
   - CocoaLumberjack/Swift (3.3.0):
     - CocoaLumberjack/Default
@@ -13,7 +15,7 @@ DEPENDENCIES:
   - INSPhotoGallery
 
 SPEC CHECKSUMS:
-  AkamaiMAP: ead111929a1598ba46b88ef4e2a1abdea3136e00
+  AkamaiMAP: ae91f246af8d0f278f09d610bfc0492f3a924c18
   CocoaLumberjack: 3c8c74683302f9012bb168e1c4b7ae3c0b558431
   INSNibLoading: 0244d5b9c30d4642c77b31469cbfd905e8b1efb3
   INSPhotoGallery: 2c07e4a5b5be1b4fd49c0c1f16eed28c6fe8a15d

@@ -118,6 +118,7 @@
 		684EF342C091507D645D7B5371FA2DFB /* INSPhotoGallery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = INSPhotoGallery.framework; path = INSPhotoGallery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		68CD15EF01D0C94CAE671AEFFC71022A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6982BC2240DE574A2DE79057413D26C3 /* INSPhotoGalleryCloseLandscape@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "INSPhotoGalleryCloseLandscape@3x.png"; path = "INSPhotoGallery/INSPhotoGallery.bundle/INSPhotoGalleryCloseLandscape@3x.png"; sourceTree = "<group>"; };
+		70C5B6DEB8CCD68377A4CEBA7666634B /* VocSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VocSdk.framework; path = "MAP-sdk-ios-prod-18.41.823/VocSdk.framework"; sourceTree = "<group>"; };
 		7396C77E3D91A444C97C9CC5401CF0DF /* INSPhotosViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = INSPhotosViewController.swift; path = INSPhotoGallery/INSPhotosViewController.swift; sourceTree = "<group>"; };
 		7BE53586280729C93E00284EDAE9B53F /* INSNibLoading-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "INSNibLoading-dummy.m"; sourceTree = "<group>"; };
 		7C185C8B6475E414D0B63A6A7DFDA172 /* Pods-UrbanCrawl-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UrbanCrawl-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -160,7 +161,6 @@
 		DF6A533B9654481F83458D6E6A69B529 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0975471440721D36B1D25556D16F6BE /* INSPhotoGalleryClose.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = INSPhotoGalleryClose.png; path = INSPhotoGallery/INSPhotoGallery.bundle/INSPhotoGalleryClose.png; sourceTree = "<group>"; };
 		E1B11D730177C4F0769D7FB099DC536D /* Pods-UrbanCrawl-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UrbanCrawl-umbrella.h"; sourceTree = "<group>"; };
-		EA6A9E4606AE11AE5900E68C9A88813A /* VocSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VocSdk.framework; path = "MAP-sdk-ios-prod-18.33.781/VocSdk.framework"; sourceTree = "<group>"; };
 		EAE425683B02D03E6EC571EE7CE10F67 /* INSPhotoGallery-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "INSPhotoGallery-dummy.m"; sourceTree = "<group>"; };
 		EE87CF7DE47B4E784AE24664A52F1359 /* DDAssertMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDAssertMacros.h; path = Classes/DDAssertMacros.h; sourceTree = "<group>"; };
 		F61AECD90B7781382A547FFBCFB02643 /* CocoaLumberjack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CocoaLumberjack.swift; path = Classes/CocoaLumberjack.swift; sourceTree = "<group>"; };
@@ -317,10 +317,18 @@
 			path = INSPhotoGallery;
 			sourceTree = "<group>";
 		};
+		68A8A9307074BADE07C221873F3632CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70C5B6DEB8CCD68377A4CEBA7666634B /* VocSdk.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		78D9FE76C07A67FB9F32BCE6595C595C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				DE8E236747D3F28E4C701F1B0C428BCD /* AkamaiMAP */,
+				E3659A660A63BA04F96668F46D26A980 /* AkamaiMAP */,
 				0CA47060E9A4F8F1969A257EF95B4DAB /* CocoaLumberjack */,
 				1B4FD62DB44C9DFA42DA65D9FA4A8899 /* INSNibLoading */,
 				4D22FA05B2DBA8F0697CC32D01DA77B0 /* INSPhotoGallery */,
@@ -351,14 +359,6 @@
 				3F1F9EDB6955095D847A6CC36C4D5F7D /* Products */,
 				100A23BBD4FBF3BA916D534B822BD2D5 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		8B0C076989730BDA3742452C42B4AF3F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				EA6A9E4606AE11AE5900E68C9A88813A /* VocSdk.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		8C35B6CCBA4F838DBD950DF9AF9FA030 /* Support Files */ = {
@@ -411,10 +411,18 @@
 			name = Swift;
 			sourceTree = "<group>";
 		};
-		DE8E236747D3F28E4C701F1B0C428BCD /* AkamaiMAP */ = {
+		AE034ABF7A8BD117C3E3E5CA592A0C0E /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				8B0C076989730BDA3742452C42B4AF3F /* Frameworks */,
+				68A8A9307074BADE07C221873F3632CB /* Frameworks */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		E3659A660A63BA04F96668F46D26A980 /* AkamaiMAP */ = {
+			isa = PBXGroup;
+			children = (
+				AE034ABF7A8BD117C3E3E5CA592A0C0E /* Core */,
 			);
 			name = AkamaiMAP;
 			path = AkamaiMAP;

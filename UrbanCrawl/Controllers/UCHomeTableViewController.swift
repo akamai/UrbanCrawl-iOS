@@ -23,6 +23,7 @@
  */
 
 import UIKit
+import VocSdk
 
 class UCHomeTableViewController: UIViewController,UCServicesDelegate,UITableViewDataSource,UITableViewDelegate {
     var cityCount = 0
@@ -75,7 +76,7 @@ class UCHomeTableViewController: UIViewController,UCServicesDelegate,UITableView
         space.width = 45;
         
         self.navigationItem.rightBarButtonItems = [bbitem1,bbitem2,bbitem3,space];
-
+        
         self.tableView.dataSource = self
         self.tableView.delegate = self
         
@@ -85,21 +86,21 @@ class UCHomeTableViewController: UIViewController,UCServicesDelegate,UITableView
     }
     
     override func viewWillAppear(_ animated: Bool) {
-       
+        
         let services = UCServices.sharedInstance;
         services.delegate = self;
         
         if(services.cities.count == 0){
-        services.requestPlacesAndImages()
+            services.requestPlacesAndImages()
         }
         
         services.selectedCity = nil
         self.nextViewMetrics = nil
         self.addressDevMode()
         self.updateDevConsole()
-
+        
     }
-
+    
     
     override func viewDidAppear(_ animated: Bool) {
     }
@@ -108,56 +109,56 @@ class UCHomeTableViewController: UIViewController,UCServicesDelegate,UITableView
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     // MARK: - Table view data source
-
-     func numberOfSections(in tableView: UITableView) -> Int {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
-
-     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return UCServices.sharedInstance.cities.count //array count should be given here.
     }
-
-   
-     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cellIdentifier = "CityTableViewCell"
         
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? CityTableViewCell
-        else{
-            fatalError("The dequeued cell is not an instance of CityTableViewCell.")
-
+            else{
+                fatalError("The dequeued cell is not an instance of CityTableViewCell.")
+                
         }
         
         let row = indexPath.row
         
         let city = UCServices.sharedInstance.cities[row]
         let cityName = city.value(forKey: "name") as! String?
-
+        
         
         if(UCServices.sharedInstance.cityImages[cityName!] != nil) {
-        cell.cityImageView!.image = UCServices.sharedInstance.cityImages[cityName!]
+            cell.cityImageView!.image = UCServices.sharedInstance.cityImages[cityName!]
         }else{
-        self.issueImageDownload(imageView:cell.cityImageView!, cell: cell, city: city)
+            self.issueImageDownload(imageView:cell.cityImageView!, cell: cell, city: city)
         }
         
         cell.cityName!.text = cityName
         cell.countryName!.text = city.value(forKey: "countryname") as! String?
         
         // Configure the cell...
-
+        
         return cell
     }
     
-     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 87
     }
     
     
-     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
         
         self.waitingView = UCServices.sharedInstance.customActivityIndicatory(self.tableView.superview!, startAnimate: true)
@@ -168,67 +169,67 @@ class UCHomeTableViewController: UIViewController,UCServicesDelegate,UITableView
         UCServices.sharedInstance.selectedCity = city
         
         UCServices.sharedInstance.requestPlacesForTheCity(cityId: cityId!)
-
-
+        
+        
     }
     func UI(_ block: @escaping ()->Void) {
         DispatchQueue.main.async(execute: block)
     }
     
-
+    
     /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
+     // Override to support conditional editing of the table view.
+     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+     // Return false if you do not want the specified item to be editable.
+     return true
+     }
+     */
+    
     /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
+     // Override to support editing the table view.
+     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+     if editingStyle == .delete {
+     // Delete the row from the data source
+     tableView.deleteRows(at: [indexPath], with: .fade)
+     } else if editingStyle == .insert {
+     // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+     }
+     }
+     */
+    
     /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
+     // Override to support rearranging the table view.
+     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
+     
+     }
+     */
+    
     /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
+     // Override to support conditional rearranging of the table view.
+     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
+     // Return false if you do not want the item to be re-orderable.
+     return true
+     }
+     */
+    
     
     // MARK: - Navigation
-
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         if segue.identifier == "citySegue" {
             if let nextVC = segue.destination as? UCCityTableViewController {
-
+                
                 if(UCServices.sharedInstance.selectedCity == nil){
-                NSLog("Singleton not instantiated with the selected item")
+                    NSLog("Singleton not instantiated with the selected item")
                 }
                 
                 nextVC.devArray.append(nextViewMetrics!)
             }
         }
-
+        
     }
     
     
@@ -236,40 +237,40 @@ class UCHomeTableViewController: UIViewController,UCServicesDelegate,UITableView
         
         
         if(self.devView?.superview != nil){
-        
-        var consoleText:String = ""
-        var totalTime:Double = 0.0
-        
-        for metric in self.devArray
-        {
-            let responseTime = metric["Time"]! as String
-            let endPointURL  = metric["URL"]
-            let responseTimeInFloat:Float = Float(responseTime)!
-
             
-            consoleText  +=  "Endpoint:" + endPointURL!
-            consoleText +=  "\n" + "ResponseTime:" + responseTime + "\n"
-
+            var consoleText:String = ""
+            var totalTime:Double = 0.0
             
-            if(responseTimeInFloat <= 0.1){
-                consoleText += "Retrieved from device Cache" + "\n"
+            for metric in self.devArray
+            {
+                let responseTime = metric["Time"]! as String
+                let endPointURL  = metric["URL"]
+                let responseTimeInFloat:Float = Float(responseTime)!
+                
+                
+                consoleText  +=  "Endpoint:" + endPointURL!
+                consoleText +=  "\n" + "ResponseTime:" + responseTime + "\n"
+                
+                
+                if(responseTimeInFloat <= 0.1){
+                    consoleText += "Retrieved from device Cache" + "\n"
+                }
+                
+                totalTime +=   Double(responseTime)!
             }
-            
-            totalTime +=   Double(responseTime)!
-        }
             
             consoleText += "Total Time Taken:" + String(totalTime)
             
             DispatchQueue.main.async {
                 self.consoleView.text = consoleText
             }
-        
+            
         }
     }
     
     func issueImageDownload(imageView:UIImageView,cell:CityTableViewCell, city:NSDictionary)
     {
-
+        
         
         let actInd: UIActivityIndicatorView = UIActivityIndicatorView()
         actInd.frame = CGRect(x:0.0, y:0.0, width:30.0, height: 30.0)
@@ -286,7 +287,11 @@ class UCHomeTableViewController: UIViewController,UCServicesDelegate,UITableView
         var request:URLRequest = URLRequest(url:urlForTheRequest!)
         request.httpMethod = "GET"
         let StartDate = Date()
-        let session = URLSession(configuration: URLSessionConfiguration.default)
+        
+        //UC: MAP the custom session configuration to VOC Factory
+        let sessionConfiguration = URLSessionConfiguration.default
+        VocServiceFactory.setupSessionConfiguration(sessionConfiguration)
+        let session = URLSession(configuration: sessionConfiguration)
         let task = session.dataTask(with: request, completionHandler: {(data, response, error) -> Void in
             if let data = data {
                 if let response = response as? HTTPURLResponse , 200...299 ~= response.statusCode {
@@ -319,31 +324,31 @@ class UCHomeTableViewController: UIViewController,UCServicesDelegate,UITableView
                         let metrics:[String:String] = ["URL":url as! String, "Time": String(executionTime)]
                         self.devArray.append(metrics)
                         self.updateDevConsole()
-
+                        
                     }
                     
                 } else {
-
+                    
                     DispatchQueue.main.async{
-
-                    actInd.removeFromSuperview()
-                    cell.setNeedsLayout()
+                        
+                        actInd.removeFromSuperview()
+                        cell.setNeedsLayout()
                     }
                 }
             }
         })
         task.resume()
-
+        
         
         
         
     }
-
- 
+    
+    
     //MARK: UCServicesDelegate
     func getAllCitiesAPIResponse(placesDictionary:NSDictionary, responseCode:NSInteger, metrics:Dictionary<String, String>){
         
-        print(placesDictionary)       
+        print(placesDictionary)
         
         DispatchQueue.main.async {
             self.tableView.reloadData()
@@ -351,7 +356,7 @@ class UCHomeTableViewController: UIViewController,UCServicesDelegate,UITableView
         
         self.devArray.append(metrics)
         self.updateDevConsole()
-
+        
     }
     
     func getAllPlacesAPIFailed(responseCode:NSString)
@@ -362,7 +367,7 @@ class UCHomeTableViewController: UIViewController,UCServicesDelegate,UITableView
     
     func imageReceivedForTheCity(data: NSData, tag: NSInteger) {
         
-     
+        
         let cityImage = UIImage(data:(data as NSData) as Data)
         let city:NSDictionary = UCServices.sharedInstance.cities[tag] as NSDictionary
         let cityName = city.value(forKey: "name") as! String?
@@ -371,8 +376,8 @@ class UCHomeTableViewController: UIViewController,UCServicesDelegate,UITableView
         NSLog("Image Received for the City %@", cityName!);
         let indexPath:NSIndexPath = NSIndexPath(row:tag, section: 0)
         DispatchQueue.main.async {
-        //self.tableView.reloadData()
-        self.tableView.reloadRows(at:[indexPath as IndexPath], with: UITableViewRowAnimation.none)
+            //self.tableView.reloadData()
+            self.tableView.reloadRows(at:[indexPath as IndexPath], with: UITableViewRowAnimation.none)
         }
         
     }
@@ -382,23 +387,23 @@ class UCHomeTableViewController: UIViewController,UCServicesDelegate,UITableView
         
         print("image has failed while downloading")
     }
-
+    
     
     @IBAction func planTravelClicked(sender: UIButton){
         
         self.navigationController!.performSegue(withIdentifier: "planTravelSegue", sender: nil)
-
-    
-    }
         
+        
+    }
+    
     @IBAction func settingsClicked(sender: UIButton){
         self.navigationController!.performSegue(withIdentifier: "settingsSegue", sender: nil)
-
+        
         
     }
     
     @IBAction func refreshClicked(sender:UIButton){
-
+        
         UCServices.sharedInstance.cities = []
         devArray = [Dictionary<String,String>]()
         UCServices.sharedInstance.cityImages = [String:UIImage]()
@@ -406,28 +411,28 @@ class UCHomeTableViewController: UIViewController,UCServicesDelegate,UITableView
             self.tableView.reloadData()
         }
         UCServices.sharedInstance.requestPlacesAndImages()
-
         
-   
+        
+        
         
     }
     
     func retrievedPlacesForCity(cityWithPlaces:NSDictionary, metrics:Dictionary<String,String>){
         
         self.nextViewMetrics  = metrics
-
+        
         DispatchQueue.main.async {
-        self.waitingView!.removeFromSuperview()
-        self.performSegue(withIdentifier:"citySegue", sender:nil)
-
+            self.waitingView!.removeFromSuperview()
+            self.performSegue(withIdentifier:"citySegue", sender:nil)
+            
         }
         
         let cityName = cityWithPlaces.value(forKey: "name") as! String?
-
+        
         print(cityWithPlaces)
         NSLog("Places retrieved for City: %@",cityName!);
-
-
+        
+        
         
     }
     
@@ -436,14 +441,14 @@ class UCHomeTableViewController: UIViewController,UCServicesDelegate,UITableView
         DispatchQueue.main.async {
             self.waitingView!.removeFromSuperview()
             self.performSegue(withIdentifier:"citySegue", sender:nil)
-
+            
         }
         
         let cityName = cityWithEmptyPlaces.value(forKey: "name") as! String?
-
+        
         NSLog("No Places available for the city: %@",cityName!);
-
-
+        
+        
     }
     
     func addressDevMode(){
@@ -452,56 +457,56 @@ class UCHomeTableViewController: UIViewController,UCServicesDelegate,UITableView
         {
             
             if(UCServices.sharedInstance.developerMode == true && self.devView?.superview == nil){
-            devView?.frame = CGRect(x: self.view.frame.origin.x, y: self.view.frame.origin.y+self.view.frame.size.height-220, width: self.view.frame.size.width, height:220)
-            devView?.alpha = 0.9
-            
-            self.view.addSubview(devView!)
-            self.view.bringSubview(toFront: devView!)
-            nQualityView.alpha = 1.0
-            self.aniFlag = 0
-            
-            self.devTimer = Timer.scheduledTimer(timeInterval: 0.15, target: self, selector: #selector(self.kickInTimer), userInfo: nil, repeats: true)
+                devView?.frame = CGRect(x: self.view.frame.origin.x, y: self.view.frame.origin.y+self.view.frame.size.height-220, width: self.view.frame.size.width, height:220)
+                devView?.alpha = 0.9
                 
-           self.testNetworkQuality(sender: nil)
+                self.view.addSubview(devView!)
+                self.view.bringSubview(toFront: devView!)
+                nQualityView.alpha = 1.0
+                self.aniFlag = 0
                 
-               /* self.devTimer = Timer.scheduledTimer(withTimeInterval: 0.15, repeats: false){
-                    
-                    timer in
-                    
-                    if(self.aniFlag == 0){
-                        self.nQualityView.alpha = self.nQualityView.alpha-0.1
-                        
-                        if(self.nQualityView.alpha <= 0.1)
-                        {
-                            self.aniFlag = 1
-                        }
-                    }
-                    else{
-                        self.nQualityView.alpha = self.nQualityView.alpha+0.1
-                        
-                        if(self.nQualityView.alpha == 1)
-                        {
-                            self.aniFlag = 0
-                        }
-                    }
-                }
-                */
+                self.devTimer = Timer.scheduledTimer(timeInterval: 0.15, target: self, selector: #selector(self.kickInTimer), userInfo: nil, repeats: true)
+                
+                self.testNetworkQuality(sender: nil)
+                
+                /* self.devTimer = Timer.scheduledTimer(withTimeInterval: 0.15, repeats: false){
+                 
+                 timer in
+                 
+                 if(self.aniFlag == 0){
+                 self.nQualityView.alpha = self.nQualityView.alpha-0.1
+                 
+                 if(self.nQualityView.alpha <= 0.1)
+                 {
+                 self.aniFlag = 1
+                 }
+                 }
+                 else{
+                 self.nQualityView.alpha = self.nQualityView.alpha+0.1
+                 
+                 if(self.nQualityView.alpha == 1)
+                 {
+                 self.aniFlag = 0
+                 }
+                 }
+                 }
+                 */
                 self.devTimer?.fire()
             }
             
         }
-        
+            
         else{
             devView?.removeFromSuperview()
             self.devTimer?.invalidate()
             self.devTimer = nil
         }
-
+        
     }
     
     
     func kickInTimer(){
-
+        
         if(self.aniFlag == 0){
             self.nQualityView.alpha = self.nQualityView.alpha-0.1
             
@@ -542,7 +547,7 @@ class UCHomeTableViewController: UIViewController,UCServicesDelegate,UITableView
         case 4:
             nQualityView.backgroundColor = UIColor.lightGray
             nQualityLabel.text = "Determining.."
-
+            
             break
         default:
             nQualityView.backgroundColor = UIColor.lightGray
@@ -550,10 +555,10 @@ class UCHomeTableViewController: UIViewController,UCServicesDelegate,UITableView
             break
             
         }
-
+        
         
         
     }
     
-
+    
 }

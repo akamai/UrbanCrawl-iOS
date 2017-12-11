@@ -49,5 +49,17 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>com.akamai</key>
+	<dict>
+		<key>vocsdk</key>
+		<dict>
+			<key>license</key>
+			<string>32d8e06a3d85438f20e8f9df3bd5b8298578a4d5a8172514f929486c0f87bc83</string>
+			<key>segments</key>
+			<array/>
+			<key>user</key>
+			<string></string>
+		</dict>
+	</dict>
 </dict>
 </plist>

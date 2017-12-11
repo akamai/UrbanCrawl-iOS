@@ -25,7 +25,7 @@
 import Foundation
 import UIKit
 import CocoaLumberjack
-
+import VocSdk
 
 @objc protocol UCServicesDelegate:class{
     
@@ -39,284 +39,303 @@ import CocoaLumberjack
     @objc optional   func failedToRetrievePlaceDetailsForThePlace(placeId:Int)
     @objc optional   func retrievedImages(imageURLS:NSArray, placeId:Int, metrics:Dictionary<String,String>)
     @objc optional   func failedToRetrieveImagesForPlace(placeId:Int)
-
+    
 }
 
 //UC: UCServices provides API services through the delegate UCServicesDelegate.
 
 class UCServices
 {
-
-weak var delegate:UCServicesDelegate?
-static let sharedInstance = UCServices()
     
-var cities:[NSDictionary] = []
-var cityImages = [String:UIImage]()
+    weak var delegate:UCServicesDelegate?
+    static let sharedInstance = UCServices()
     
-var placeDictionary:NSDictionary = [:]
-var selectedCity:NSDictionary? = nil
-var selectedPlace:NSDictionary? = nil;
-var developerMode:Bool = false;
-
+    var cities:[NSDictionary] = []
+    var cityImages = [String:UIImage]()
+    
+    var placeDictionary:NSDictionary = [:]
+    var selectedCity:NSDictionary? = nil
+    var selectedPlace:NSDictionary? = nil;
+    var developerMode:Bool = false;
+    
     private init(){}
-
-// MARK: - Network Services
     
-func requestPlacesAndImages()
-{
+    // MARK: - Network Services
     
-    let getAllCitiesURL = "https://terraplanet.herokuapp.com/api/cities/getAllCities"
-    let urlForTheRequest:URL? = URL(string:getAllCitiesURL)
-    var request:URLRequest = URLRequest(url:urlForTheRequest!)
-    request.httpMethod = "GET"
-    
-    let startDate = Date()
-    let session = URLSession(configuration: URLSessionConfiguration.default)
-    let task = session.dataTask(with: request, completionHandler: {(data, response, error) -> Void in
-        if let data = data {
-            let json = try? JSONSerialization.jsonObject(with: data, options: [])
-            let prettyJson = try? JSONSerialization.data(withJSONObject: json!, options: .prettyPrinted)
-            if let response = response as? HTTPURLResponse , 200...299 ~= response.statusCode {
-                
-                DDLogVerbose(prettyJson.debugDescription)
-                
-                let citiesDict = json as! NSDictionary
-                let cities = citiesDict.value(forKey:"cities") as! NSArray
-                UCServices.sharedInstance.cities = cities as! [NSDictionary]
-                
-                let executionTime = Date().timeIntervalSince(startDate)
-                let metrics:[String:String] = ["URL":getAllCitiesURL, "Time": String(executionTime)]
-                
-                self.delegate?.getAllCitiesAPIResponse!(placesDictionary: json as! NSDictionary, responseCode: response.statusCode, metrics:metrics)
-                
-            } else {
-                
-            }
-            
-        }
-    })
-    task.resume()
-}
-
-
-func requestPlacesForTheCity(cityId:Int){
-    
-    
-    let getAllPlacesURL = "https://terraplanet.herokuapp.com/api/places/getAllPlacesOfCity?id="
-    let getAllPlacesCompleteURL = String(format:"%@%d",getAllPlacesURL,cityId)
-    let urlForTheRequest:URL? = URL(string:getAllPlacesCompleteURL)
-    var request:URLRequest = URLRequest(url:urlForTheRequest!)
-    request.httpMethod = "GET"
-    
-    var currentcity:NSDictionary? = nil
-    for city in self.cities
+    func requestPlacesAndImages()
     {
-        if(city.value(forKey:"id") as! Int  == cityId){
-            currentcity = city
-        }
-    }
-    let currentCityMCopy:NSMutableDictionary? = NSMutableDictionary(dictionary:currentcity!)
-    
-    let startDate = Date()
-    let session = URLSession(configuration: URLSessionConfiguration.default)
-    let task = session.dataTask(with: request, completionHandler: {(data, response, error) -> Void in
-        if let data = data {
-            let json = try? JSONSerialization.jsonObject(with: data, options: [])
-            if let response = response as? HTTPURLResponse , 200...299 ~= response.statusCode {
-                let placesDict = json as! NSDictionary
-                DDLogVerbose(json.debugDescription)
-                
-                let places:NSArray? = placesDict.value(forKey:"places") as! NSArray?
-                currentCityMCopy?.setValue(places!, forKey:"places")
-                
-                self.selectedCity = currentCityMCopy! as NSDictionary
-                
-                let executionTime = Date().timeIntervalSince(startDate)
-                let metrics:[String:String] = ["URL":getAllPlacesCompleteURL, "Time": String(executionTime)]
-                
-                self.delegate?.retrievedPlacesForCity!(cityWithPlaces:currentCityMCopy!, metrics:metrics)
-                
-            } else {
-                
-                self.delegate?.failedToRetrievePlacesForCityId!(cityWithEmptyPlaces:currentCityMCopy!)
-            }
-        }
-    })
-    task.resume()
-
-    
-}
-    
-func requestPlaceDetails(placeId:Int)
-{
-    
-    let getAllPlacesURL = "https://terraplanet.herokuapp.com/api/places/getPlaceDetails?id="
-    let getPlaceDetailsCompleteURL = String(format:"%@%d",getAllPlacesURL,placeId)
-    let urlForTheRequest:URL? = URL(string:getPlaceDetailsCompleteURL)
-    var request:URLRequest = URLRequest(url:urlForTheRequest!)
-    request.httpMethod = "GET"
-    
-    var currentPlace:NSDictionary? = nil
-    let places:NSArray = self.selectedCity?.value(forKey: "places")  as! NSArray
-    for place in places
-    {
-        let placeInContext:NSDictionary = place as! NSDictionary
-        if(placeInContext.value(forKey:"id") as! Int  == placeId){
-            currentPlace = placeInContext
-        }
-    }
-    
-    let currentPlaceMCopy:NSMutableDictionary? = NSMutableDictionary(dictionary:currentPlace!)
-    
-    let startDate = Date()
-    let session = URLSession(configuration: URLSessionConfiguration.default)
-    let task = session.dataTask(with: request, completionHandler: {(data, response, error) -> Void in
-        if let data = data {
-            let json = try? JSONSerialization.jsonObject(with: data, options: [])
-            if let response = response as? HTTPURLResponse , 200...299 ~= response.statusCode {
-                let placesDict = json as! NSDictionary
-                DDLogVerbose(json.debugDescription)
-                
-                let placeDetails:NSDictionary? = placesDict.value(forKey:"placeDetails") as! NSDictionary?
-                currentPlaceMCopy?.setValue(placeDetails!, forKey:"placeDetails")
-                
-                let placesMCopy:NSMutableArray? = NSMutableArray(array: places)
-                
-                //var currentPlaceOld:NSDictionary? = nil
-                var placeIndex = 0
-                
-                for i in 0..<placesMCopy!.count
-                {
+        
+        let getAllCitiesURL = "https://terraplanet.herokuapp.com/api/cities/getAllCities"
+        let urlForTheRequest:URL? = URL(string:getAllCitiesURL)
+        var request:URLRequest = URLRequest(url:urlForTheRequest!)
+        request.httpMethod = "GET"
+        
+        let startDate = Date()
+        
+        //UC: MAP the custom session configuration to VOC Factory
+        let sessionConfiguration = URLSessionConfiguration.default
+        VocServiceFactory.setupSessionConfiguration(sessionConfiguration)
+        let session = URLSession(configuration: sessionConfiguration)
+        let task = session.dataTask(with: request, completionHandler: {(data, response, error) -> Void in
+            if let data = data {
+                let json = try? JSONSerialization.jsonObject(with: data, options: [])
+                let prettyJson = try? JSONSerialization.data(withJSONObject: json!, options: .prettyPrinted)
+                if let response = response as? HTTPURLResponse , 200...299 ~= response.statusCode {
                     
-                    let placeInContext:NSDictionary = placesMCopy![i] as! NSDictionary
-                    if(placeInContext.value(forKey:"id") as! Int  == placeId){
-                        // currentPlaceOld = placeInContext
-                        placeIndex = i
-                        break
-                    }
+                    DDLogVerbose(prettyJson.debugDescription)
+                    
+                    let citiesDict = json as! NSDictionary
+                    let cities = citiesDict.value(forKey:"cities") as! NSArray
+                    UCServices.sharedInstance.cities = cities as! [NSDictionary]
+                    
+                    let executionTime = Date().timeIntervalSince(startDate)
+                    let metrics:[String:String] = ["URL":getAllCitiesURL, "Time": String(executionTime)]
+                    
+                    self.delegate?.getAllCitiesAPIResponse!(placesDictionary: json as! NSDictionary, responseCode: response.statusCode, metrics:metrics)
+                    
+                } else {
+                    
                 }
                 
-                placesMCopy?.replaceObject(at:placeIndex, with:currentPlaceMCopy!)
-                
-                
-                
-                let currentCityMCopy:NSMutableDictionary? = NSMutableDictionary(dictionary:self.selectedCity!)
-                currentCityMCopy?.setValue(placesMCopy!, forKey:"places")
-                
-                UCServices.sharedInstance.selectedCity = currentCityMCopy! as NSDictionary
-                UCServices.sharedInstance.selectedPlace = currentPlaceMCopy! as NSDictionary
-                //UCServices.sharedInstance.cities = cities as! [NSDictionary]
-                
-                let executionTime = Date().timeIntervalSince(startDate)
-                let metrics:[String:String] = ["URL":getPlaceDetailsCompleteURL, "Time": String(executionTime)]
-                
-                
-                self.delegate?.retrievedPlaceDetailsForThePlace!(placeId: placeId, metrics:metrics)
-                
-            } else {
-                
-                self.delegate?.failedToRetrievePlaceDetailsForThePlace!(placeId: placeId)
+            }
+        })
+        task.resume()
+    }
+    
+    
+    func requestPlacesForTheCity(cityId:Int){
+        
+        
+        let getAllPlacesURL = "https://terraplanet.herokuapp.com/api/places/getAllPlacesOfCity?id="
+        let getAllPlacesCompleteURL = String(format:"%@%d",getAllPlacesURL,cityId)
+        let urlForTheRequest:URL? = URL(string:getAllPlacesCompleteURL)
+        var request:URLRequest = URLRequest(url:urlForTheRequest!)
+        request.httpMethod = "GET"
+        
+        var currentcity:NSDictionary? = nil
+        for city in self.cities
+        {
+            if(city.value(forKey:"id") as! Int  == cityId){
+                currentcity = city
             }
         }
-    })
-    task.resume()
-}
+        let currentCityMCopy:NSMutableDictionary? = NSMutableDictionary(dictionary:currentcity!)
+        let startDate = Date()
+        
+        //UC: MAP the custom session configuration to VOC Factory
+        let sessionConfiguration = URLSessionConfiguration.default
+        VocServiceFactory.setupSessionConfiguration(sessionConfiguration)
+        let session = URLSession(configuration: sessionConfiguration)
+        let task = session.dataTask(with: request, completionHandler: {(data, response, error) -> Void in
+            if let data = data {
+                let json = try? JSONSerialization.jsonObject(with: data, options: [])
+                if let response = response as? HTTPURLResponse , 200...299 ~= response.statusCode {
+                    let placesDict = json as! NSDictionary
+                    DDLogVerbose(json.debugDescription)
+                    
+                    let places:NSArray? = placesDict.value(forKey:"places") as! NSArray?
+                    currentCityMCopy?.setValue(places!, forKey:"places")
+                    
+                    self.selectedCity = currentCityMCopy! as NSDictionary
+                    
+                    let executionTime = Date().timeIntervalSince(startDate)
+                    let metrics:[String:String] = ["URL":getAllPlacesCompleteURL, "Time": String(executionTime)]
+                    
+                    self.delegate?.retrievedPlacesForCity!(cityWithPlaces:currentCityMCopy!, metrics:metrics)
+                    
+                } else {
+                    
+                    self.delegate?.failedToRetrievePlacesForCityId!(cityWithEmptyPlaces:currentCityMCopy!)
+                }
+            }
+        })
+        task.resume()
+        
+        
+    }
     
-    
-func requestImagesFor(place:Int, city:Int)
-{
-    var id:Int = 0
-    
-    if(place != 0)
+    func requestPlaceDetails(placeId:Int)
     {
-        id = place
-    }
-    else{
-        id = city
-    }
-    
-    let getAllCitiesURL = String(format:"https://terraplanet.herokuapp.com/api/media/getAllMediaByPlaceId?placeid=%d&type=image",id)
-    let urlForTheRequest:URL? = URL(string:getAllCitiesURL)
-    var request:URLRequest = URLRequest(url:urlForTheRequest!)
-    request.httpMethod = "GET"
-    
-    let startDate = Date()
-    let session = URLSession(configuration: URLSessionConfiguration.default)
-    let task = session.dataTask(with: request, completionHandler: {(data, response, error) -> Void in
-        if let data = data {
-            let json = try? JSONSerialization.jsonObject(with: data, options: [])
-            if let response = response as? HTTPURLResponse , 200...299 ~= response.statusCode {
-                DDLogVerbose(json.debugDescription)
-
-                
-                let mediaDict = json as! NSDictionary
-                print(mediaDict)
-                let mediaArray:NSArray = mediaDict.value(forKey:"media") as! NSArray
-                let imageURLs:NSMutableArray = NSMutableArray.init()
-                
-                for i in 1..<mediaArray.count
-                {
-                    let mediaItem:NSDictionary = mediaArray[i] as! NSDictionary
-                    let imageURL:String = mediaItem.value(forKey:"url") as! String
-                    imageURLs.add(imageURL)
+        
+        let getAllPlacesURL = "https://terraplanet.herokuapp.com/api/places/getPlaceDetails?id="
+        let getPlaceDetailsCompleteURL = String(format:"%@%d",getAllPlacesURL,placeId)
+        let urlForTheRequest:URL? = URL(string:getPlaceDetailsCompleteURL)
+        var request:URLRequest = URLRequest(url:urlForTheRequest!)
+        request.httpMethod = "GET"
+        
+        var currentPlace:NSDictionary? = nil
+        let places:NSArray = self.selectedCity?.value(forKey: "places")  as! NSArray
+        for place in places
+        {
+            let placeInContext:NSDictionary = place as! NSDictionary
+            if(placeInContext.value(forKey:"id") as! Int  == placeId){
+                currentPlace = placeInContext
+            }
+        }
+        
+        let currentPlaceMCopy:NSMutableDictionary? = NSMutableDictionary(dictionary:currentPlace!)
+        
+        let startDate = Date()
+        
+        //UC: MAP the custom session configuration to VOC Factory
+        let sessionConfiguration = URLSessionConfiguration.default
+        VocServiceFactory.setupSessionConfiguration(sessionConfiguration)
+        let session = URLSession(configuration: sessionConfiguration)
+        let task = session.dataTask(with: request, completionHandler: {(data, response, error) -> Void in
+            if let data = data {
+                let json = try? JSONSerialization.jsonObject(with: data, options: [])
+                if let response = response as? HTTPURLResponse , 200...299 ~= response.statusCode {
+                    let placesDict = json as! NSDictionary
+                    DDLogVerbose(json.debugDescription)
+                    
+                    let placeDetails:NSDictionary? = placesDict.value(forKey:"placeDetails") as! NSDictionary?
+                    currentPlaceMCopy?.setValue(placeDetails!, forKey:"placeDetails")
+                    
+                    let placesMCopy:NSMutableArray? = NSMutableArray(array: places)
+                    
+                    //var currentPlaceOld:NSDictionary? = nil
+                    var placeIndex = 0
+                    
+                    for i in 0..<placesMCopy!.count
+                    {
+                        
+                        let placeInContext:NSDictionary = placesMCopy![i] as! NSDictionary
+                        if(placeInContext.value(forKey:"id") as! Int  == placeId){
+                            // currentPlaceOld = placeInContext
+                            placeIndex = i
+                            break
+                        }
+                    }
+                    
+                    placesMCopy?.replaceObject(at:placeIndex, with:currentPlaceMCopy!)
+                    
+                    
+                    
+                    let currentCityMCopy:NSMutableDictionary? = NSMutableDictionary(dictionary:self.selectedCity!)
+                    currentCityMCopy?.setValue(placesMCopy!, forKey:"places")
+                    
+                    UCServices.sharedInstance.selectedCity = currentCityMCopy! as NSDictionary
+                    UCServices.sharedInstance.selectedPlace = currentPlaceMCopy! as NSDictionary
+                    //UCServices.sharedInstance.cities = cities as! [NSDictionary]
+                    
+                    let executionTime = Date().timeIntervalSince(startDate)
+                    let metrics:[String:String] = ["URL":getPlaceDetailsCompleteURL, "Time": String(executionTime)]
+                    
+                    
+                    self.delegate?.retrievedPlaceDetailsForThePlace!(placeId: placeId, metrics:metrics)
+                    
+                } else {
+                    
+                    self.delegate?.failedToRetrievePlaceDetailsForThePlace!(placeId: placeId)
                 }
-                
-                let executionTime = Date().timeIntervalSince(startDate)
-                let metrics:[String:String] = ["URL":getAllCitiesURL, "Time": String(executionTime)]
-
-                
-                self.delegate?.retrievedImages!(imageURLS: imageURLs, placeId: place,metrics:metrics)
-                
             }
-            
-            else {
-            }
-        }
-    })
-    task.resume()
-
-        
-        
-}
-
-func issueImageRequestForAllTheImages(cities:NSArray){
-        
-
-    for i in 0 ..< cities.count  {
-        let city = cities[i] as! NSDictionary
-        let url = city.value(forKey:"thumburl")
-        self.requestHeroImageForCities(ImageURL:url as! NSString, tag: i)
+        })
+        task.resume()
     }
-}
     
     
-func requestHeroImageForCities(ImageURL:NSString, tag:NSInteger)
-{
-    
-    let urlForTheRequest:URL? = URL(string:ImageURL as String)
-    var request:URLRequest = URLRequest(url:urlForTheRequest!)
-    request.httpMethod = "GET"
-    
-    let session = URLSession(configuration: URLSessionConfiguration.default)
-    let task = session.dataTask(with: request, completionHandler: {(data, response, error) -> Void in
-        if let data = data {
-            if let response = response as? HTTPURLResponse , 200...299 ~= response.statusCode {
-                self.delegate?.imageReceivedForTheCity!(data: data as NSData, tag: tag)
-                
-            } else {
-                self.delegate?.imageFailedForTheCity!(error: "Error while retrieving image for the tag")
-            
-            }
+    func requestImagesFor(place:Int, city:Int)
+    {
+        var id:Int = 0
+        
+        if(place != 0)
+        {
+            id = place
         }
-    })
-    task.resume()
-
-}
-
-// MARK: - UI Services
-   
-func customActivityIndicatory(_ viewContainer: UIView, startAnimate:Bool? = true) -> UIView {
+        else{
+            id = city
+        }
+        
+        let getAllCitiesURL = String(format:"https://terraplanet.herokuapp.com/api/media/getAllMediaByPlaceId?placeid=%d&type=image",id)
+        let urlForTheRequest:URL? = URL(string:getAllCitiesURL)
+        var request:URLRequest = URLRequest(url:urlForTheRequest!)
+        request.httpMethod = "GET"
+        
+        let startDate = Date()
+        
+        //UC: MAP the custom session configuration to VOC Factory
+        let sessionConfiguration = URLSessionConfiguration.default
+        VocServiceFactory.setupSessionConfiguration(sessionConfiguration)
+        let session = URLSession(configuration: sessionConfiguration)
+        let task = session.dataTask(with: request, completionHandler: {(data, response, error) -> Void in
+            if let data = data {
+                let json = try? JSONSerialization.jsonObject(with: data, options: [])
+                if let response = response as? HTTPURLResponse , 200...299 ~= response.statusCode {
+                    DDLogVerbose(json.debugDescription)
+                    
+                    
+                    let mediaDict = json as! NSDictionary
+                    print(mediaDict)
+                    let mediaArray:NSArray = mediaDict.value(forKey:"media") as! NSArray
+                    let imageURLs:NSMutableArray = NSMutableArray.init()
+                    
+                    for i in 1..<mediaArray.count
+                    {
+                        let mediaItem:NSDictionary = mediaArray[i] as! NSDictionary
+                        let imageURL:String = mediaItem.value(forKey:"url") as! String
+                        imageURLs.add(imageURL)
+                    }
+                    
+                    let executionTime = Date().timeIntervalSince(startDate)
+                    let metrics:[String:String] = ["URL":getAllCitiesURL, "Time": String(executionTime)]
+                    
+                    
+                    self.delegate?.retrievedImages!(imageURLS: imageURLs, placeId: place,metrics:metrics)
+                    
+                }
+                    
+                else {
+                }
+            }
+        })
+        task.resume()
+        
+        
+        
+    }
     
+    func issueImageRequestForAllTheImages(cities:NSArray){
+        
+        
+        for i in 0 ..< cities.count  {
+            let city = cities[i] as! NSDictionary
+            let url = city.value(forKey:"thumburl")
+            self.requestHeroImageForCities(ImageURL:url as! NSString, tag: i)
+        }
+    }
+    
+    
+    func requestHeroImageForCities(ImageURL:NSString, tag:NSInteger)
+    {
+        
+        let urlForTheRequest:URL? = URL(string:ImageURL as String)
+        var request:URLRequest = URLRequest(url:urlForTheRequest!)
+        request.httpMethod = "GET"
+        
+        
+        //UC: MAP the custom session configuration to VOC Factory
+        let sessionConfiguration = URLSessionConfiguration.default
+        VocServiceFactory.setupSessionConfiguration(sessionConfiguration)
+        let session = URLSession(configuration: sessionConfiguration)
+        let task = session.dataTask(with: request, completionHandler: {(data, response, error) -> Void in
+            if let data = data {
+                if let response = response as? HTTPURLResponse , 200...299 ~= response.statusCode {
+                    self.delegate?.imageReceivedForTheCity!(data: data as NSData, tag: tag)
+                    
+                } else {
+                    self.delegate?.imageFailedForTheCity!(error: "Error while retrieving image for the tag")
+                    
+                }
+            }
+        })
+        task.resume()
+        
+    }
+    
+    // MARK: - UI Services
+    
+    func customActivityIndicatory(_ viewContainer: UIView, startAnimate:Bool? = true) -> UIView {
+        
         let mainContainer: UIView = UIView(frame: viewContainer.bounds)
         mainContainer.center = viewContainer.center
         mainContainer.backgroundColor = UIColor.black//UIColor.init(netHex: 0xFFFFFF)
@@ -350,7 +369,7 @@ func customActivityIndicatory(_ viewContainer: UIView, startAnimate:Bool? = true
         }
         return mainContainer
     }
-
+    
 }
 
 

@@ -23,6 +23,7 @@
  */
 
 import UIKit
+import VocSdk
 
 class UCCityTableViewController: UIViewController,UCServicesDelegate,UITableViewDelegate,UITableViewDataSource {
     
@@ -31,24 +32,24 @@ class UCCityTableViewController: UIViewController,UCServicesDelegate,UITableView
     var devText:String? = nil;
     var devTimer:Timer? = nil;
     var nextViewMetrics:Dictionary<String,String>? = nil
-
-
-
+    
+    
+    
     @IBOutlet weak var tableView:UITableView?
     @IBOutlet weak var consoleView:UITextView!
     @IBOutlet weak var nQualityView:UIView!
     @IBOutlet weak var devView:UIView?
     @IBOutlet weak var nQualityLabel:UILabel!
-
+    
     
     
     var waitingView:UIView? = nil;
     
-
-
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         
         //UrbanCrawl Logo
         let imageLogo = UIImage(named:"uclogo.png")
@@ -64,25 +65,25 @@ class UCCityTableViewController: UIViewController,UCServicesDelegate,UITableView
         self.tableView?.dataSource = self
         
         self.tableView?.contentInset = UIEdgeInsetsMake(-35, 0, 0, 0)
-
+        
         self.navigationItem.rightBarButtonItems = [space];
-
+        
         self.consoleView?.textColor = UIColor(red: 0.6157, green: 1, blue: 0, alpha: 1.0)
-
+        
     }
     
     
     override func viewWillAppear(_ animated: Bool) {
         let services = UCServices.sharedInstance;
         UCServices.sharedInstance.selectedPlace = nil
-
-        services.delegate = self;  
+        
+        services.delegate = self;
     }
     
     override func viewWillDisappear(_ animated: Bool) {
- 
+        
     }
-
+    
     override func viewDidAppear(_ animated: Bool) {
         self.addressDevMode()
         self.updateDevConsole()
@@ -92,9 +93,9 @@ class UCCityTableViewController: UIViewController,UCServicesDelegate,UITableView
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     // MARK: - Table view data source
-
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 8
@@ -102,25 +103,25 @@ class UCCityTableViewController: UIViewController,UCServicesDelegate,UITableView
     
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat{
-   
-    switch(section) {
-    
-    case 0: return  0.0
-    case 1: return  25
-    case 2: return  25
-    case 3: return  25
-    case 4: return  25
-    case 5: return  3.0
-    case 6: return  3.0
-    case 7: return  3.0
-    case 8: return  3.0
-    default :return 40.0
-    
+        
+        switch(section) {
+            
+        case 0: return  0.0
+        case 1: return  25
+        case 2: return  25
+        case 3: return  25
+        case 4: return  25
+        case 5: return  3.0
+        case 6: return  3.0
+        case 7: return  3.0
+        case 8: return  3.0
+        default :return 40.0
+            
+        }
     }
-    }
-
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-       
+        
         switch(indexPath.section) {
         case 0: return  100
         case 1: return  165
@@ -135,11 +136,11 @@ class UCCityTableViewController: UIViewController,UCServicesDelegate,UITableView
             
         }
     }
-
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         switch(section) {
-
+            
         case 0: return  1
         case 1: return  1
         case 2: return  1
@@ -169,12 +170,12 @@ class UCCityTableViewController: UIViewController,UCServicesDelegate,UITableView
         default :return nil
             
         }
-
+        
         
     }
     
-     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         
         let section = indexPath.section
         let cellIdentifier:String
@@ -187,83 +188,83 @@ class UCCityTableViewController: UIViewController,UCServicesDelegate,UITableView
         switch(section)
         {
         case 0:
-        cellIdentifier = "CityTableViewCell"
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? CityTableViewCell
-        else{
-                fatalError("The dequeued cell is not an instance of CityTableViewCell.")
-            
-        }
-        
-
-        if(UCServices.sharedInstance.cityImages[cityName!] == nil) {}else {
-            cell.cityImageView!.image = UCServices.sharedInstance.cityImages[cityName!]        }
-        
-        cell.cityName!.text = city?.value(forKey: "name") as! String?
-        cell.countryName!.text = city?.value(forKey: "countryname") as! String?
-        
-        if( cell.cityImageView!.layer.sublayers != nil )
-        {
-            for  layer in  cell.cityImageView!.layer.sublayers! {
-                
-                layer.removeFromSuperlayer()
-                
+            cellIdentifier = "CityTableViewCell"
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? CityTableViewCell
+                else{
+                    fatalError("The dequeued cell is not an instance of CityTableViewCell.")
+                    
             }
-        }
-        
-        let gradientLayer:CAGradientLayer = CAGradientLayer()
-        gradientLayer.frame.size =  cell.cityImageView!.frame.size
-        gradientLayer.colors = [UIColor.purple.withAlphaComponent(0.5).cgColor,UIColor.purple.withAlphaComponent(0.3).cgColor,UIColor.white.withAlphaComponent(0.3).cgColor] //Use diffrent colors
-        gradientLayer.startPoint = CGPoint(x: 0.0, y: 1.0)
-        gradientLayer.endPoint = CGPoint(x: 1.0, y: 1.0)
-        cell.cityImageView!.layer.addSublayer(gradientLayer)
-
-        
-        returnCell = cell
+            
+            
+            if(UCServices.sharedInstance.cityImages[cityName!] == nil) {}else {
+                cell.cityImageView!.image = UCServices.sharedInstance.cityImages[cityName!]        }
+            
+            cell.cityName!.text = city?.value(forKey: "name") as! String?
+            cell.countryName!.text = city?.value(forKey: "countryname") as! String?
+            
+            if( cell.cityImageView!.layer.sublayers != nil )
+            {
+                for  layer in  cell.cityImageView!.layer.sublayers! {
+                    
+                    layer.removeFromSuperlayer()
+                    
+                }
+            }
+            
+            let gradientLayer:CAGradientLayer = CAGradientLayer()
+            gradientLayer.frame.size =  cell.cityImageView!.frame.size
+            gradientLayer.colors = [UIColor.purple.withAlphaComponent(0.5).cgColor,UIColor.purple.withAlphaComponent(0.3).cgColor,UIColor.white.withAlphaComponent(0.3).cgColor] //Use diffrent colors
+            gradientLayer.startPoint = CGPoint(x: 0.0, y: 1.0)
+            gradientLayer.endPoint = CGPoint(x: 1.0, y: 1.0)
+            cell.cityImageView!.layer.addSublayer(gradientLayer)
+            
+            
+            returnCell = cell
             
             
         case 1:
-        cellIdentifier = "VideoTableViewCell"
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? VideoTableViewCell else {
-            
-               fatalError("The dequeued cell is not an instance of VideoTableViewCell")
-        }
-        
-        if(UCServices.sharedInstance.cityImages[cityName!] == nil) {}
-        else {
-            cell.heroImage!.image = UCServices.sharedInstance.cityImages[cityName!]
-        }
-        
-        
-        if(cell.heroImage!.layer.sublayers != nil )
-        {
-            for  layer in  cell.heroImage!.layer.sublayers! {
+            cellIdentifier = "VideoTableViewCell"
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? VideoTableViewCell else {
                 
-                layer.removeFromSuperlayer()
-                
+                fatalError("The dequeued cell is not an instance of VideoTableViewCell")
             }
-        }
-        
-        let gradientLayer:CAGradientLayer = CAGradientLayer()
-        gradientLayer.frame.size =  cell.heroImage!.frame.size
-        gradientLayer.colors = [UIColor.purple.withAlphaComponent(0.5).cgColor,UIColor.purple.withAlphaComponent(0.3).cgColor,UIColor.white.withAlphaComponent(0.3).cgColor] //Use diffrent colors
-        gradientLayer.startPoint = CGPoint(x: 0.0, y: 1.0)
-        gradientLayer.endPoint = CGPoint(x: 1.0, y: 1.0)
-        cell.heroImage!.layer.addSublayer(gradientLayer)
-        
-        returnCell = cell
+            
+            if(UCServices.sharedInstance.cityImages[cityName!] == nil) {}
+            else {
+                cell.heroImage!.image = UCServices.sharedInstance.cityImages[cityName!]
+            }
+            
+            
+            if(cell.heroImage!.layer.sublayers != nil )
+            {
+                for  layer in  cell.heroImage!.layer.sublayers! {
+                    
+                    layer.removeFromSuperlayer()
+                    
+                }
+            }
+            
+            let gradientLayer:CAGradientLayer = CAGradientLayer()
+            gradientLayer.frame.size =  cell.heroImage!.frame.size
+            gradientLayer.colors = [UIColor.purple.withAlphaComponent(0.5).cgColor,UIColor.purple.withAlphaComponent(0.3).cgColor,UIColor.white.withAlphaComponent(0.3).cgColor] //Use diffrent colors
+            gradientLayer.startPoint = CGPoint(x: 0.0, y: 1.0)
+            gradientLayer.endPoint = CGPoint(x: 1.0, y: 1.0)
+            cell.heroImage!.layer.addSublayer(gradientLayer)
+            
+            returnCell = cell
             
         case 2:
-        cellIdentifier = "ScrollViewIdentifier"
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? ScrollTableViewCell else {
+            cellIdentifier = "ScrollViewIdentifier"
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? ScrollTableViewCell else {
                 
                 fatalError("The dequeued cell is not an instance of VideoTableViewCell")
             }
             cell.scrollView?.contentSize = CGSize(width: 600.0, height: 125)
-
-        
-        if(places != nil){
-            self.addImages(view: cell.scrollView!, cell: cell, places:places!)}
-    
+            
+            
+            if(places != nil){
+                self.addImages(view: cell.scrollView!, cell: cell, places:places!)}
+            
             returnCell = cell
             
             
@@ -276,18 +277,18 @@ class UCCityTableViewController: UIViewController,UCServicesDelegate,UITableView
             cell.textView?.text = city?.value(forKey: "description") as! String?
             returnCell = cell
             
-        
+            
         case 4:
             cellIdentifier = "LabelCellIdentifier"
             guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? LabelTableViewCell else {
                 
                 fatalError("The dequeued cell is not an instance of VideoTableViewCell")
             }
-
+            
             cell.imgView?.image = UIImage(named:"ic_best_time.png")
             cell.titleLabel?.text = "Best time to Visit"
             cell.valueLabel?.text = "9AM - 11PM"
-
+            
             returnCell = cell
             
         case 5:
@@ -339,8 +340,8 @@ class UCCityTableViewController: UIViewController,UCServicesDelegate,UITableView
             cell.valueLabel?.text = "112102 miles"
             
             returnCell = cell
-
-
+            
+            
         default:
             return returnCell!
         }
@@ -350,45 +351,45 @@ class UCCityTableViewController: UIViewController,UCServicesDelegate,UITableView
         return returnCell!
     }
     
-
+    
     /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
+     // Override to support conditional editing of the table view.
+     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+     // Return false if you do not want the specified item to be editable.
+     return true
+     }
+     */
+    
     /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
+     // Override to support editing the table view.
+     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+     if editingStyle == .delete {
+     // Delete the row from the data source
+     tableView.deleteRows(at: [indexPath], with: .fade)
+     } else if editingStyle == .insert {
+     // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+     }
+     }
+     */
+    
     /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
+     // Override to support rearranging the table view.
+     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
+     
+     }
+     */
+    
     /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
+     // Override to support conditional rearranging of the table view.
+     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
+     // Return false if you do not want the item to be re-orderable.
+     return true
+     }
+     */
+    
     
     // MARK: - Navigation
-
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
@@ -403,7 +404,7 @@ class UCCityTableViewController: UIViewController,UCServicesDelegate,UITableView
                 nextVC.devArray.append(self.nextViewMetrics!)
             }
         }
-
+        
     }
     
     
@@ -430,7 +431,7 @@ class UCCityTableViewController: UIViewController,UCServicesDelegate,UITableView
         for i in 0..<places.count
         {
             let place = places[i] as! NSDictionary
-      
+            
             let rect:CGRect = CGRect(x: CGFloat(x), y: CGFloat(y), width: CGFloat(width), height: CGFloat(height))
             
             let containerView:UIView = UIView.init(frame:rect)
@@ -469,21 +470,25 @@ class UCCityTableViewController: UIViewController,UCServicesDelegate,UITableView
             request.httpMethod = "GET"
             
             let StartDate = Date()
-            let session = URLSession(configuration: URLSessionConfiguration.default)
+            
+            //UC: MAP the custom session configuration to VOC Factory
+            let sessionConfiguration = URLSessionConfiguration.default
+            VocServiceFactory.setupSessionConfiguration(sessionConfiguration)
+            let session = URLSession(configuration: sessionConfiguration)
             let task = session.dataTask(with: request, completionHandler: {(data, response, error) -> Void in
                 if let data = data {
                     if let response = response as? HTTPURLResponse , 200...299 ~= response.statusCode {
-                       
+                        
                         DispatchQueue.main.async{
-                        let image:UIImage = UIImage(data:data)!
-                        imageView.image = image
-                        cell.setNeedsLayout()
-                        actInd.removeFromSuperview()
+                            let image:UIImage = UIImage(data:data)!
+                            imageView.image = image
+                            cell.setNeedsLayout()
+                            actInd.removeFromSuperview()
                         }
                     } else {
                         DispatchQueue.main.async{
-
-                        actInd.removeFromSuperview()
+                            
+                            actInd.removeFromSuperview()
                         }
                         print("Error downloading image for a place")
                     }
@@ -492,7 +497,7 @@ class UCCityTableViewController: UIViewController,UCServicesDelegate,UITableView
                     let metrics:[String:String] = ["URL":urlAllowed, "Time": String(executionTime)]
                     self.devArray.append(metrics)
                     self.updateDevConsole()
-
+                    
                 }
             })
             task.resume()
@@ -526,7 +531,7 @@ class UCCityTableViewController: UIViewController,UCServicesDelegate,UITableView
             containerView.addSubview(cityLabel)
             
             view.addSubview(containerView)
-        
+            
             x = x+width+pad
             
             
@@ -535,14 +540,14 @@ class UCCityTableViewController: UIViewController,UCServicesDelegate,UITableView
         let contentwidth:Float = (pad*2) * Float(places.count) + width*Float(places.count)
         
         view.contentSize = CGSize(width: CGFloat(contentwidth), height: view.frame.size.height)
-    
+        
     }
     
     @IBAction func placeSelected(_sender: AnyObject){
         
-       let button:UIButton = _sender as! UIButton
-       let placeIndex:Int = button.tag
-       print("User cliced the place with Index:",placeIndex)
+        let button:UIButton = _sender as! UIButton
+        let placeIndex:Int = button.tag
+        print("User cliced the place with Index:",placeIndex)
         
         let selectedCity:NSDictionary = UCServices.sharedInstance.selectedCity!
         let places:NSArray = selectedCity.value(forKey: "places") as! NSArray
@@ -554,14 +559,14 @@ class UCCityTableViewController: UIViewController,UCServicesDelegate,UITableView
         let placeDetails = selectedPlace.value(forKey: "placeDetails")
         
         if(placeDetails == nil){
-        self.waitingView = UCServices.sharedInstance.customActivityIndicatory((self.tableView?.superview!)!, startAnimate: true)
-
-        UCServices.sharedInstance.requestPlaceDetails(placeId: placeId)
-
+            self.waitingView = UCServices.sharedInstance.customActivityIndicatory((self.tableView?.superview!)!, startAnimate: true)
+            
+            UCServices.sharedInstance.requestPlaceDetails(placeId: placeId)
+            
         }
         else{
-        self.performSegue(withIdentifier: "placeSegue", sender: nil)
-
+            self.performSegue(withIdentifier: "placeSegue", sender: nil)
+            
         }
     }
     
@@ -573,15 +578,15 @@ class UCCityTableViewController: UIViewController,UCServicesDelegate,UITableView
         DispatchQueue.main.async{
             self.performSegue(withIdentifier: "placeSegue", sender: nil)
             self.waitingView?.removeFromSuperview()
-
+            
         }
         
     }
-
+    
     
     func failedToRetrievePlaceDetailsForThePlace(placeId: Int) {
         self.waitingView?.removeFromSuperview()
-
+        
     }
     
     
@@ -704,8 +709,8 @@ class UCCityTableViewController: UIViewController,UCServicesDelegate,UITableView
         
     }
     
-
-
+    
+    
     
 }
 
