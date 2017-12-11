@@ -33,9 +33,21 @@ class LogsWebViewController: UIViewController {
         super.viewDidLoad()
         self.title = " Debug Logs"
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        let ssd = (appDelegate.ddFileLogger?.currentLogFileInfo.filePath)! as String
-        let html = try? String(contentsOfFile: ssd, encoding: String.Encoding.utf8)
-
+        var filePath = ""
+        
+        if let uFilePath = appDelegate.ddFileLogger?.currentLogFileInfo.filePath{
+          
+            filePath = uFilePath
+        }
+        
+        if(filePath == "")
+        {
+            print("No data found in log file")
+            return
+        }
+        
+        
+        let html = try? String(contentsOfFile:filePath, encoding: String.Encoding.utf8)
         webView?.loadHTMLString(html!, baseURL: nil)
 
         // Do any additional setup after loading the view.
