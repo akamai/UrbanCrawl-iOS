@@ -39,6 +39,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate,VocServiceDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         
+        //UC: UrbanCrawl uses Lumberjack for logging.
+        self.ddFileLogger = DDFileLogger() // File Logger
+        self.ddFileLogger?.rollingFrequency = TimeInterval(60*60*24)  // 24 hours
+        self.ddFileLogger?.logFileManager.maximumNumberOfLogFiles = 7
+        DDLog.add(ddFileLogger!)
+        
+        
         //UC: Registering MAP SDK with the licence key.
         
         do {
@@ -70,12 +77,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate,VocServiceDelegate {
         //UC: Setting the time based debug console.
         self.akaService?.setDebugConsoleLog(true)
         
-        
-        //UC: UrbanCrawl uses Lumberjack for logging.
-        self.ddFileLogger = DDFileLogger() // File Logger
-        self.ddFileLogger?.rollingFrequency = TimeInterval(60*60*24)  // 24 hours
-        self.ddFileLogger?.logFileManager.maximumNumberOfLogFiles = 7
-        DDLog.add(ddFileLogger!)
         
         DDLogVerbose("Log Initialized for UrbanCrawl")
         
