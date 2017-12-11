@@ -9,22 +9,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "UrbanCrawl/Controllers/UCHomeTableViewController.swift"
-            timestampString = "534671303.696273"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "349"
-            endingLineNumber = "349"
-            landmarkName = "getAllCitiesAPIResponse(placesDictionary:responseCode:metrics:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "UrbanCrawl/Controllers/UCPlaceTableViewController.swift"
             timestampString = "528010519.906009"
             startingColumnNumber = "9223372036854775807"
