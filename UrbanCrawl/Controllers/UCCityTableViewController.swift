@@ -164,9 +164,9 @@ class UCCityTableViewController: UIViewController,UCServicesDelegate,UITableView
         
         switch(section) {
         case 0:return nil
-        case 1:return String(format: "VIRTUAL TOUR TO %@ ", cityName!)
+        case 1:return "VIRTUAL TOUR TO \(cityName!)"
         case 2:return "Places of Interest"
-        case 3:return String(format: "About %@ ", cityName!)
+        case 3:return "About \(cityName!)"
         case 4:return "Other Information"
         default :return nil
             

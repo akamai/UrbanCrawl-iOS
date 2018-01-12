@@ -159,9 +159,9 @@ class UCPlaceTableViewController: UIViewController,UCServicesDelegate,UITableVie
         switch(section) {
         case 0:return nil
         case 1:
-        return String(format: "Virtual tour to %@ ", placeName)
+        return "Virtual tour to \(placeName)"
         case 3:
-        return String(format: "About %@ ", placeName)
+        return "About \(placeName)"
         case 4:
         return "Other Information"
         default :return nil
@@ -250,10 +250,10 @@ class UCPlaceTableViewController: UIViewController,UCServicesDelegate,UITableVie
                 
                 fatalError("The dequeued cell is not an instance of VideoTableViewCell")
             }
-            cell.currentStage?.text = String(format:"%@ > %@",cityName!,placeName as! CVarArg)//"Cambridge > Liberty"
+            cell.currentStage?.text = "\(cityName!) > \(placeName as! CVarArg)"
         
             let numImages:NSNumber = self.placeDetails?.value(forKey: "numimages") as! NSNumber
-            let numImageString:String = String(format: "%d Images Available", numImages.intValue)
+            let numImageString:String = "\(numImages.intValue) Images Available"
             cell.imagesCount?.setTitle(numImageString, for: .normal)
             cell.imagesCount?.titleLabel?.textColor = UIColor.purple.withAlphaComponent(0.8)
             cell.currentStage?.textColor = UIColor.darkGray

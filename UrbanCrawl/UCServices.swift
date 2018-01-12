@@ -107,7 +107,7 @@ class UCServices
         
         
         let getAllPlacesURL = "https://terraplanet.herokuapp.com/api/places/getAllPlacesOfCity?id="
-        let getAllPlacesCompleteURL = String(format:"%@%d",getAllPlacesURL,cityId)
+        let getAllPlacesCompleteURL = "\(getAllPlacesURL)\(cityId)"
         let urlForTheRequest:URL? = URL(string:getAllPlacesCompleteURL)
         var request:URLRequest = URLRequest(url:urlForTheRequest!)
         request.httpMethod = "GET"
@@ -158,7 +158,7 @@ class UCServices
     {
         
         let getAllPlacesURL = "https://terraplanet.herokuapp.com/api/places/getPlaceDetails?id="
-        let getPlaceDetailsCompleteURL = String(format:"%@%d",getAllPlacesURL,placeId)
+        let getPlaceDetailsCompleteURL = "\(getAllPlacesURL)\(placeId)"
         let urlForTheRequest:URL? = URL(string:getPlaceDetailsCompleteURL)
         var request:URLRequest = URLRequest(url:urlForTheRequest!)
         request.httpMethod = "GET"
@@ -208,11 +208,16 @@ class UCServices
                     }
                     
                     placesMCopy?.replaceObject(at:placeIndex, with:currentPlaceMCopy!)
+                    var currentCityMCopy:NSMutableDictionary? = nil
                     
-                    
-                    
-                    let currentCityMCopy:NSMutableDictionary? = NSMutableDictionary(dictionary:self.selectedCity!)
-                    currentCityMCopy?.setValue(placesMCopy!, forKey:"places")
+                    if self.selectedCity != nil{
+                       currentCityMCopy = NSMutableDictionary(dictionary:self.selectedCity!)
+                       currentCityMCopy?.setValue(placesMCopy!, forKey:"places")
+
+                    }
+                    else{
+                        return
+                    }
                     
                     UCServices.sharedInstance.selectedCity = currentCityMCopy! as NSDictionary
                     UCServices.sharedInstance.selectedPlace = currentPlaceMCopy! as NSDictionary
@@ -246,7 +251,7 @@ class UCServices
             id = city
         }
         
-        let getAllCitiesURL = String(format:"https://terraplanet.herokuapp.com/api/media/getAllMediaByPlaceId?placeid=%d&type=image",id)
+        let getAllCitiesURL = "https://terraplanet.herokuapp.com/api/media/getAllMediaByPlaceId?placeid=\(id)&type=image"
         let urlForTheRequest:URL? = URL(string:getAllCitiesURL)
         var request:URLRequest = URLRequest(url:urlForTheRequest!)
         request.httpMethod = "GET"
