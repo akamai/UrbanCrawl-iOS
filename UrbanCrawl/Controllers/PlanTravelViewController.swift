@@ -41,7 +41,6 @@ class PlanTravelViewController: UIViewController,UIPickerViewDelegate,UIPickerVi
         gradientLayer.colors = [UIColor.purple.withAlphaComponent(0.7).cgColor,UIColor.purple.withAlphaComponent(0.3).cgColor,UIColor.purple.withAlphaComponent(0.3).cgColor] //Use diffrent colors
         gradientLayer.startPoint = CGPoint(x: 0.4, y: 0.3)
         gradientLayer.endPoint = CGPoint(x: 0.8, y: 0.7)
-     //  self.view.layer.addSublayer(gradientLayer)
         
         
         
