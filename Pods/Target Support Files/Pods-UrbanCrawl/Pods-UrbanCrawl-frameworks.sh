@@ -102,13 +102,13 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${PODS_ROOT}/AkamaiMAP/MAP-sdk-ios-prod-18.41.823/VocSdk.framework"
+  install_framework "${PODS_ROOT}/AkamaiMAP/MAP-sdk-ios-prod-18.42.959/VocSdk.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/INSNibLoading/INSNibLoading.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/INSPhotoGallery/INSPhotoGallery.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${PODS_ROOT}/AkamaiMAP/MAP-sdk-ios-prod-18.41.823/VocSdk.framework"
+  install_framework "${PODS_ROOT}/AkamaiMAP/MAP-sdk-ios-prod-18.42.959/VocSdk.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/INSNibLoading/INSNibLoading.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/INSPhotoGallery/INSPhotoGallery.framework"

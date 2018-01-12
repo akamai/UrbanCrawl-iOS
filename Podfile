@@ -8,7 +8,7 @@ target 'UrbanCrawl' do
   # Pods for UrbanCrawl
 pod 'INSPhotoGallery'
 pod 'INSNibLoading'
-pod 'CocoaLumberjack/Swift'
+pod 'CocoaLumberjack/Swift', '~> 3.3.0'
 pod 'AkamaiMAP'
 
 

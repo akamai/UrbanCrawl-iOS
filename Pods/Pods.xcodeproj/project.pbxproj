@@ -111,45 +111,44 @@
 		3C4A551577552C0A981EFBE8537938DD /* DDASLLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDASLLogger.h; path = Classes/DDASLLogger.h; sourceTree = "<group>"; };
 		484E0D85330F91596226C9C0B1FAD0B2 /* INSPhotosDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = INSPhotosDataSource.swift; path = INSPhotoGallery/INSPhotosDataSource.swift; sourceTree = "<group>"; };
 		49787EC4B5F0385C200F31744EC0FDDA /* INSPhotoGalleryClose@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "INSPhotoGalleryClose@2x.png"; path = "INSPhotoGallery/INSPhotoGallery.bundle/INSPhotoGalleryClose@2x.png"; sourceTree = "<group>"; };
-		547D767BA755DE33C5BC91984FCCAAB4 /* Pods-UrbanCrawl.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-UrbanCrawl.modulemap"; sourceTree = "<group>"; };
+		547D767BA755DE33C5BC91984FCCAAB4 /* Pods-UrbanCrawl.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-UrbanCrawl.modulemap"; sourceTree = "<group>"; };
 		55AF8B6EC5DDD5D2D773B7AFCD7A72F8 /* Pods-UrbanCrawl-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UrbanCrawl-dummy.m"; sourceTree = "<group>"; };
 		5D36DE7BC153B0C7D703D79923A42AEB /* CocoaLumberjack-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaLumberjack-umbrella.h"; sourceTree = "<group>"; };
 		5F5E3019E7D38C3D7C5AC8CA418D80C4 /* UIView+INSNibLoading.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+INSNibLoading.h"; path = "INSNibLoading/iOS/UIView+INSNibLoading.h"; sourceTree = "<group>"; };
-		684EF342C091507D645D7B5371FA2DFB /* INSPhotoGallery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = INSPhotoGallery.framework; path = INSPhotoGallery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		684EF342C091507D645D7B5371FA2DFB /* INSPhotoGallery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = INSPhotoGallery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		68CD15EF01D0C94CAE671AEFFC71022A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6982BC2240DE574A2DE79057413D26C3 /* INSPhotoGalleryCloseLandscape@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "INSPhotoGalleryCloseLandscape@3x.png"; path = "INSPhotoGallery/INSPhotoGallery.bundle/INSPhotoGalleryCloseLandscape@3x.png"; sourceTree = "<group>"; };
-		70C5B6DEB8CCD68377A4CEBA7666634B /* VocSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VocSdk.framework; path = "MAP-sdk-ios-prod-18.41.823/VocSdk.framework"; sourceTree = "<group>"; };
 		7396C77E3D91A444C97C9CC5401CF0DF /* INSPhotosViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = INSPhotosViewController.swift; path = INSPhotoGallery/INSPhotosViewController.swift; sourceTree = "<group>"; };
 		7BE53586280729C93E00284EDAE9B53F /* INSNibLoading-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "INSNibLoading-dummy.m"; sourceTree = "<group>"; };
 		7C185C8B6475E414D0B63A6A7DFDA172 /* Pods-UrbanCrawl-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UrbanCrawl-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7DFFE3990ED5AAD71404E19E0F3FF07E /* INSPhotoGallery.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = INSPhotoGallery.xcconfig; sourceTree = "<group>"; };
-		852027ED6D8C91C843D7FEE1D4524755 /* CocoaLumberjack.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = CocoaLumberjack.modulemap; sourceTree = "<group>"; };
+		852027ED6D8C91C843D7FEE1D4524755 /* CocoaLumberjack.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CocoaLumberjack.modulemap; sourceTree = "<group>"; };
 		88342B24CB49543F1C3F59596B4471F7 /* DDASLLogCapture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDASLLogCapture.m; path = Classes/DDASLLogCapture.m; sourceTree = "<group>"; };
 		8A89A29B6209551987B32AFADF6088D6 /* Pods-UrbanCrawl-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UrbanCrawl-acknowledgements.plist"; sourceTree = "<group>"; };
 		8B04E915BD95988B233BC57CCCC9F130 /* INSPhotoGallery-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "INSPhotoGallery-umbrella.h"; sourceTree = "<group>"; };
 		8D9BB16D5F078E27AF04CF7FC053160D /* DDOSLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDOSLogger.m; path = Classes/DDOSLogger.m; sourceTree = "<group>"; };
 		8E1D3E618B5C1CD2F482BDF6D9908F92 /* INSPhotosOverlayView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = INSPhotosOverlayView.swift; path = INSPhotoGallery/INSPhotosOverlayView.swift; sourceTree = "<group>"; };
-		906553B6EF4AE319CB83F2987D78952B /* CocoaLumberjack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CocoaLumberjack.framework; path = CocoaLumberjack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		906553B6EF4AE319CB83F2987D78952B /* CocoaLumberjack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaLumberjack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		92FAA61A1020DC55C603489B48F8EAC1 /* DDLog+LOGV.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DDLog+LOGV.h"; path = "Classes/DDLog+LOGV.h"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		97C9C3FD2BC0D390C14222C350DEAEB1 /* INSPhotoGallery-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "INSPhotoGallery-prefix.pch"; sourceTree = "<group>"; };
 		9A18E92F477814733C61D0C2ECDC32DE /* INSPhotoGalleryClose@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "INSPhotoGalleryClose@3x.png"; path = "INSPhotoGallery/INSPhotoGallery.bundle/INSPhotoGalleryClose@3x.png"; sourceTree = "<group>"; };
 		9A5F6BD776F325E402D26CE2BB576BC0 /* DDOSLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDOSLogger.h; path = Classes/DDOSLogger.h; sourceTree = "<group>"; };
 		A27B5273B8F8312E241929A491D9C527 /* CocoaLumberjack-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CocoaLumberjack-dummy.m"; sourceTree = "<group>"; };
 		A7DFF0471C35D4A63DE184DD28D0B928 /* CocoaLumberjack.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaLumberjack.xcconfig; sourceTree = "<group>"; };
 		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		B8FFF4F76F6A4CE6B2336DF0A5597312 /* INSPhotoGallery.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = INSPhotoGallery.bundle; path = INSPhotoGallery.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8FFF4F76F6A4CE6B2336DF0A5597312 /* INSPhotoGallery.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = INSPhotoGallery.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9D31C3FB3ADF946635ED6496163F91F /* INSPhotoViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = INSPhotoViewController.swift; path = INSPhotoGallery/INSPhotoViewController.swift; sourceTree = "<group>"; };
 		BCD98E5A405FB3BF3321A4D1AAD7CB4B /* INSNibLoading-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "INSNibLoading-prefix.pch"; sourceTree = "<group>"; };
 		BCFA26152F064B2B140E746F6598972F /* Pods-UrbanCrawl-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UrbanCrawl-frameworks.sh"; sourceTree = "<group>"; };
 		C13EBAFAF8C7E6D427A302B0049ECEAC /* DDLegacyMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLegacyMacros.h; path = Classes/DDLegacyMacros.h; sourceTree = "<group>"; };
 		C16917DBB37C091C89C441E87A3034D1 /* DDFileLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDFileLogger.m; path = Classes/DDFileLogger.m; sourceTree = "<group>"; };
-		C6051F8A1E8419B2A74B875CDF44FCDE /* INSNibLoading.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = INSNibLoading.framework; path = INSNibLoading.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6051F8A1E8419B2A74B875CDF44FCDE /* INSNibLoading.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = INSNibLoading.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7B96ED8F2A09ADD60AF5AC62C1AC28F /* CocoaLumberjack-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaLumberjack-prefix.pch"; sourceTree = "<group>"; };
 		CBAB4FEFA19F853AB671762866D8252D /* ResourceBundle-INSPhotoGallery-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-INSPhotoGallery-Info.plist"; sourceTree = "<group>"; };
 		CE1300149BCFEF14DF0ACBF05CA1B50E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE1BD9B3E69717C8C8EFF47048265B17 /* INSNibLoading-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "INSNibLoading-umbrella.h"; sourceTree = "<group>"; };
-		CF41A32313D66F7BC623804587B1A9AD /* Pods_UrbanCrawl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_UrbanCrawl.framework; path = "Pods-UrbanCrawl.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF41A32313D66F7BC623804587B1A9AD /* Pods_UrbanCrawl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UrbanCrawl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0F7DBD804DC055E0D3829D5D0050E39 /* INSPhotosInteractionAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = INSPhotosInteractionAnimator.swift; path = INSPhotoGallery/INSPhotosInteractionAnimator.swift; sourceTree = "<group>"; };
 		D153F1BC85183C93C0F3BDCAE8A4EA04 /* DDLogMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLogMacros.h; path = Classes/DDLogMacros.h; sourceTree = "<group>"; };
 		D1E3BB01C88099946DCA4B60100C0FFB /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDAbstractDatabaseLogger.h; path = Classes/DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
@@ -157,14 +156,15 @@
 		D4F1E83361783D85D5CF212ED983F192 /* DDFileLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDFileLogger.h; path = Classes/DDFileLogger.h; sourceTree = "<group>"; };
 		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		DC2AD630EC64713F463CF5CAFF590413 /* Pods-UrbanCrawl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UrbanCrawl.release.xcconfig"; sourceTree = "<group>"; };
-		DDC8C1463EF738C8F1056AA7D1A1E985 /* INSPhotoGallery.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = INSPhotoGallery.modulemap; sourceTree = "<group>"; };
+		DDC8C1463EF738C8F1056AA7D1A1E985 /* INSPhotoGallery.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = INSPhotoGallery.modulemap; sourceTree = "<group>"; };
 		DF6A533B9654481F83458D6E6A69B529 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0975471440721D36B1D25556D16F6BE /* INSPhotoGalleryClose.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = INSPhotoGalleryClose.png; path = INSPhotoGallery/INSPhotoGallery.bundle/INSPhotoGalleryClose.png; sourceTree = "<group>"; };
 		E1B11D730177C4F0769D7FB099DC536D /* Pods-UrbanCrawl-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UrbanCrawl-umbrella.h"; sourceTree = "<group>"; };
+		EAB314CCECC445598AFEF5B93C6A7E62 /* VocSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VocSdk.framework; path = "MAP-sdk-ios-prod-18.42.959/VocSdk.framework"; sourceTree = "<group>"; };
 		EAE425683B02D03E6EC571EE7CE10F67 /* INSPhotoGallery-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "INSPhotoGallery-dummy.m"; sourceTree = "<group>"; };
 		EE87CF7DE47B4E784AE24664A52F1359 /* DDAssertMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDAssertMacros.h; path = Classes/DDAssertMacros.h; sourceTree = "<group>"; };
 		F61AECD90B7781382A547FFBCFB02643 /* CocoaLumberjack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CocoaLumberjack.swift; path = Classes/CocoaLumberjack.swift; sourceTree = "<group>"; };
-		F7E1C1A1676301D236220614B8BB21C8 /* INSNibLoading.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = INSNibLoading.modulemap; sourceTree = "<group>"; };
+		F7E1C1A1676301D236220614B8BB21C8 /* INSNibLoading.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = INSNibLoading.modulemap; sourceTree = "<group>"; };
 		FD9755A3610E2533B3FA13413A6C86B8 /* DDASLLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDASLLogger.m; path = Classes/DDASLLogger.m; sourceTree = "<group>"; };
 		FF5869897E6C2D20EB32C18ABE23D969 /* INSPhotoGalleryCloseLandscape@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "INSPhotoGalleryCloseLandscape@2x.png"; path = "INSPhotoGallery/INSPhotoGallery.bundle/INSPhotoGalleryCloseLandscape@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -220,7 +220,6 @@
 				78E4B3D8367FF3ED7076C588516F05F1 /* Support Files */,
 				A370C0CF0BAF0FDD779A448DF6FD1BBA /* Swift */,
 			);
-			name = CocoaLumberjack;
 			path = CocoaLumberjack;
 			sourceTree = "<group>";
 		};
@@ -265,7 +264,6 @@
 				23487C8DEB12E004F14CBDE1AD79658E /* UIView+INSNibLoading.m */,
 				8C35B6CCBA4F838DBD950DF9AF9FA030 /* Support Files */,
 			);
-			name = INSNibLoading;
 			path = INSNibLoading;
 			sourceTree = "<group>";
 		};
@@ -313,14 +311,13 @@
 				966DE1AFE5ACDE647066807AC8A63498 /* Resources */,
 				A21CB62189B35179E80CB6DC7EF7B1CC /* Support Files */,
 			);
-			name = INSPhotoGallery;
 			path = INSPhotoGallery;
 			sourceTree = "<group>";
 		};
-		68A8A9307074BADE07C221873F3632CB /* Frameworks */ = {
+		60ED0C3F375831E6C3D213659DAE1E03 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				70C5B6DEB8CCD68377A4CEBA7666634B /* VocSdk.framework */,
+				EAB314CCECC445598AFEF5B93C6A7E62 /* VocSdk.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -414,7 +411,7 @@
 		AE034ABF7A8BD117C3E3E5CA592A0C0E /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				68A8A9307074BADE07C221873F3632CB /* Frameworks */,
+				60ED0C3F375831E6C3D213659DAE1E03 /* Frameworks */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -424,7 +421,6 @@
 			children = (
 				AE034ABF7A8BD117C3E3E5CA592A0C0E /* Core */,
 			);
-			name = AkamaiMAP;
 			path = AkamaiMAP;
 			sourceTree = "<group>";
 		};
